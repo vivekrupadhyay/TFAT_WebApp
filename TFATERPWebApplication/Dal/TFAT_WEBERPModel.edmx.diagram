@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="14c0c1e6589f417d820b4758eb98c804" Name="Diagram1" ZoomLevel="78">
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ActivityStatu" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ActivityType" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Book" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.CommissionType" Width="1.5" PointX="9.75" PointY="10.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.CompanyAccType" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.CompanyBussType" Width="1.5" PointX="2.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ContactSource" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.CorrespondenceType" Width="1.5" PointX="17.75" PointY="4.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Department" Width="1.5" PointX="17.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Designation" Width="1.5" PointX="17.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Division" Width="1.5" PointX="17.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ExpenseType" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Grade" Width="1.5" PointX="19.75" PointY="4.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemBOM" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemBOMHeader" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemBOMRoute" Width="1.5" PointX="3" PointY="2.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemCategory" Width="1.5" PointX="19.75" PointY="8.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemDetail" Width="1.5" PointX="19.75" PointY="12.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemGroup" Width="1.5" PointX="0.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemMaster" Width="1.5" PointX="2.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Language" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Ledger" Width="1.5" PointX="10" PointY="14.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.LedgerBranch" Width="1.5" PointX="21.75" PointY="4.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MailingCategory" Width="1.5" PointX="4.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ProductCategory" Width="1.5" PointX="21.75" PointY="15.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Religion" Width="1.5" PointX="21.75" PointY="19.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ReportGroup" Width="1.5" PointX="23.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ReportHeader" Width="1.5" PointX="23.75" PointY="5.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.RequisitionType" Width="1.5" PointX="23.75" PointY="20.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ResourceCategory" Width="1.5" PointX="21.75" PointY="24.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Resource" Width="1.5" PointX="23.75" PointY="24.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Segment" Width="1.5" PointX="25.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.SLA" Width="1.5" PointX="25.75" PointY="4.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Stage" Width="1.5" PointX="4.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Territory" Width="1.5" PointX="25.75" PointY="8.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TFatBranch" Width="1.5" PointX="15" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatCity" Width="1.5" PointX="10.25" PointY="1.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatComp" Width="1.5" PointX="12.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatCountry" Width="1.5" PointX="5.75" PointY="1.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatDesignForm" Width="1.5" PointX="15" PointY="2.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatDesignHeader" Width="1.5" PointX="12.75" PointY="1.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatMenu" Width="1.5" PointX="25.75" PointY="12.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatPass" Width="1.5" PointX="7.75" PointY="8" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatSearch" Width="1.5" PointX="25.75" PointY="18.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatState" Width="1.5" PointX="5.625" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.WarrantyType" Width="1.5" PointX="9.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOn_B" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemClass" Width="1.5" PointX="27.75" PointY="5.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.rStock" Width="1.5" PointX="27.75" PointY="9.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.SuchanProject" Width="1.5" PointX="27.75" PointY="19.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatDesign" Width="1.5" PointX="27.75" PointY="27.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatForm" Width="1.5" PointX="21.75" PointY="28.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TfatPerd" Width="1.5" PointX="23.75" PointY="28.75" IsExpanded="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ItemBOM_ItemBOM" ManuallyRouted="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ItemBOMHeader_ItemBOMHeader" ManuallyRouted="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ItemBOMRoute_ItemBOMHeader" ManuallyRouted="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ItemBOMRoute_ItemBOMHeader1" ManuallyRouted="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ItemBOMRoute_ItemBOMHeader2" ManuallyRouted="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ItemBOMRoute_ItemBOMRoute" ManuallyRouted="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_LedgerAuthIds" ManuallyRouted="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_TFatBranch_TfatComp" ManuallyRouted="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_TfatCity_TfatCity" ManuallyRouted="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_TfatState_TfatCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_TfatDesignForm_TfatDesignHeader" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOn_A" Width="1.5" PointX="0.75" PointY="21.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Address" Width="1.5" PointX="20.375" PointY="0.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Attachment" Width="1.5" PointX="5.75" PointY="27.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Master" Width="1.5" PointX="10.375" PointY="48.375" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MasterInfo" Width="1.5" PointX="17.75" PointY="38.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MasterGroup" Width="1.5" PointX="12.75" PointY="21.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MasterInfoDC" Width="1.5" PointX="2.75" PointY="21.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MasterSubLedger" Width="1.5" PointX="4.75" PointY="21.125" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_AddressSource" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_AddressState" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_LedgerAltCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_LedgerCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_LedgerParty" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_MasterAuthIds" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_MasterUserID" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOn_D" Width="1.5" PointX="15.875" PointY="15.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOn_P" Width="1.5" PointX="10.875" PointY="9.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddonValue" Width="1.5" PointX="22.875" PointY="9.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.CurrRate" Width="1.5" PointX="12.875" PointY="9.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.DocType" Width="1.5" PointX="8.25" PointY="0.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.IncoTerm" Width="1.5" PointX="11.25" PointY="35.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemMore" Width="1.5" PointX="27.875" PointY="26.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemWarranty" Width="1.5" PointX="24.875" PointY="9.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MainType" Width="1.5" PointX="3.75" PointY="19.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Sale" Width="1.5" PointX="6" PointY="15.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.SalesChannel" Width="1.5" PointX="0.75" PointY="27" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.SalesDivision" Width="1.5" PointX="3.75" PointY="27.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.SalesMan" Width="1.5" PointX="3.75" PointY="36.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.SalesmanCategory" Width="1.5" PointX="14.875" PointY="9.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.SalesTaxDetail" Width="1.5" PointX="17.875" PointY="21.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Stock" Width="1.5" PointX="37.125" PointY="35" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockMore" Width="1.5" PointX="39.375" PointY="35.375" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockSerialData" Width="1.5" PointX="22.875" PointY="16.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Store" Width="1.5" PointX="34.875" PointY="42.375" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.SubLedger" Width="1.5" PointX="18.25" PointY="85" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.SubType" Width="1.5" PointX="0.75" PointY="20.375" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TransportDetail" Width="1.5" PointX="19.875" PointY="21.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TransporterMa" Width="1.5" PointX="40.875" PointY="6.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.UnitMaster" Width="1.5" PointX="34.875" PointY="36.375" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOn_DRev" Width="1.5" PointX="32.875" PointY="13.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOn_F" Width="1.5" PointX="16.875" PointY="9.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOn_G" Width="1.5" PointX="24.875" PointY="16.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOn_J" Width="1.5" PointX="19.875" PointY="28.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnAG" Width="1.5" PointX="36.875" PointY="27.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnBP" Width="1.5" PointX="38.875" PointY="17.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnBR" Width="1.5" PointX="38.875" PointY="27.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnCM" Width="1.5" PointX="18.875" PointY="36.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnCN" Width="1.5" PointX="40.875" PointY="15.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnCP" Width="1.5" PointX="40.875" PointY="20.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnCR" Width="1.5" PointX="40.875" PointY="25.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnC" Width="1.5" PointX="29.875" PointY="36.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnDN" Width="1.5" PointX="31.875" PointY="36.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnEP" Width="1.5" PointX="40.875" PointY="30.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnEPRev" Width="1.5" PointX="41.875" PointY="35.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnE" Width="1.5" PointX="42.875" PointY="6.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnESRev" Width="1.5" PointX="13.875" PointY="38.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnF" Width="1.5" PointX="42.875" PointY="11.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnGD" Width="1.5" PointX="15.875" PointY="38.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnGI" Width="1.5" PointX="42.875" PointY="16.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnGJ" Width="1.5" PointX="42.875" PointY="21.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnGO" Width="1.5" PointX="42.875" PointY="26.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnGP" Width="1.5" PointX="43.875" PointY="31.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnGrid" Width="1.5" PointX="43.875" PointY="36.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnGT" Width="1.5" PointX="44.875" PointY="6.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnHP" Width="1.5" PointX="44.875" PointY="11.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnIA" Width="1.5" PointX="44.875" PointY="16.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnIC" Width="1.5" PointX="44.875" PointY="21.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnIM" Width="1.5" PointX="44.875" PointY="26.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnIP" Width="1.5" PointX="17.875" PointY="41.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnI" Width="1.5" PointX="19.875" PointY="41.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnIV" Width="1.5" PointX="30.875" PointY="41.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnJB" Width="1.5" PointX="45.875" PointY="31.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnJC" Width="1.5" PointX="45.875" PointY="36.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnJE" Width="1.5" PointX="41.875" PointY="41.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnJI" Width="1.5" PointX="43.875" PointY="41.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnJM" Width="1.5" PointX="45.875" PointY="41.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnJO" Width="1.5" PointX="46.875" PointY="6.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnJ" Width="1.5" PointX="46.875" PointY="11.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnJV" Width="1.5" PointX="46.875" PointY="16.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnJX" Width="1.5" PointX="46.875" PointY="21.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnMB" Width="1.5" PointX="46.875" PointY="26.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnMC" Width="1.5" PointX="13.875" PointY="43.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnMM" Width="1.5" PointX="47.875" PointY="31.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnMP" Width="1.5" PointX="47.875" PointY="36.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnMR" Width="1.5" PointX="47.875" PointY="41.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnMV" Width="1.5" PointX="48.875" PointY="6.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnNP" Width="1.5" PointX="48.875" PointY="11.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnN" Width="1.5" PointX="48.875" PointY="16.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnOC" Width="1.5" PointX="48.875" PointY="21.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnOP" Width="1.5" PointX="48.875" PointY="26.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnOPRev" Width="1.5" PointX="10.875" PointY="45.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnO" Width="1.5" PointX="49.875" PointY="31.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnOSRev" Width="1.5" PointX="49.875" PointY="36.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPC" Width="1.5" PointX="49.875" PointY="41.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPG" Width="1.5" PointX="50.875" PointY="6.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPI" Width="1.5" PointX="50.875" PointY="11.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPIRev" Width="1.5" PointX="15.875" PointY="46.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPJ" Width="1.5" PointX="17.875" PointY="46.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPK" Width="1.5" PointX="19.875" PointY="46.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPM" Width="1.5" PointX="50.875" PointY="16.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPP" Width="1.5" PointX="50.875" PointY="21.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPR" Width="1.5" PointX="50.875" PointY="26.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnP" Width="1.5" PointX="30.875" PointY="46.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPV" Width="1.5" PointX="41.875" PointY="46.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnPX" Width="1.5" PointX="43.875" PointY="46.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnQP" Width="1.5" PointX="45.875" PointY="46.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnQPRev" Width="1.5" PointX="47.875" PointY="46.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnQ" Width="1.5" PointX="49.875" PointY="46.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnQSRev" Width="1.5" PointX="51.875" PointY="31.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnRC" Width="1.5" PointX="51.875" PointY="36.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnRJ" Width="1.5" PointX="51.875" PointY="41.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnRM" Width="1.5" PointX="51.875" PointY="46.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnRP" Width="1.5" PointX="52.875" PointY="6.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnR" Width="1.5" PointX="11.25" PointY="40" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOn" Width="1.5" PointX="12.875" PointY="48.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnSG" Width="1.5" PointX="52.875" PointY="11.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddonsIG" Width="1.5" PointX="52.875" PointY="16.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnSL" Width="1.5" PointX="52.875" PointY="22.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnSX" Width="1.5" PointX="53.875" PointY="27.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnTG" Width="1.5" PointX="53.875" PointY="32.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnTH" Width="1.5" PointX="53.875" PointY="37.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnTI" Width="1.5" PointX="53.875" PointY="42.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnTJ" Width="1.5" PointX="53.875" PointY="47.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnTO" Width="1.5" PointX="54.875" PointY="6.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnTP" Width="1.5" PointX="54.875" PointY="11.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnT" Width="1.5" PointX="54.875" PointY="16.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnTT" Width="1.5" PointX="54.875" PointY="21.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnU" Width="1.5" PointX="14.875" PointY="51.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnWO" Width="1.5" PointX="16.875" PointY="51.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AddOnX" Width="1.5" PointX="55.875" PointY="26.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.AuditTrail" Width="1.5" PointX="30.875" PointY="51.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.CurrencyMaster" Width="1.5" PointX="55.875" PointY="31.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.LCMaster" Width="1.5" PointX="55.875" PointY="37.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.PaymentTerm" Width="1.5" PointX="41.875" PointY="51.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ProjectDetail" Width="1.5" PointX="23.125" PointY="35.625" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Scheme" Width="1.5" PointX="43.875" PointY="51.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockAdj" Width="1.5" PointX="45.875" PointY="51.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockBatch" Width="1.5" PointX="47.875" PointY="51.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockClass" Width="1.5" PointX="55.875" PointY="45.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockExcise" Width="1.5" PointX="39.375" PointY="50.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockMCPara" Width="1.5" PointX="49.875" PointY="51.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockO" Width="1.5" PointX="39.375" PointY="75.875" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockQC" Width="1.5" PointX="56.875" PointY="6.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockReserve" Width="1.5" PointX="56.875" PointY="17.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockRev" Width="1.5" PointX="34.875" PointY="20.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockSerial" Width="1.5" PointX="51.875" PointY="52.5" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_AttachmentBTPS" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_DocTypesMainType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_DocTypesSubType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_LedgerType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesIncoTerms" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockBOMSrl" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_LedgerBTPS" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_LedgerDivision" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_LedgerMainType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_LedgerSLCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_LedgerSubType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesMainType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockMainType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SubTypesMainType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_MasterSalesman" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ProjectDetailsParty" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesAcHeadCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockParty" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_AddonRSBTPS" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesAuthIds" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesDCCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesDivision" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesSalesman" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesSubType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockDCCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockDivision" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesmanGrp" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesmanState" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockAuthIds" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockExciseBTPSS" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockMoreBTPSS" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockOSBTPSS" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockPerUnit" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockStore" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockSubType" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockUnit" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ProjectDetailsState" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Charge" Width="1.5" PointX="28.375" PointY="12.375" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TempLedgerBranch" Width="1.5" PointX="31" PointY="1.375" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TaxMaster" Width="1.5" PointX="12.625" PointY="60.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TaxDetail" Width="1.5" PointX="13.375" PointY="31.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.TaxForm" Width="1.5" PointX="15.375" PointY="31.125" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_AddressPTaxCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_AddressSTaxCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_TaxMasterAddTaxCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_TaxMasterASchgCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_TaxMasterCessCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_TaxMasterPostCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_TaxMasterSchgCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesTaxCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockTaxCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ProjectDetailsTaxCode" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Master1" Width="1.5" PointX="30.375" PointY="18.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ServiceTaxMaster" Width="1.5" PointX="12.625" PointY="71.5" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ServiceTaxRate" Width="1.5" PointX="5.375" PointY="10.25" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ServiceTaxMasterSTCessPost" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ServiceTaxMasterSTCessPostR" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ServiceTaxMasterSTRatePost" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ServiceTaxMasterSTRatePostR" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ServiceTaxMasterSTSheCessPost" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_ServiceTaxMasterSTSheCessPostR" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_SalesSTCode" />
+        <AssociationConnector Association="TFAT_WEBERPModel.FK_StockSTCode" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.UnitMaster1" Width="1.5" PointX="12.375" PointY="4.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ItemMaster1" Width="1.5" PointX="0.75" PointY="32.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ProcessMas1" Width="1.5" PointX="32.75" PointY="24.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.ReasonMaster1" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MfgRejection1" Width="1.5" PointX="33.375" PointY="1.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MfgTimeLoss1" Width="1.5" PointX="35.375" PointY="1.125" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Stores1" Width="1.5" PointX="25.375" PointY="42.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.StockMCPara1" Width="1.5" PointX="35.375" PointY="8.375" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MfgParameter" Width="1.5" PointX="14.375" PointY="3.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MfgQuantity" Width="1.5" PointX="37.375" PointY="0.75" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.MachineParameter" Width="1.5" PointX="26.375" PointY="21.875" />
+        <EntityTypeShape EntityType="TFAT_WEBERPModel.Test_Date" Width="1.5" PointX="10.375" PointY="30.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

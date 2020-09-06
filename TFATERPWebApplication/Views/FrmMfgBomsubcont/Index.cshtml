@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/jqTree/jqtree.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/jquery-ui-1.10.4.custom.css/cupertino/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui-1.10.4.custom.css/cupertino/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+<script src="~/Scripts/App/AppJQueryUI.js"></script>
+<script type="text/javascript" src="~/Scripts/jqTree/tree.jquery.js"></script>
+<script src="~/Scripts/i18n/grid.locale-en.js" type="text/javascript"></script>
+<script src="~/Scripts/jquery.jqGrid.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="~/Scripts/App/JQMenu.js"></script>
+<script src="~/Scripts/App/FrmmfgBomsubcont.js"></script>
+<script src="~/Scripts/App/FrmmfgBomsubcont1.js"></script>
+@using (Html.BeginForm("Index", "FrmMfgBomsubcont", FormMethod.Post, new { enctype = "frmMultiPart" }))
+{
+    <table style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid;  border-color: #a5a8ab;">
+        <tr>
+            <td>
+                Issued to Sub-Controctors(ISC)
+                <table style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid;  border-color: #a5a8ab;">
+                    <tr>
+                        <td style="border-right: 1px solid; width: 35%; padding-left: 5px;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        Issue_Date:
+                                    </td>
+                                    <td>
+                                        @Html.TextBox("txt WoNo", null, new { style = "width:235px; font-size:9pt;" })
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Date:
+                                    </td>
+                                    <td>
+                                        @Html.TextBox("txt WoNo", null, new { style = "width:235px; font-size:9pt;" })
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class=" demo">
+                    <div id="tabs">
+                        <ul>
+                            <li><a id="m_tb1" href="#tabs-1">General</a></li>
+                            <li><a id="m_tb2" href="#tabs-2">Item Details</a></li>
+
+
+                        </ul>
+                        <div id="tabs-1">
+                            <table>
+                                <tr>
+                                    <td width="10%">
+                                        Issue Slip No.:
+                                    </td>
+                                    <td width="28%">
+                                        @Html.TextBox("txt WoNo", null, new { style = "width:230px; font-size:9pt;" })
+                                    </td>
+                                    <td width="5%">
+                                        Date:
+                                    </td>
+                                    <td>
+                                        @Html.TextBox("txt WoNo", null, new { style = " font-size:9pt;" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        From Store:
+                                    </td>
+                                    <td>
+                                        @Html.Partial("_User", "TfatCity")
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        ToParty:
+                                    </td>
+                                    <td>
+                                        @Html.Partial("_User", "TfatCity")
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="tabs-2">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <table style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid;  border-color: #a5a8ab;">
+                                            <tr>
+                                                <td>
+                                                    Material Expectedto be Received:
+                                                    <table id="list5" style="width: 100%"></table>
+                                                    <div id="pager5"></div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid;  border-color: #a5a8ab;">
+                                            <tr>
+                                                <td>
+                                                    Material Issued to Received:
+                                                    
+                                                </td>
+                                                <td>
+                                                    @Html.DropDownList("Address", new SelectList(string.Empty, "Value", "Text"), "----select---", new { id = "AddressNo.", style = "width:230px; height:20px; font-size:9pt;" })
+                                               <input type="button" value="Expland" />
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <table id="list6" style="width: 100%"></table>
+                                                    <div id="pager6"></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+}

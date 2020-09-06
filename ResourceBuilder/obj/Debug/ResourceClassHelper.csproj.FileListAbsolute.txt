@@ -1,0 +1,17 @@
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassWriter\bin\Debug\ResourceClassHelper.exe.config
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassWriter\bin\Debug\ResourceClassHelper.exe
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassWriter\bin\Debug\ResourceClassHelper.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassWriter\bin\Debug\Resources.dll
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassWriter\bin\Debug\Resources.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassWriter\obj\Debug\ResourceClassHelper.csprojResolveAssemblyReference.cache
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassWriter\obj\Debug\ResourceClassHelper.exe
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassWriter\obj\Debug\ResourceClassHelper.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\ResourceClassHelper.exe.config
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\ResourceClassHelper.exe
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\ResourceClassHelper.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\Resources.dll
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\Resources.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\obj\Debug\ResourceClassHelper.csprojResolveAssemblyReference.cache
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\obj\Debug\ResourceClassHelper.exe
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\obj\Debug\ResourceClassHelper.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\Resources.xml

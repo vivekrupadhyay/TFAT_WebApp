@@ -1,0 +1,5 @@
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATWebApplication.Services\obj\Debug\TFATWebApplication.Services.csprojResolveAssemblyReference.cache
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATWebApplication.Services\bin\Debug\TFATWebApplication.Services.exe
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATWebApplication.Services\bin\Debug\TFATWebApplication.Services.pdb
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATWebApplication.Services\obj\Debug\TFATWebApplication.Services.exe
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATWebApplication.Services\obj\Debug\TFATWebApplication.Services.pdb

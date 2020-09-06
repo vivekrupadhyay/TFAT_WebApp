@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.01 Frameset//EN"
+          "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="@TFATERPWebApplication.Core.CultureHelper.GetCurrentNeutralCulture()" dir="@(TFATERPWebApplication.Core.CultureHelper.IsRighToLeft() ? "rtl" : "ltr")">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/jqTree/jqtree.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/layout.css")" />  
+    <link href="~/Content/jquery-ui-1.10.4.custom.css/cupertino/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+    <link href="~/Content/jquery-ui-1.10.4.custom.css/cupertino/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/jquery-ui-1.10.4.custom/jquery-ui-1.10.4.custom.js"></script>
+    <script src="~/Scripts/jquery-ui-1.10.4.custom/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="~/Scripts/App/AppJQueryUI.js"></script>
+    <script type="text/javascript" src="~/Scripts/jqTree/tree.jquery.js"></script>
+    @section scripts{
+        <script type="text/javascript" src="~/Scripts/App/JQMenu.js"></script>
+    }
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    <button id="btnMenu" style="position: fixed; top: 60px; left: -55px; /* Rotate div */ transform:rotate(90deg); -ms-transform:rotate(90deg); /* IE 9 */ -webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */ z-index: 3; width:auto !important;">
+        Suchan Software
+    </button>
+    <div id="divMenu" class="scrollbar">
+        @Html.DropDownList("DDL_MenuCode_T", new SelectList(ViewBag.SuchanProjects, "ProjectCode", "ProjectName"), "Select Project", new { @style = "width:180px;" })<br />
+        <input type="text" id="txtsearch" style="width:175px; " /><br />
+        <hr />
+        <div id="tree1"></div>
+    </div>
+    @*<header>
+        <div class="content-wrapper" >
+            <div class="float-right"  >
+
+            </div>
+        </div>
+    </header>*@
+    <header>
+        @Html.Partial("~/Views/Shared/_header.cshtml")
+        @*<div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+            </div>
+            <div class="float-right">
+                <section id="login">
+                    @Html.Partial("_LoginPartial")
+                </section>
+               
+               
+
+                <nav>
+                    <ul id="menu">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>*@
+    </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        @Html.Partial("~/Views/Shared/_footer.cshtml")
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "Newdatalist";
+  @* var culture = System.Threading.Thread.CurrentThread.CurrentUICulture.Name.ToLowerInvariant();*@
+    Layout = null;
+    
+}
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+<link href="~/Content/Menu.css" rel="stylesheet" />
+<link href="~/Content/Login.css" rel="stylesheet" />
+
+<script src="~/Scripts/modernizr-2.6.2.js"></script>
+<script src="~/Scripts/jquery-2.1.1.min.js"></script>
+<script src="~/Scripts/jquery-2.1.1.js"></script>
+@*<div id="divnew" class="scrollbar">
+    @Html.DropDownList("CompanyCode", new SelectList(ViewBag.TfatComps, "Code", "Name"), "Select TfatComps", new { @style = "width:180px;" })<br />
+    @Html.DropDownList("CompanyCode", new SelectList(ViewBag.TfatBranch, "Code", "Name"), "Select TfatBranch", new { @style = "width:180px;" })<br />
+</div>*@
+
+ 
+<script type="text/javascript">    
+        $(function () {
+            $("#var1").change(function () {
+                var code = $("#var1 :selected").val();
+                var url = 'Branch';
+                var data1 = { "code": code };
+                $.post(url, data1, function (data) {
+                    var items = [];
+                    items.push("<option value=" + 0 + ">" + "Choose Branch" + "</option>");
+                    for (var i = 0; i < data.length; i++) {
+                        items.push("<option value=" + data[i].Value + ">" + data[i].Text + "</option>");
+                    }
+                    $("#var2").html(items.join(' '));
+                })
+            });
+
+            $("#var1").change(function () {
+                var code = $("#var1 :selected").val();
+                var url = 'Perd';
+                var data1 = { "code": code };
+                $.post(url, data1, function (data) {
+                    var items = [];
+                    items.push("<option value=" + 0 + ">" + "Choose Period" + "</option>");
+                    for (var i = 0; i < data.length; i++) {
+                        items.push("<option value=" + data[i].Value + ">" + data[i].Text + "</option>");
+                    }
+                    $("#var3").html(items.join(' '));
+                })
+            });
+        });
+ </script>
+
+<body>
+    <div>
+        <img src="../Images/logo.png" style="Width:130px; Height:40px;" />
+
+    </div>
+    <div style="color:#f2e9e9;background-color:#f2e9e9">
+        <hr style="color:#f2e9e9;" />
+    </div>
+    <div style="padding-top:6em;">
+
+        @using (Html.BeginForm("Newdatalist", "Company", FormMethod.Post))
+        {
+            //this  is for create form tag
+            @Html.AntiForgeryToken()
+            // this is for prevent CSRF attack
+            if (@ViewBag.Message != null)
+            {
+                @*<div style="border:1px solid red;">
+                        @ViewBag.Message
+                    </div>*@
+            }
+            <table width="30%" align="center">
+                <tr>
+                    <td class="labelcompanycss" width="25%" align="left" height="35px">@Html.Label("Select a Company / Group")</td>
+                </tr>
+                <tr>
+                    <td>@Html.DropDownList("var1",null, "Select Company", new {style = "height:22px;width:300px;border:1px solid;border-color:gray;" })</td>
+                </tr>
+                <tr>
+                    <td class="labelcompanysmallcss">@Html.ActionLink("Define a new company", "NewCompany", "NewCompany",null, new { @class = "linkcolor" })</td>
+                </tr>
+                <tr>
+                    <td class="labelcompanycss" width="25%" align="left" height="35px">@Html.Label("Select a Plant / Business Unit")</td>
+                </tr>
+                <tr>
+                    <td>@Html.DropDownList("var2",null, "Select Branch", new { style = "height:22px;width:300px;border:1px solid;border-color:gray;" })</td>
+                </tr>
+                <tr>
+                    <td class="labelcompanysmallcss">@Html.ActionLink("Define a New Plant/BU", "NewBranch", "NewBranch", null , new { @class = "linkcolor" })</td>
+                </tr>
+                <tr>
+                    <td class="labelcompanycss" width="25%" align="left" height="35px">@Html.Label("Select Accounting Period")</td>
+                </tr>
+                <tr>
+                    <td>@Html.DropDownList("var3",null, "Select Period", new { style = "height:22px;width:300px;border:1px solid;border-color:gray;" })</td>
+                </tr>
+                <tr>
+                    <td class="labelcompanysmallcss">@Html.ActionLink("Define a New Accounting Period", "actionName", "controllerName", new { @class = "linkcolor" })</td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>

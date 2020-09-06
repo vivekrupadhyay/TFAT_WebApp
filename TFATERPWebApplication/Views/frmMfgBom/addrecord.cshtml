@@ -1,0 +1,540 @@
+﻿@model TFATERPWebApplication.Models.BomMaterialModel
+
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/js/addmfgbomcontrol.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#txtName1_@ViewBag.itemMaster').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName1_@ViewBag.itemMaster').val();
+                $.ajax({
+                    url: "/frmMfgBom/AutocompleteName/" + id + "?name=" + $('#txtName1_@ViewBag.itemMaster').val(),
+                    dataType: "json",
+                    type: 'POST',
+                    data: {
+                        name: request.term
+                    },
+                    success: function (data) {
+                        response(data);
+                    }
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+
+                var id = $('#TableName1_@ViewBag.itemMaster').val();
+                var mData;
+                $.ajax({
+                    url: "/frmMfgBom/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'N'
+                    },
+                    success: function (_result) {
+                        //alert(_result);
+                        mData = _result.UserName;
+                        $('#txtCode1_@ViewBag.itemMaster').val(mData);
+                        $('#Description').val(mData);
+                    }
+                });
+                
+            },
+            minLength: 1
+        });
+        $('#txtCode1_@ViewBag.itemMaster').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName1_@ViewBag.itemMaster').val();
+                $.ajax({
+                    url: "/frmMfgBom/AutocompleteCode/" + id + "?code=" + $('#txtCode1_@ViewBag.itemMaster').val(),
+                    dataType: "json",
+                    data: {
+                        code: request.term
+                    },
+                    success: function (data) {
+                        response(data);
+                    },
+                    type: 'POST'
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+                var id = $('#TableName1_@ViewBag.itemMaster').val();
+                var mData;
+                var unit;
+                $.ajax({
+                    url: "/frmMfgBom/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'C'
+                    },
+                    success: function (_result) {
+                        mData = _result.UserName;
+                        unit = _result.unitdata;
+                       
+                        $('#txtName1_@ViewBag.itemMaster').val(mData);
+                        $('#Description').val(mData);
+                        $('#Units').html(unit);
+                    }
+                });
+        
+            },
+            minLength: 1
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#txtName_@ViewBag.Process').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName_@ViewBag.Process').val();
+                $.ajax({
+                    url: "/frmMfgBom/AutocompleteName/" + id + "?name=" + $('#txtName_@ViewBag.Process').val(),
+                    dataType: "json",
+                    type: 'POST',
+                    data: {
+                        name: request.term
+                    },
+                    success: function (data) {
+
+                        response(data);
+                    }
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+
+                var id = $('#TableName_@ViewBag.Process').val();
+                var mData;
+                $.ajax({
+                    url: "/frmMfgBom/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'N'
+                    },
+                    success: function (_result) {
+                        mData = _result.UserName;
+                        //  alert(mData);
+                    }
+                });
+                @*setTimeout(function () { $('#txtCode_@ViewBag.Process').val(mData); }, 1000);*@
+            },
+            minLength: 1
+        });
+        $('#txtCode_@ViewBag.Process').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName_@ViewBag.Process').val();
+                $.ajax({
+                    url: "/frmMfgBom/AutocompleteCode/" + id + "?code=" + $('#txtCode_@ViewBag.Process').val(),
+                    dataType: "json",
+                    data: {
+                        code: request.term
+                    },
+                    success: function (data) {
+
+                        response(data);
+                    },
+                    type: 'POST'
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+                var id = $('#TableName_@ViewBag.Process').val();
+                var mData;
+                $.ajax({
+                    url: "/frmMfgBom/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'C'
+                    },
+                    success: function (_result) {
+
+                        mData = _result.UserName;
+
+                    }
+                });
+                //settimeout(function () { $('#txtname_@ViewBag.Process').val(mdata); }, 1000);
+            },
+            minLength: 1
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('#txtName_@ViewBag.Store').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName_@ViewBag.Store').val();
+                $.ajax({
+                    url: "/frmMfgBom/AutocompleteName/" + id + "?name=" + $('#txtName_@ViewBag.Store').val(),
+                    dataType: "json",
+                    type: 'POST',
+                    data: {
+                        name: request.term
+                    },
+                    success: function (data) {
+
+                        response(data);
+                    }
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+
+                var id = $('#TableName_@ViewBag.Store').val();
+                var mData;
+                $.ajax({
+                    url: "/frmMfgBom/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'N'
+                    },
+                    success: function (_result) {
+                        mData = _result;
+                        //  alert(mData);
+                    }
+                });
+                @*setTimeout(function () { $('#txtCode_@ViewBag.Store').val(mData); }, 1000);*@
+            },
+            minLength: 1
+        });
+        $('#txtCode_@ViewBag.Store').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName_@ViewBag.Store').val();
+                $.ajax({
+                    url: "/frmMfgBom/AutocompleteCode/" + id + "?code=" + $('#txtCode_@ViewBag.Store').val(),
+                    dataType: "json",
+                    data: {
+                        code: request.term
+                    },
+                    success: function (data) {
+
+                        response(data);
+                    },
+                    type: 'POST'
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+                var id = $('#TableName_@ViewBag.Store').val();
+                var mData;
+                $.ajax({
+                    url: "/frmMfgBom/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'C'
+                    },
+                    success: function (_result) {
+
+                        mData = _result.UserName;
+
+                    }
+                });
+                @*setTimeout(function () { $('#txtName_@ViewBag.Store').val(mData); }, 1000);*@
+            },
+            minLength: 1
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('#txtName_@ViewBag.ReasonMaster').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName_@ViewBag.ReasonMaster').val();
+                $.ajax({
+                    url: "/frmMfgBom/AutocompleteName/" + id + "?name=" + $('#txtName_@ViewBag.ReasonMaster').val(),
+                    dataType: "json",
+                    type: 'POST',
+                    data: {
+                        name: request.term
+                    },
+                    success: function (data) {
+
+                        response(data);
+                    }
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+
+                var id = $('#TableName_@ViewBag.ReasonMaster').val();
+                var mData;
+                $.ajax({
+                    url: "/frmMfgBom/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'N'
+                    },
+                    success: function (_result) {
+                        mData = _result;
+                        //  alert(mData);
+                    }
+                });
+                @*setTimeout(function () { $('#txtCode_@ViewBag.ReasonMaster').val(mData); }, 1000);*@
+            },
+            minLength: 1
+        });
+        $('#txtCode_@ViewBag.ReasonMaster').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName_@ViewBag.ReasonMaster').val();
+                $.ajax({
+                    url: "/frmMfgBom/AutocompleteCode/" + id + "?code=" + $('#txtCode_@ViewBag.ReasonMaster').val(),
+                    dataType: "json",
+                    data: {
+                        code: request.term
+                    },
+                    success: function (data) {
+
+                        response(data);
+                    },
+                    type: 'POST'
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+                var id = $('#TableName_@ViewBag.ReasonMaster').val();
+                var mData;
+                $.ajax({
+                    url: "/frmMfgBom/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'C'
+                    },
+                    success: function (_result) {
+
+                        mData = _result.UserName;
+
+                    }
+                });
+                @*setTimeout(function () { $('#txtName_@ViewBag.ReasonMaster').val(mData); }, 1000);*@
+            },
+            minLength: 1
+        });
+    });
+</script>
+
+@using (Html.BeginForm("addrecord", "frmMfgBom", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>
+                <br />
+                <br />
+                <div id="output"></div>
+                <div id="overlay" class="web_dialog_overlay"></div>
+                <div id="dialog" class="web_dialog">
+                    <table style="width: 100%; border: 0px;" cellpadding="3" cellspacing="0">
+                        <tr>
+                            <td class="web_dialog_title">Add Items</td>
+                            <td class="web_dialog_title align_right"><a href="#" id="btnClose">Close</a></td>
+                        </tr>
+                        <tr>
+                            <td style="font-family:Tahoma;font-size:8pt;border-right:1px solid;padding-right:3px;">
+                                <table style="font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;">
+                                    <tr>
+                                        <td>
+                                            @Html.Label("Serial No", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })
+                                        </td>
+                                        <td colspan="3">
+                                            @if (ViewBag.Sno != null)
+                                            {
+                                                @ViewBag.Sno
+                                            }
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.Label("Product", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td>
+                                            <input type="hidden" id="TableName1_@ViewBag.itemMaster" value="@ViewBag.itemMaster" />
+                                            @Html.TextBoxFor(model => model.txtCode1_itemMaster, new { id = "txtCode1_" + ViewBag.itemMaster })
+                                            @Html.TextBoxFor(model => model.txtName1_itemMaster, new { id = "txtName1_" + ViewBag.itemMaster })
+
+                                        </td>
+                                        <td>@Html.Label("Stock", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.Label("Unit", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td colspan="3"><div id="Units">Unit Of Measurment</div></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.Label("Description", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td colspan="3">
+                                            @Html.TextAreaFor(model => model.Description)
+
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.Label("Store", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td>
+
+                                            <input type="hidden" id="TableName_@ViewBag.Store" value="@ViewBag.Store" />
+                                            @Html.TextBoxFor(model => model.StoreCode, new { id = "txtCode_" + ViewBag.Store })
+                                            @Html.TextBoxFor(model => model.StoreName, new { id = "txtName_" + ViewBag.Store })
+                                        </td>
+                                        <td>
+                                            @Html.Label("Stock", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })
+                                        </td>
+                                        <td>@Html.ActionLink("0.00", "stock")</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.Label("Process", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+
+                                        <td colspan="3">
+                                            <input type="hidden" id="TableName_@ViewBag.Process" value="@ViewBag.Process" />
+                                            @Html.TextBoxFor(model => model.ProcessCode, new { id = "txtCode_" + ViewBag.Process })
+                                            @Html.TextBoxFor(model => model.ProcessName, new { id = "txtName_" + ViewBag.Process })
+
+                                        </td>
+
+                                    </tr>
+                                    <tr><td colspan="4"><hr /></td></tr>
+                                    <tr>
+                                        <td>@Html.Label("Quantity", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td colspan="3">@Html.TextBoxFor(m => m.Qty)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.Label("Rate", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td>@Html.TextBoxFor(m => m.Rate)</td>
+                                        <td>@Html.Label("Per n Unit", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td>@Html.TextBoxFor(m => m.Unit)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.Label("Per Unit", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td>
+                                           
+                                            @Html.DropDownListFor(m => m.PerUnit, new SelectList(ViewBag.PerUnit, "Value", "Text"), "----select----", new { style = "width:141px;font-size:9pt;" })
+                                        </td>
+                                        <td>@Html.Label("Value", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td>@Html.TextBoxFor(m => m.Value)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.Label("Reason", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td colspan="3">
+                                            <input type="hidden" id="TableName_@ViewBag.ReasonMaster" value="@ViewBag.ReasonMaster" />
+                                            @Html.TextBoxFor(model => model.Code , new { id = "txtCode_" + ViewBag.ReasonMaster })
+                                            @Html.TextBoxFor(model => model.Name , new { id = "txtName_" + ViewBag.ReasonMaster })
+
+                                        </td>
+                                        <td></td><td></td>
+                                    </tr>
+                                    <tr id="viv">
+                                        <td colspan="2"></td>
+                                        <td>@Html.Label("Bom Code", null, new { style = "font-family:Tahoma;font-size:8pt;font-weight:normal;padding-left:5px;" })</td>
+                                        <td>@Html.DropDownListFor(m => m.PerUnit, new SelectList(ViewBag.PerUnit, "Value", "Text"), "----select----", new { style = "width:141px;font-size:9pt;" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <div class=" demos">
+                                                <div id="tabs1">
+                                                    <ul>
+                                                        <li><a id="m_tb11" href="#tabs-11">Narration</a></li>
+                                                        <li><a id="m_tb21" href="#tabs-21">Batch Details</a></li>
+                                                    </ul>
+                                                    <div id="tabs-11">
+                                                            @Html.TextAreaFor(a => a.Narration, new {style="width:600px;height:30px;"})
+                                                      </div>
+                                                    <div id="tabs-21">
+                                                        testdata1
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            &nbsp;Reason Type &nbsp;
+                                             @Html.DropDownListFor(m => m.ReasonType, new SelectList(ViewBag.Reason, "Value", "Text"), "----select----", new { id = "ReasonType", style = "width:200px;font-size:9pt;" })
+                                        </td>
+
+                                    </tr>
+                                    <tr><td colspan="4"><hr /></td></tr>
+                                    <tr>
+                                        <td align="right" colspan="4" style="padding-right:5px;"><a href="#" class="button addon">Product AddOns</a>@*<a href="#" class="button save">Accept</a>*@<input type="submit" value="Accept" class="button save" /><a href="#" class="button cancel">Descart</a></td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" style="padding-left:10px;">
+                                <table cellpadding="0" cellspacing="0" style="padding-left:5px;">
+                                    <tr><td><a href="#" class="button wtimg">History</a></td></tr>
+                                    <tr><td><a href="#" class="button wtimg">Exc.Goods</a></td></tr>
+                                    <tr><td><a href="#" class="button wtimg">Non-Exc Goods</a></td></tr>
+                                    <tr>
+                                        <td>
+                                            <input type="button" value="Mfg" class="Buttonclick" />
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="button" value="Cons" class="Buttonclick" />
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="button" value="waste" class="Buttonclick" />
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            @Html.HiddenFor(model => model.QuantityHiddn)
+                                            <input type="button" value="Loss n Scrap" class="Buttonclick" />
+
+                                        </td>
+                                    </tr>
+                                    <tr><td><a id="exp" href="#" class="button wtimg">Expand Bom</a></td></tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+}
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('.Buttonclick').click(function () {
+
+            $('#QuantityHiddn').val($(this).attr("value"));
+            $('button').removeClass('active');
+            $(this).addClass('active');
+        });
+        $('#exp').click(function () {
+            //  debugger
+            //  alert("Hi vk");
+            $('#viv').toggle();
+
+
+        });
+    })
+
+</script>
+

@@ -1,0 +1,156 @@
+﻿@model TFATERPWebApplication.Models.TfatPassModel 
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Sign Up</title>
+    <link href="~/Content/Menu.css" rel="stylesheet" />
+    <link href="~/Content/Login.css" rel="stylesheet" />
+    </head>
+<body style="background-color:#aed0ea;">
+
+    <div>
+        <img src="../Images/logo.png" style="Width:130px; Height:40px;" />
+
+    </div>
+    <div style="color:#f2e9e9;background-color:#f2e9e9">
+        <hr style="color:#f2e9e9;" />
+    </div>
+    <div style="padding-top:1em;padding-left:5em;">
+
+        @using (Html.BeginForm("SignUp", "SignUp", FormMethod.Post))
+        {
+            //this  is for create form tag
+            @Html.AntiForgeryToken()
+            // this is for prevent CSRF attack
+            if (@ViewBag.Message != null)
+            {
+                <div style="border:1px solid red;">
+                    @ViewBag.Message
+                </div>
+            }
+            <table style="vertical-align:top;" width="70%">
+                <tr height="10px">
+                    <td colspan="3" class="labelcss" valign="top">
+                        @Html.Label("Account Information")
+                    </td>
+
+                </tr>
+                <tr>
+                    <td width="50%" colspan="3" style="color:#bababa;">
+                        <div class="hr"><hr /></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labelsigncss" width="25%" align="right" height="35px">
+                        @Html.Label("Email Address")
+                    </td>
+                    <td width="40%">
+                        @Html.TextBoxFor(a => a.IDs, new { style = "height:22px;width:250px;border:1px solid;border-color:gray;" })
+
+                    </td>
+                    <td width="35%" valign="middle">
+                        @Html.ValidationMessageFor(a => a.IDs, null, new { style = "font-size:12px;font-family:Tahoma;color:#ff0000;" })
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="labelsigncss" width="20%" align="right" height="35px"> @Html.Label("Password")</td>
+                    <td align="left">
+                        @Html.PasswordFor(a => a.PassWords, new { value = ViewBag.pass, style = "height:22px;width:250px;border:1px solid;border-color:gray;" })
+
+                    </td>
+                    <td align="left" valign="middle">@Html.ValidationMessageFor(a => a.PassWords, null, new { style = "font-size:12px;font-family:Tahoma;color:#ff0000" })</td>
+                <tr>
+                    <td class="labelsigncss" width="20%" align="right" height="35px"> @Html.Label("Re-Enter Password")</td>
+                    <td align="left">
+                        @Html.PasswordFor(a => a.ConfirmPassword, new { value = ViewBag.conpass, style = "height:22px;width:250px;border:1px solid;border-color:gray;" })
+                    </td>
+                    <td align="left" valign="middle">
+                        @Html.ValidationMessageFor(a => a.ConfirmPassword, null, new { style = "font-size:12px;font-family:Tahoma;color:#ff0000;" })
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="labelcss" valign="top">
+                        @Html.Label("Word Verification")
+                    </td>
+                </tr>
+                <tr>
+                    <td width="99%" colspan="3" style="color:#bababa;"><hr style="color:#bababa;" /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2" valign="middle">@Html.Label("Image TextEnter the text you see in the below image", new { style = "font-size:11px;font-family:Tahoma;color:black;" })</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2" align="left">
+                        <input type="image" id="image" src=@Url.Action("Image", "SignUp") />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        @Html.LabelFor(m => m.Captcha, null, new { style = "font-size:12px;font-family:Tahoma;color:#000;text-align:left;" })
+                    </td>
+                    <td align="left">
+                        @Html.TextBoxFor(m => m.Captcha)
+                    </td>
+                    <td>@Html.ValidationMessageFor(m => m.Captcha, null, new { style = "font-size:12px;font-family:Tahoma;color:#ff0000;" })</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td style="font-size:12px;font-family:Tahoma;color:#ff0000;" align="left">
+                        @Html.ValidationMessage("myerrorsummary")
+                       
+                    </td>
+
+                </tr>
+                <tr height="10px">
+                    <td class="labelcss" valign="top">
+                        @Html.Label("Terms Of Services")
+                    </td>
+                    <td>@Html.ValidationMessageFor(m => m.TermsAccepted, null, new { style = "color:#159227;font-size:12px;font-family:Tahoma;font-weight:bold" })</td>
+                </tr>
+                <tr>
+                    <td width="99%" colspan="3" style="color:#bababa;"><hr style="color:#bababa;" /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2" align="left" style="color:#000;">
+                        @Html.CheckBoxFor(m => m.TermsAccepted) @Html.Label("I agree to the", new { style = "font-size:12px;font-family:Tahoma;color:black;" }) @Html.ActionLink("Terms of Services", "actionName", "controllerName", new { style = "font-size:12px;font-family:Tahoma;color:#ff0000" }) and @Html.ActionLink("Privacy Policy", "actionName", "controllerName", new { style = "font-size:12px;font-family:Tahoma;color:#ff0000" })
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2" align="left" style="color:#000;"><input type="submit" class="button" value="Sign In" /> @Html.Label("Refer", new { style = "font-size:12px;font-family:Tahoma;color:black;" }) @Html.ActionLink("FAQ", "actionName", "controllerName", new { style = "font-size:12px;font-family:Tahoma;color:#ff0000" }) or @Html.ActionLink(" Contact Support ", "actionName", "controllerName", new { style = "font-size:12px;font-family:Tahoma;color:#ff0000" }) @Html.Label("We'll get back to you soon", new { style = "font-size:12px;font-family:Tahoma;color:black;" })   </td>
+
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2" align="left" style="padding-left:5em;color:#000;">
+
+                        @Html.Label("Already have a account?", new { style = "font-size:11px;font-family:Tahoma; color:black;" }) @Html.ActionLink("Sign In", "Login", "Login", null, new { style = "font-size:11px;font-family:Tahoma;color:#ff0000" })
+                    </td>
+
+                </tr>
+            </table>
+        }
+        
+        @section Scripts{
+
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+       
+    </div>
+</body>
+
+
+</html>

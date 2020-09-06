@@ -1,0 +1,104 @@
+﻿@model TFATERPWebApplication.Models.TfatPassModel 
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Content/Menu.css" rel="stylesheet" />
+    <link href="~/Content/Login.css" rel="stylesheet" />
+
+    </head>
+<body style="background-color:#aed0ea;">
+    <div style="background-color:#2779aa;">
+        <div>&nbsp;</div>
+        <div style="background-color:#2779aa;vertical-align:middle;">
+            <img src="../Images/logo.png" style="Width:130px; Height:40px;" />
+
+        </div>
+        <div style="background-color:#ffffff;">
+            <hr style="color:#ffffff;" />
+        </div>
+    </div>
+    <div style="padding-top:4em;padding-left:22em;">
+
+        @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+        {
+            //this  is for create form tag
+            @Html.AntiForgeryToken()
+            // this is for prevent CSRF attack
+            if (@ViewBag.Message != null)
+            {
+                <div style="border:1px solid red;">
+                    @ViewBag.Message
+                </div>
+            }
+            <table style="vertical-align:top;">
+                <tr height="90px">
+                    <td colspan="3" class="labelcss">
+                        @*83bdee*@
+                    <table style="border:0px solid;border-color:gray;border-radius: 5px;" width="100%">
+                        <tr>
+                            <td valign="top"><img src="../Images/Loginimg.png" /></td>
+                            <td align="left" valign="middle" style="font-weight:bold;">@Html.Label("Login to iGreen ERP")</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="labelcss">
+                    @*@Html.LabelFor(a => a.Username)*@
+                    @Html.Label("Email")
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="4">
+                    @Html.TextBoxFor(a => a.IDs, new { @class = "loginvalidation", Type = "Email", required = "required ", onfocus = "highlight(this,'yellow')" })
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:12px;font-family:Tahoma;" align="left" colspan="4">
+                    @Html.ValidationMessageFor(a => a.IDs)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="labelcss">
+                    @Html.Label("Password")
+                    @*@Html.LabelFor(a => a.PassWords)*@
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="4">
+                    @Html.PasswordFor(a => a.PassWords, new { @class = "loginvalidation", Type = "Password", required = "required", onfocus = "highlight(this,'yellow')" })
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size: 12px; font-family: Tahoma;" align="left" colspan="4">
+                    @Html.ValidationMessageFor(a => a.PassWords)
+                </td>
+            </tr>
+            <tr><td colspan="3" style="display:inline-block;color:#1ea831" width="0px;">@Html.ValidationMessage("errormsg")</td></tr>
+            <tr>
+                <td>
+                    <input type="submit" class="button" value="Sign In" />&nbsp;
+                    @Html.ActionLink("Reset Password", "actionName", "controllerName", new { @class = "linkcolor" })
+                </td>
+                <td align="left" style=" font-size:14px;" colspan="2">@Html.ActionLink("Sign In", "SignUp", "SignUp", null, new { @class = "linkcolor" })</td>
+            </tr>
+
+        </table>
+        }
+        @* This below line is for create javascript section *@
+        @section Scripts{
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+        @*</fieldset>*@
+    </div>
+</body>
+</html>

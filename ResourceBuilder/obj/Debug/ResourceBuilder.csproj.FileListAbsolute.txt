@@ -1,0 +1,65 @@
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\ResourceBuilder.exe.config
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\Resources.xml
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\ResourceBuilder.exe
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\ResourceBuilder.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\Resources.dll
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\bin\Debug\Resources.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\obj\Debug\ResourceBuilder.csprojResolveAssemblyReference.cache
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\obj\Debug\ResourceBuilder.exe
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceClassHelper\obj\Debug\ResourceBuilder.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceBuilder\bin\Debug\ResourceBuilder.exe.config
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceBuilder\obj\Debug\ResourceBuilder.exe
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceBuilder\obj\Debug\ResourceBuilder.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceBuilder\bin\Debug\Resources.xml
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceBuilder\bin\Debug\ResourceBuilder.exe
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceBuilder\bin\Debug\ResourceBuilder.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceBuilder\bin\Debug\Resources.dll
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceBuilder\bin\Debug\Resources.pdb
+C:\Users\Nadeem\Documents\Visual Studio 2013\Projects\MvcInternationalization\ResourceBuilder\obj\Debug\ResourceBuilder.csprojResolveAssemblyReference.cache
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\ResourceBuilder\bin\Debug\ResourceBuilder.exe.config
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\ResourceBuilder\bin\Debug\ResourceBuilder.exe
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\ResourceBuilder\bin\Debug\ResourceBuilder.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\ResourceBuilder\bin\Debug\Resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\ResourceBuilder\bin\Debug\Resources.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\ResourceBuilder\obj\Debug\ResourceBuilder.exe
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\ResourceBuilder\obj\Debug\ResourceBuilder.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\ResourceBuilder\obj\Debug\ResourceBuilder.csprojResolveAssemblyReference.cache
+G:\dipti\backup\TFATERPWebApplication\ResourceBuilder\bin\Debug\ResourceBuilder.exe.config
+G:\dipti\backup\TFATERPWebApplication\ResourceBuilder\bin\Debug\ResourceBuilder.exe
+G:\dipti\backup\TFATERPWebApplication\ResourceBuilder\bin\Debug\ResourceBuilder.pdb
+G:\dipti\backup\TFATERPWebApplication\ResourceBuilder\bin\Debug\Resources.dll
+G:\dipti\backup\TFATERPWebApplication\ResourceBuilder\bin\Debug\Resources.pdb
+G:\dipti\backup\TFATERPWebApplication\ResourceBuilder\obj\Debug\ResourceBuilder.exe
+G:\dipti\backup\TFATERPWebApplication\ResourceBuilder\obj\Debug\ResourceBuilder.pdb
+G:\dipti\backup\TFATERPWebApplication\ResourceBuilder\obj\Debug\ResourceBuilder.csprojResolveAssemblyReference.cache
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.exe.config
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.exe
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\Resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\Resources.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.csprojResolveAssemblyReference.cache
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.exe
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.pdb
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.exe.config
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.exe
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.pdb
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\Resources.dll
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\Resources.pdb
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.csprojResolveAssemblyReference.cache
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.exe
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.exe.config
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.exe
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\Resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\Resources.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.csprojResolveAssemblyReference.cache
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.exe
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.exe.config
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.exe
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\ResourceBuilder.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\Resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\bin\Debug\Resources.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.exe
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\ResourceBuilder\obj\Debug\ResourceBuilder.pdb

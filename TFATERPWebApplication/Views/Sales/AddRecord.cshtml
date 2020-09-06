@@ -1,0 +1,238 @@
+﻿@model TFATERPWebApplication.Models.StockModel
+
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+<script src="~/js/InnerTabJs.js"></script>
+<link href="~/Content/InnerTab.css" rel="stylesheet" />
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#tabs').tabs();
+        $(".accordion").accordion({ header: "dt" });
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('#txtName1_@ViewBag.TableName').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName1_@ViewBag.TableName').val();
+                $.ajax({
+                    url: "/Sales/AutocompleteName/" + id + "?name=" + $('#txtName1_@ViewBag.TableName').val(),
+                    dataType: "json",
+                    type: 'POST',
+                    data: {
+                        name: request.term
+                    },
+                    success: function (data) {
+                        response(data);
+                    }
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+
+                var id = $('#TableName1_@ViewBag.TableName').val();
+                var mData;
+                $.ajax({
+                    url: "/Sales/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'N'
+                    },
+                    success: function (_result) {
+                        alert(_result);
+                        mData = _result;
+                    }
+                });
+                setTimeout(function () { $('#txtCode1_@ViewBag.TableName').val(mData); }, 1000);
+            },
+            minLength: 1
+        });
+        $('#txtCode1_@ViewBag.TableName').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName1_@ViewBag.TableName').val();
+                $.ajax({
+                    url: "/Sales/AutocompleteCode/" + id + "?code=" + $('#txtCode1_@ViewBag.TableName').val(),
+                    dataType: "json",
+                    data: {
+                        code: request.term
+                    },
+                    success: function (data) {
+                        response(data);
+                    },
+                    type: 'POST'
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+                var id = $('#TableName1_@ViewBag.TableName').val();
+                var mData;
+                $.ajax({
+                    url: "/Sales/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'C'
+                    },
+                    success: function (_result) {
+                        mData = _result;
+                    }
+                });
+                setTimeout(function () { $('#txtName1_@ViewBag.TableName').val(mData); }, 1000);
+            },
+            minLength: 1
+        });
+    });
+</script>
+
+@using (Html.BeginForm("AddRecord", "Sales", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+  
+        <table style="font-family:Tahoma;font-size:9pt;" width="100%">
+            <tr>
+                <td width="10%">
+                    Sr No.:
+                </td>
+                <td>@Html.TextBoxFor(model => model.Sno)</td>
+            </tr>
+            <tr>
+                <td width="10%">
+                    ProductCode:
+
+                </td>
+                <td>
+                    <input type="hidden" id="TableName1_@ViewBag.TableName" value="@ViewBag.TableName" />
+                    @*<input type="text" name="Code" id="txtCode1_@ViewBag.TableName" style="width:80px;" /><input type="text" name="Name" id="txtName1_@ViewBag.TableName" style="width:80px;" />*@
+                    @*@Html.TextBoxFor(model => model.Code, new { id = "txtCode1_" + ViewBag.TableName })
+                    @Html.TextBoxFor(model => model.DCCode, new { id = "txtName1_" + ViewBag.TableName })*@
+                    @*@Html.Partial("_User", "TfatCity")*@
+                    @*<input type="hidden" id="TableName_TfatCity" value="@Model" />
+                        <input type="text" name="Code" id="txtCode_TfatCity" style="width:70px;" /><input type="text" name="Name" id="txtName_TfatCity" style="width:70px;" />*@
+                </td>
+            </tr>
+            <tr>
+                <td width="15%">
+                    ProductDescription:
+
+                    @*@Html.Partial("_User", "TfatComp")&nbsp;&nbsp;&nbsp;Cr.Period:@Html.Partial("_User", "Stock")*@
+                </td>
+                <td>@Html.TextBoxFor(model => model.DCCode)</td>
+            </tr>
+            <tr>
+                <td width="10%">
+                    Quantity:
+                </td>
+                <td>@Html.TextBoxFor(model => model.Qty)</td>
+                <td>
+                    Unit:
+                </td>
+                <td width="5%">@Html.TextBoxFor(model => model.Unit, new { style = "width:70px" })</td>
+                <td>
+                    Qty2:
+                </td>
+                <td width="5%">@Html.TextBoxFor(model => model.Qty2, new { style = "width:70px" })</td>
+                <td>
+                    Unit2:
+                </td>
+                <td>@Html.TextBoxFor(model => model.Unit2, new { style = "width:70px" })</td>
+            </tr>
+
+            <tr>
+                <td width="10%">
+                    Rate:
+                </td>
+                <td>@Html.TextBoxFor(model => model.Rate)</td>
+                <td>
+                    Per:
+                </td>
+                <td>
+                    @*@Html.DropDownList("Per", ViewData["Category"] as List<SelectListItem>, new { style = "width:70px" })*@
+                    @Html.DropDownListFor(model => model.RatePer, ViewData["Category"] as List<SelectListItem>, new { style = "width:70px" })
+
+                </td>
+                <td>
+                    RatePer:
+                </td>
+                <td>@Html.TextBoxFor(model => model.RatePer, new { style = "width:70px" })</td>
+            </tr>
+            <tr>
+                <td width="10%">
+                    Disc%:
+                </td>
+                <td>@Html.TextBoxFor(model => model.Disc)</td>
+                <td>
+                    Disc.Amt:
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.DiscAmt, new { style = "width:70px" })
+                </td>
+                <td>
+                    Value:
+                </td>
+                <td>
+                    @Html.TextBoxFor(model => model.Value, new { style = "width:70px" })
+                </td>
+
+            </tr>
+            <tr>
+                <td width="10%">
+                    TotalDisc:
+                </td>
+                <td>@Html.TextBoxFor(model => model.TotalDisc)</td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td width="10%">
+                    Narration:
+                </td>
+                <td>@Html.TextBoxFor(model => model.Narr)</td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td width="10%">
+                    Order:
+                </td>
+                <td>@Html.TextBoxFor(model => model.Order)</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td width="10%">
+                    VenderID:
+                </td>
+                <td>@Html.TextBoxFor(model => model.VenderID)</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td width="10%"></td>
+                <td>
+                    <br/>
+                    <br/>
+                <input type="submit" id="Add" value="Add" />
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+    
+    <br />
+    <br />
+
+ 
+
+}
+

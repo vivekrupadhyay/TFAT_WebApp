@@ -1,0 +1,211 @@
+﻿@model TFATERPWebApplication.Dal.LedgerBranch
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<meta name="viewport" content="width=device-width" />
+
+<link href="~/Content/css/dataTables.jqueryui.css" rel="stylesheet" />
+<link href="~/Content/css/dataTables.tableTools.css" rel="stylesheet" />
+<link href="~/Content/jquery.jqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+@section scripts{
+    <script src="~/Scripts/i18n/grid.locale-en.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.jqGrid.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Scripts/App/JQMenu.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+@*@RenderSection("Scripts",required:true)*@
+}
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var lPath = window.location.pathname;
+        var arr = lPath.split("/");
+        var id = arr[arr.length - 1];
+
+        $("#list").jqGrid({
+            url: '/BankPay/GetRecords/',
+            datatype: "Json",
+            contentType: "application/json; charset-utf-8",
+            mtype: 'GET',
+
+            colNames: ['Sr No.', 'Code', 'Plan/BU', 'Account Description', 'Sub Ldgr', 'Debit', 'Credit', 'Cost Center', 'Profit Center', 'Chq Type', 'Narr'],
+            colModel: [
+
+                { name: 'Sno', index: 'Sno', align: "center", sortable: false, editable: true, editoptions: { size: 5 } },
+                { name: 'Code', index: 'Code', align: "center", sortable: false, editable: true, edittype: 'text' },
+                { name: 'Branch', index: 'Branch', align: "right", sortable: false, editable: true, edittype: 'text' },
+                { name: 'BankCode', index: 'BankCode', align: "right", sortable: false, editable: true, edittype: 'text', editoptions: { maxlength: 6 } },
+                { name: 'SubLdgr', index: 'SubLdgr', align: "right", sortable: false, editable: true, edittype: 'text' },
+                { name: 'Debit', index: 'Debit', align: "right", sortable: false, editable: true, edittype: 'text', formatter: 'integer' },
+                { name: 'Credit', index: 'Credit', align: "right", sortable: false, editable: true, edittype: 'text' },
+                { name: 'CostCentre', index: 'CostCentre', align: "center", sortable: false, editable: true, edittype: 'text' },
+                { name: 'ProfitCenter', index: 'ProfitCenter', align: "center", sortable: false, editable: true, edittype: 'text' },
+                { name: 'Cheque', index: 'Cheque', align: "center", sortable: false, editable: true, edittype: 'text' },
+                { name: 'Narr', index: 'Narr', align: "center", sortable: false, editable: true, edittype: 'text' }
+
+            ],
+
+            pager: "#pager",
+            rowNum: 5,
+            rownumbers: true,
+            rowList: [5, 10, 15],
+            height: 'auto',
+            //height:'110',
+            width: '940',
+            viewrecords: true,
+            reloadAfterSubmit: true,
+            //multiselect: true,
+            reloadAfterSubmit: true,
+            gridview: true,
+            sortname: 'Sno',
+            editurl: '/BankPay/EditRecords/',
+            loadonce: true,
+            reloadAfterSubmit: true,
+            footerrow: true,
+            
+            //loadComplete: function () {
+            //    var $grid = $("#list");
+            //    var sum = $grid.jqGrid('getCol', 'Debit', false, 'sum');
+            //    $grid.jqGrid('footerData', 'set', { SubLdgr: 'Total (Dbt/Crt):', Debit: sum });
+            //    var sum1 = $grid.jqGrid('getCol', 'Credit', false, 'sum');
+            //    $grid.jqGrid('footerData', 'set', { Total: 'Total:', Credit: sum1 });
+
+            //},
+            userDataOnFooter: true,
+            caption: "Bank Payment",
+        });
+
+        jQuery("#list").jqGrid('navGrid', '#pager', {
+            edit: true,
+            edittext: "Edit",
+            add: true,
+            addtext: "Add",
+            del: true,
+            deltext: "Delete",
+            search: true,
+            searchtext: "Search",
+            refresh: true,
+            refreshtext: "Refresh",
+            alertcap: "Warning",
+            alertext: "Please Select Row",
+
+
+        });
+        $.extend($.jgrid.edit, {
+            beforeSubmit: function () {
+                $(this).jqGrid("setGridParam", { datatype: "json" });
+                return [true, "", ""];
+            }
+        });
+
+
+    });
+
+</script>
+
+<script>
+    $(function () {
+        $("#datepicker").datepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+</script>
+
+<table width="900px" align="center" style="font-family:Tahoma;font-size:11px;border:1px solid #aed0ea;">
+
+    <tr style="background-color:#2779aa;">
+        <td colspan="3" class="labelcss" valign="top" height="30px;">
+            @Html.Label("Cash/Bank Data Entry", new { style = "font-weight:bold;font-size:14px;color:#ffffff;padding:2px 1px 1px 2px;" })
+        </td>
+    </tr>
+
+    <tr>
+        <td width="400px" style="border-right:1px solid #b2acac;padding-left:5px;">
+            <table style="font-family:Tahoma;font-size:11px;">
+
+                <tr>
+                    <td width="10%">Vouchar Date</td>
+                    <td width="10%">@Html.TextBoxFor(a => a.ValueDate, new { id = "datepicker", style = "width:120px;" })</td>
+                </tr>
+                <tr>
+                    <td width="10%">Last Vouchar No</td>
+                    <td>@Html.TextBoxFor(a => a.Prefix, new { style = "width:80px;" }) @Html.TextBoxFor(a => a.Srl, new { style = "width:80px;" })</td>
+                </tr>
+                <tr>
+                    <td width="10%">Vouchar No</td>
+                    <td>@Html.TextBoxFor(a => a.Prefix, new { style = "width:80px;" }) @Html.TextBoxFor(a => a.Srl, new { style = "width:80px;" })</td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+
+            </table>
+        </td>
+        <td width="200px" style="border-right:1px solid #b2acac;padding-left:5px;">
+            <table style="font-family:Tahoma;font-size:11px;">
+                <tr>
+
+                    <td>@Html.ActionLink("Cash Bank", "Bank Payment")</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Html.TextBoxFor(a => a.BankCode, new { style = "width:80px;" })@Html.TextBoxFor(a => a.BankCode, new { style = "width:200px;" })</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-family:Tahoma;font-size:11px;">Amount INR:&nbsp;<b>Constant</b></td>
+                    <td></td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+
+            </table>
+        </td>
+        <td width="300px" style="padding-left:5px;">
+            <table>
+                <tr>
+                    <td align="left">Balance</td>
+                    <td>@Html.ActionLink("0.00 Dr.", "BankPayment")</td>
+                </tr>
+                <tr>
+                    <td align="left">OD Limit</td>
+                    <td>@Html.ActionLink("0.00 Dr.", "BankPayment")</td>
+                </tr>
+                <tr>
+                    <td style="font-family:Tahoma;font-size:11px;">Usable</td>
+                    <td></td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+            </table>
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td colspan="3" align="center" style="padding-left:5px;padding-right:0px">
+
+            <div id="ErrorMsg" style="color:red;">@ViewBag.ErrorMsg</div>
+
+            <div class="jqGrid">
+                <table id="list" class="scroll" cellpadding="0" cellspacing="0"></table>
+                <div id="pager"></div>
+            </div>
+
+        </td>
+    </tr>
+    <tr>
+        <td align="left" style="font-family:Tahoma;font-size:10px;padding-left:5px;">
+            <input type="button" value="AddOns" name="AddOns" class="button" />
+            <input type="button" value="Template" name="Template" class="button" />
+            <input type="button" value="Attach Docs" name="Attach Docs" class="button" />
+        </td>
+        <td colspan="2" align="right" style="padding-right:1px;">
+            <input type="button" value="Save As" name="Save As" class="button" />
+            <input type="button" value="Print" name="Print" class="button" />
+            <input type="button" value="Save" name="Save" class="button" />
+            <input type="button" value="Cancel" name="Cancel" class="button" />
+        </td>
+    </tr>
+
+</table>

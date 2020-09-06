@@ -1,0 +1,142 @@
+﻿body {
+    
+}
+
+.topheading
+{
+
+    font-family:Tahoma Verdana Arial ;
+    font-size:14px;
+    font-weight:bold;
+    border-color:#a7a5a5;
+    vertical-align:middle;
+    color:#ffffff;
+    height:30px;
+    background-color:#2779aa;
+    padding-top: 10px;
+    border-top-left-radius: 50px 30px;
+    border-top-right-radius: 50px 30px;
+    
+
+}
+.lblheading
+{
+
+    font-family:Tahoma ;
+    font-size:11px;
+    border-color:#a7a5a5;
+    vertical-align:top;
+    text-align:left;
+    color:#000000;
+    
+
+}
+
+
+.boxshadow 
+{
+  -moz-box-shadow: 3px 3px 5px #535353;
+  -webkit-box-shadow: 3px 3px 5px #535353;       
+  box-shadow: 3px 3px 5px #535353;
+}
+.roundbox
+{  
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px;  
+  border-radius: 6px 6px 6px 6px;
+}
+.roundbox-top
+{    
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;    
+    border-radius: 4px 4px 0 0;
+}
+.roundbox-bottom
+{    
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.gridheader, .gridheaderbig, .gridheaderleft, .gridheaderright
+{    
+    padding: 4px 4px 4px 4px;
+    background:  #2779aa url(images/vertgradient.png) repeat-x;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+.gridheaderleft
+{
+    text-align: left;
+}
+.gridheaderright
+{
+    text-align: right;
+}
+.gridheaderbig
+{    
+    font-size: 135%;
+}
+
+/* css for grid view */
+
+.gridview {
+    font-family: Tahoma;
+ background-color: #2779aa;
+ border: solid 1px #CCCCCC !important;
+
+ 
+
+}
+
+.gridViewHeader {
+   background-color: #cec3c3;
+    color: #000000;
+    padding: 4px 50px 4px 4px;
+    text-align: left;
+    border-width: 0px;
+    border-collapse: collapse;
+    padding-left:1px;
+    font-size:9px;
+    font-family:Tahoma;
+    border:1px solid #CCCCCC;
+    text-align:center;
+    
+    
+}
+
+.gridViewRow {
+ background-color: #ffffff;
+    color: #003399;
+    border-width: 0px;
+    border-collapse: collapse;
+    Font-Size:9px;
+    font-family:Tahoma;
+}
+
+.gridViewAltRow {
+ background-color: #efe7e7;
+ border-width: 0px;
+ border-collapse: collapse;
+ Font-Size:9px;
+ font-family:Tahoma;
+}
+
+.gridViewSelectedRow {
+ background-color: #009999;
+ color: #CCFF99;
+ border-width: 0px;
+ border-collapse: collapse;
+ Font-Size:11px;
+ font-family:Tahoma;
+}
+
+.gridViewPager 
+{
+ background-color: #0066CC;
+ color: #FFFFFF;
+ text-align: left;
+ padding: 0px;
+}

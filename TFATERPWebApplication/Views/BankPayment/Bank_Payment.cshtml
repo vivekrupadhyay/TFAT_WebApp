@@ -1,0 +1,193 @@
+﻿@model TFATERPWebApplication.Dal.LedgerBranch
+@{
+    ViewBag.Title = "LedgerBranch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/dataTables.jqueryui.css" rel="stylesheet" />
+    <link href="~/Content/css/dataTables.tableTools.css" rel="stylesheet" />
+
+
+    <link href="~/Content/jquery.jqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+    @section scripts{
+        <script src="~/Scripts/i18n/grid.locale-en.js" type="text/javascript"></script>
+        <script src="~/Scripts/jquery.jqGrid.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="~/Scripts/App/JQMenu.js"></script>
+    }
+
+
+    <script type="text/javascript">
+        $(function () {
+            var lPath = window.location.pathname;
+            var arr = lPath.split("/");
+            var id = arr[arr.length - 1];
+            $(document).ready(function () {$("#list").jqGrid({
+                url: "/BankPayment/PopulateFromDB/" + id,
+                datatype: "Json",
+                mtype: 'GET',
+                colNames: ['Sr No.', 'Code', 'Account Description', 'Sub Ldgr', 'Debit (INR)', 'Credit (INR)', 'Cost Center', 'Profit Center', 'Chq Type', 'Narration'],
+                colModel: [
+                    { name: 'Sno', index: 'Sno', sortable: false },
+                    { name: 'Code', index: 'Code', align: "right", sortable: false, editable: true, edittype: 'text' },
+                    { name: 'BankCode', index: 'BankCode', align: "right", sortable: false, editable: true, edittype: 'text' },
+                    { name: 'Code', index: 'Code', align: "right", sortable: false, editable: true, edittype: 'text' },
+                    { name: 'Debit', index: 'Debit', align: "right", sortable: false, editable: true, edittype: 'text' },
+                    { name: 'Credit',index:'Credit' ,align: "right", sortable: false, editable: true, edittype: 'text' },
+                    { name: 'CostCenter', index: 'CostCenter', align: "right", sortable: false, editable: true, edittype: 'text' },
+                    { name: 'Code',index:'Code', align: "right", sortable: false, editable: true, edittype: 'text' },
+                    { name: 'Cheque', index: 'Cheque', align: "right", sortable: false, editable: true, edittype: 'text' },
+                    { name: 'Narr',index:'Narr', align: "right", sortable: false, editable: true, edittype: 'text' }
+
+                ],
+                pager: "#pager",
+                rowNum: 5,
+                rownumbers: true,
+                rowList: [5, 10, 15],
+                height: 300,
+                width: '927',
+                loadonce: true,
+                datatype: 'Json',
+                mtype: 'GET',
+
+                caption: "Bank Payment"
+            });
+            jQuery("#list").jqGrid('navGrid', '#pager', { edit: true, add: true, del: true });
+        });
+        });
+
+
+    </script>
+    @*<script type="text/javascript">
+        function updateDialog(action) {
+            return {
+                url: API_URL
+                , closeAfterAdd: true
+                , closeAfterEdit: true
+                , afterShowForm: function (formId) { }
+                , modal: true
+                , onclickSubmit: function (params) {
+                    var list = $("#list");
+                    var selectedRow = list.getGridParam("selrow");
+                    rowData = list.getRowData(selectedRow);
+                    params.url += rowData.Id;
+                    params.mtype = action;
+                }
+                , width: "300"
+            };
+        }
+
+
+        jQuery("#list").jqGrid('navGrid', '#pager',
+              { add: true, edit: true, del: true },
+              updateDialog('PUT'),
+              updateDialog('POST'),
+              updateDialog('DELETE')
+      );
+
+
+    </script>*@
+
+</head>
+<body>
+
+    <div style="padding-top:1em;padding-left:2em;">
+
+        @using (Html.BeginForm("BankPayment", "BankPayment", FormMethod.Post))
+        {
+            //this  is for create form tag
+            @Html.AntiForgeryToken()
+            // this is for prevent CSRF attack
+            if (@ViewBag.Message != null)
+            {
+                <div style="border:1px solid red;">
+                    @ViewBag.Message
+                </div>
+            }
+
+            <table width="90%" align="center" style="font-family:Tahoma;font-size:11px;border:1px solid;">
+
+                <tr style="background-color:#2779aa;">
+                    <td colspan="3" class="labelcss" valign="top" height="30px;">
+                        @Html.Label("Cash/Bank Data Entry", new { style = "font-weight:bold;font-size:14px;color:#ffffff;padding:2px 1px 1px 2px;" })
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="50%" style="border-right:1px solid #b2acac;padding-left:5px;">
+                        <table style="font-family:Tahoma;font-size:11px;">
+
+                            <tr>
+                                <td width="10%">Vouchar Date</td>
+                                <td width="10%">@Html.TextBoxFor(a => a.ValueDate, new { style = "width:120px;" })</td>
+                            </tr>
+                            <tr>
+                                <td width="10%">Last Vouchar No</td>
+                                <td>@Html.TextBoxFor(a => a.Prefix, new { style = "width:80px;" }) @Html.TextBoxFor(a => a.Srl, new { style = "width:80px;" })</td>
+                            </tr>
+                            <tr>
+                                <td width="10%">Vouchar No</td>
+                                <td>@Html.TextBoxFor(a => a.Prefix, new { style = "width:80px;" }) @Html.TextBoxFor(a => a.Srl, new { style = "width:80px;" })</td>
+                            </tr>
+                            <tr><td colspan="2"></td></tr>
+
+                        </table>
+                    </td>
+                    <td width="20%" style="border-right:1px solid #b2acac;padding-left:5px;">
+                        <table style="font-family:Tahoma;font-size:11px;">
+                            <tr>
+
+                                <td>@Html.ActionLink("Cash Bank", "Bank Payment")</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>@Html.TextBoxFor(a => a.Cheque, new { style = "width:300px;" })</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="font-family:Tahoma;font-size:11px;">Amount INR:&nbsp;<b>Constant</b></td>
+                                <td></td>
+                            </tr>
+                            <tr><td colspan="2"></td></tr>
+
+                        </table>
+                    </td>
+                    <td width="20%" style="border-right:1px solid #b2acac;padding-left:5px;">
+                        <table>
+                            <tr>
+                                <td align="left">Balance</td>
+                                <td>@Html.ActionLink("0.00 Dr.", "BankPayment")</td>
+                            </tr>
+                            <tr>
+                                <td align="left">OD Limit</td>
+                                <td>@Html.ActionLink("0.00 Dr.", "BankPayment")</td>
+                            </tr>
+                            <tr>
+                                <td style="font-family:Tahoma;font-size:11px;">Usable</td>
+                                <td></td>
+                            </tr>
+                            <tr><td colspan="2"></td></tr>
+                        </table>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div id="ErrorMsg" style="color:red;">@ViewBag.ErrorMsg</div>
+                        <div class="jqGrid">
+                            <table id="list" class="scroll" cellpadding="0" cellspacing="0"></table>
+                            <div id="pager"></div>
+                        </div>
+                    </td>
+                </tr>
+                @*<tr><td><input type="button"/></td></tr>*@
+
+            </table>
+        }
+
+    </div>
+</body>
+</html>

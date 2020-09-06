@@ -1,0 +1,16 @@
+﻿@*@model TFATERPWebApplication.Models.SalesModel*@ 
+
+<table style="font-family: Tahoma; font-size: 9pt;" >
+    <tr>
+        <td>
+            DocDate:<input type="text" name="DocDate" id="datepicker" /> Doc.Number:<input type="text" name="DocNumber" id="Number" />&nbsp;&nbsp;<button type="button">Revision</button></td>
+    </tr>
+    </table>
+<script>
+    $(function () {
+        $("#datepicker").datepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+</script>

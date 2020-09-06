@@ -1,0 +1,640 @@
+﻿@model TFATERPWebApplication.Models.mfgBomGenInfModel
+@{
+    ViewBag.Title = "Mfg.BOM";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<meta name="viewport" content="width=device-width" />
+<link href="~/Content/jqTree/jqtree.css" rel="stylesheet" type="text/css" />
+
+<link href="~/Content/font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/css/dataTables.jqueryui.css" rel="stylesheet" />
+<link href="~/Content/css/dataTables.tableTools.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+<link href="~/Content/jquery.jqGrid/ui.jqgrid.css" rel="stylesheet" />
+@section scripts{
+    <script src="~/Scripts/i18n/grid.locale-en.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.jqGrid.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Scripts/App/JQMenu.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+}
+<link href="~/Content/jqTree/jqtree.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+<link href="~/Content/layout.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui-1.10.4.custom.css/cupertino/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui-1.10.4.custom.css/cupertino/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+<script src="~/Scripts/App/AppJQueryUI.js"></script>
+<script type="text/javascript" src="~/Scripts/jqTree/tree.jquery.js"></script>
+<script src="~/Scripts/i18n/grid.locale-en.js" type="text/javascript"></script>
+<script src="~/Scripts/jquery.jqGrid.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="~/Scripts/App/JQMenu.js"></script>
+<script src="~/Scripts/App/BomMfgQuantity.js"></script>
+<script src="~/scripts/App/MfgBomMaterial.js"></script>
+<script src="~/scripts/App/MfgBomRejection.js"></script>
+<script src="~/Scripts/App/MfgBomMatterialTimeloss.js"></script>
+@*<script src="~/Scripts/App/MfgBomLostTime.js"></script>*@
+<link href="~/Content/testbutton.css" rel="stylesheet" />
+<script src="~/js/Tab.js"></script>
+<script src="~/Scripts/trirand/jquery.jqGrid.min.js"></script>
+<link href="~/Content/themes/ui.jqgrid.css" rel="stylesheet" />
+<link href="~/Content/themes/base/jquery.ui.datepicker.css" rel="stylesheet" />
+<link href="~/Content/themes/base/jquery.ui.tabs.css" rel="stylesheet" />
+<script src="~/Scripts/App/MfgParameter.js"></script>
+
+<style type="text/css">
+    /* set the size of the datepicker search control for Order Date*/
+    #ui-datepicker-div {
+        font-size: 11px;
+    }
+
+    /* set the size of the autocomplete search control*/
+    .ui-menu-item {
+        font-size: 11px;
+    }
+    .ui-autocomplete {
+        font-size: 11px;
+        position: absolute;
+        cursor: default;
+        z-index: 5000 !important;
+    }
+</style>
+
+
+
+
+<style type="text/css">
+    .buttonsvk {
+        background: url("../Images/cal.jpg") left center no-repeat;
+    }
+
+    .buttons {
+        display: inline-block;
+        min-width: 50px;
+        width: 64px;
+        padding: 1px 6px;
+    }
+
+    .aa {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        float: left;
+        width: 100%;
+    }
+
+    .aaa {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ab {
+        float: right;
+    }
+</style>
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#pickdate").datepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+        $("#mfgdate").datepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+        $("#expdate").datepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#dialog1').dialog({
+            autoOpen: false,
+            width: 800,
+            resizable: false,
+            modal: true
+        });
+    });
+</script>
+<script src="~/Scripts/App/EditMeterialBom.js"></script>
+@using (Html.BeginForm("Index", "frmMfgBom", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <table style="font-size:8pt;font-family:Tahoma;">
+        <tr>
+            <td style="font-size: 8pt; font-family: Tahoma;padding-left: 10px;" width="12%">Document Date</td>
+            <td>
+                @Html.TextBox("pickdate", null, new { id = "pickdate" })
+                @* <input type="text" id="pickdate" />*@
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="font-size: 8pt; font-family: Tahoma; padding-left:10px;" width="12%">Serial Number</td>
+            <td>@Html.Partial("_User", "")</td>
+        </tr>
+    </table>
+
+    <div class=" demo">
+        <div id="tabs">
+            <ul>
+                <li><a id="m_tb1" href="#tabs-1">General Information</a></li>
+                <li><a id="m_tb2" href="#tabs-2">Mfg. Quantity</a></li>
+                <li><a id="m_tb3" href="#tabs-3">Rejection/Time Loss</a></li>
+                <li><a id="m_tb4" href="#tabs-4">Material</a></li>
+                <li><a id="m_tb5" href="#tabs-5">Mfg.Parameters</a></li>
+            </ul>
+            <div id="tabs-1">
+                <table style="font-family:Tahoma; font-size:8pt ">
+                    <tr>
+                        <td width="50%" style="border-right:1px solid;border-color:#dde2e6">
+                            <table>
+                                <tr>
+                                    <td width="23%">
+                                        WO Number:
+                                    </td>
+
+                                    <td>@Html.TextBoxFor(x => x.WONumber) Stage: @Html.TextBoxFor(x => x.Stage) </td>
+
+                                </tr>
+                                <tr><td colspan="2"><hr style="color:#dde2e6" /></td></tr>
+                                <tr>
+                                    <td style="text-align:center" colspan="2">
+                                        Qty.AvaliablefortheWO: @ViewBag.Message
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mfg.Product:
+                                    </td>
+
+                                    <td>
+                                        @Html.Partial("_User", "ItemMaster")
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Route Code:
+                                    </td>
+
+                                    <td>
+                                        <input type="button" value="AddOns" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        BOM Code:
+                                    </td>
+
+                                    <td>
+                                        @Html.DropDownList("BomCode", new SelectList(ViewBag.Codelist, "Code", "BomCode"), "----select---", new { id = "AddressNo.", style = "width:290px;font-size:9pt;" })
+
+                                        @*  @Html.DropDownList("Address", new SelectList(string.Empty, "Value", "Text"), "----select---", new { id = "AddressNo.", style = "width:290px;font-size:9pt;" })*@
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Batch Size:
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBox("txt WoNo", null, new { style = "width:120px; font-size:9pt;" }) CurrentStock:@ViewBag.Titles
+                                    </td>
+                                </tr>
+                                <tr><td colspan="2"><hr /></td></tr>
+                                <tr>
+                                    <td>
+                                        Work Center:
+                                    </td>
+
+                                    <td>
+                                        @Html.Partial("_User", "Stores")
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Machine/Tool:
+                                    </td>
+
+                                    <td>
+                                        @Html.DropDownList("Machine", new SelectList(string.Empty, "Value", "Text"), "----select---", new { id = "Machine", style = "width:290px;font-size:9pt;" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Parent Machine:
+                                    </td>
+
+                                    <td>
+                                        @Html.DropDownList("Machine", new SelectList(string.Empty, "Value", "Text"), "----select---", new { id = "Machine", style = "width:290px;font-size:9pt;" })
+                                    </td>
+                                </tr>
+                                <tr><td colspan="2"><hr /></td></tr>
+                                <tr>
+                                    <td>
+                                        Mfg.City:
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" }) @Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" }) @Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" }) Qty:<input type="checkbox" name="Select" />@Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Accepted City:
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" }) @Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" }) @Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" }) Qty:<input type="checkbox" name="Select" />@Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Rejected City:
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" }) @Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" }) @Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" }) Qty:<input type="checkbox" name="Select" />@Html.TextBox("txt WoNo", null, new { style = "width:60px; font-size:9pt;" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Rejection Store:
+                                    </td>
+
+                                    <td>
+                                        @Html.Partial("_User", "")
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                        </td>
+                        <td width="50%" style="padding-left:10px;font-family:Tahoma;font-size:8pt;text-align:left;">
+                            <table style="font-family:Tahoma;font-size:8pt;vertical-align:top;" width="100%">
+                                <tr>
+                                    <td>
+                                        BOM Type
+                                    </td>
+                                    <td>
+                                        @Html.TextBox("txt WoNo", null, new { style = " font-size:9pt;" })<input type="button" value="Reverse" class="buttons" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Product
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBoxFor(x => x.Name)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        ItemSerial
+                                    </td>
+                                    <td>
+                                        @Html.TextBoxFor(x => x.Name)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Batch No
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBoxFor(x => x.Name)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mfg.Date
+                                    </td>
+
+                                    <td>
+                                        <input type="text" id="mfgdate" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Expiry Date
+                                    </td>
+
+                                    <td>
+                                        <input type="text" id="expdate" />
+                                    </td>
+                                </tr>
+                                <tr><td colspan="2"><hr style="color:#dde2e6" /></td></tr>
+                                <tr>
+                                    <td>
+                                        Work Shift
+                                    </td>
+
+                                    <td>
+                                        @*@Html.DropDownList("DDL_MenuCode_T", new SelectList(ViewBag.UnitMaster1, "RecordKey", "Name"), "select")*@
+                                        @Html.DropDownList("WorkShift", new SelectList(string.Empty, "Value", "Text"), "----select---", new { id = "AddressNo.", style = "width:140px;font-size:9pt;" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Shift Timing
+                                    </td>
+
+                                    <td>
+                                        @ViewBag.Msg
+                                    </td>
+                                </tr>
+                                <tr><td colspan="2"><hr /></td></tr>
+                                <tr>
+                                    <td>
+                                        Rate
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBox("txt WoNo", null, new { style = " font-size:9pt;width:140px;" }) Per: @Html.TextBox("txt WoNo", null, new { style = "width:30px;font-size:9pt;" })
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Per Unit
+                                    </td>
+
+                                    <td>
+                                        @*@Html.DropDownList("DDL_UnitCode_T", new SelectList(ViewBag.UnitMaster1, "Unit1Code", "ShortName"), "select")*@
+                                        @Html.DropDownList("WorkShift", new SelectList(string.Empty, "Value", "Text"), "----select----", new { id = "WorkShift", style = "width:140px;font-size:9pt;" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Labour Charges
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBox("dfdsfs")
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Machine Charges
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBox("dfdsfs")
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Other Charges
+                                    </td>
+
+                                    <td>
+                                        @Html.TextBox("dfdsfs")
+                                    </td>
+                                </tr>
+                                <tr><td colspan="2">&nbsp;</td></tr>
+                                <tr><td colspan="2">&nbsp;</td></tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="tabs-2">
+                <table style="font-family:Tahoma; font-size:8pt;">
+                    <tr>
+                        <td style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid; width: 100%; border-color: #a5a8ab; ">
+                            @ViewBag.data
+                            <table id="list" style="width: 100%"></table>
+                            <div id="pager"></div>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </div>
+            <div id="tabs-3">
+                <table style="font-family:Tahoma; font-size:8pt;">
+                    <tr style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid; width: 100%; border-color: #a5a8ab; ">
+                        <td>
+                            Rejection Quantities:
+
+                        </td>
+                        <td>Lost Time:</td>
+
+                    </tr>
+                </table>
+                <table style="font-family:Tahoma; font-size:8pt;">
+                    <tr>
+                        <td style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid; width: 100%; border-color: #a5a8ab; ">
+                            <table id="list1" style="width: 100%"></table>
+                            <div id="pager1"></div>
+                        </td>
+                        <td style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid; width: 100%; border-color: #a5a8ab; ">
+                            <table id="list2" style="width: 100%"></table>
+                            <div id="pager2"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="tabs-4">
+                <table style="font-family:Tahoma; font-size:8pt;">
+                    <tr>
+                        <td style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid; width: 100%; border-color: #a5a8ab; ">
+                            @*@ViewBag.data*@
+                            <table id="list3" style="width: 100%"></table>
+                            <div id="pager3"></div>
+                        </td>
+
+                    </tr>
+                    @{Html.RenderAction("addrecord", "frmMfgBom");}
+
+                    <tr>
+                        <td><input value="Add Items" type="button" id="btnShowModal" /></td>
+                        <td><input type="button" value="Edit" onclick="getSelectedRow()" /></td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+            <div id="tabs-5">
+                <table style="font-family:Tahoma; font-size:8pt;">
+                    <tr>
+                        <td style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid; width: 100%; border-color: #a5a8ab; ">
+                            <table>
+                                <tr>
+                                    <td>
+                                        Rate Hour
+                                    </td>
+                                    <td>@Html.TextBox("txt RateHour", null, new { style = " font-size:9pt;" })</td>
+                                    <td>
+                                        Machine Chrg
+                                    </td>
+                                    <td>@Html.TextBox("txtMachineChrg", null, new { style = "font-size:9pt;" })</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        HoursUsed
+                                    </td>
+                                    <td>@Html.TextBox("txtHours", null, new { style = "font-size:9pt;" })</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td style="border-top: 1px solid; border-bottom: 1px solid; border-left: 1px solid; border-right: 1px solid; width: 100%; border-color: #a5a8ab; ">
+                                        <table id="list5" style="width: 100%"></table>
+                                        <div id="pager5"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="dialog1">
+     
+    </div>
+}
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $("#brands").attr("checked", false);
+        $("#btnShowModal").click(function (e) {
+            //alert("hi");
+            ShowDialog(true);
+            e.preventDefault();
+        });
+
+        $("#btnClose").click(function (e) {
+            HideDialog();
+            e.preventDefault();
+        });
+
+        $("#btnSubmit").click(function (e) {
+            if ($("#brands").find("input:checked").length > 0) {
+                var brand = $("#brands input:radio:checked").val();
+                $("#output").html("<b>Your Country Is : </b>" + brand);
+                alert(" Your Country Is " + brand);
+                HideDialog();
+                e.preventDefault();
+            }
+            else {
+                alert("Please select")
+                ShowDialog(true);
+                e.preventDefault();
+            }
+        });
+
+    });
+
+    function ShowDialog(modal) {
+        $("#overlay").show();
+        $("#dialog").fadeIn(300);
+
+        if (modal) {
+            $("#overlay").unbind("click");
+        }
+        else {
+            $("#overlay").click(function (e) {
+                HideDialog();
+            });
+        }
+    }
+
+    function HideDialog() {
+        $("#overlay").hide();
+        $("#dialog").fadeOut(300);
+    }
+
+</script>
+<style type="text/css">
+    .web_dialog_overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #000000;
+        opacity: .15;
+        filter: alpha(opacity=15);
+        -moz-opacity: .15;
+        z-index: 101;
+        display: none;
+    }
+
+    .web_dialog {
+        display: none;
+        position: fixed;
+        width: 800px;
+        height: 560px;
+        top: 25%;
+        left: 30%;
+        margin-left: -190px;
+        margin-top: -100px;
+        background-color: #ffffff;
+        border: 2px solid #336699;
+        padding: 0px;
+        z-index: 102;
+        font-family: Tahoma;
+        font-size: 8pt;
+    }
+
+    .web_dialog_title {
+        border-bottom: solid 2px #336699;
+        background-color: #336699;
+        padding: 4px;
+        color: White;
+        font-weight: bold;
+        font-family: Tahoma;
+    }
+
+        .web_dialog_title a {
+            color: White;
+            text-decoration: none;
+        }
+
+    .align_right {
+        text-align: right;
+    }
+</style>
+@*<script type="text/javascript" >
+        $(document).ready(function () {
+            alert("hi");
+            $('#m_tb4').easytabs();
+        });
+
+    </script>*@
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+﻿<script src="~/js/InnerTabJs.js"></script>
+<link href="~/Content/InnerTab.css" rel="stylesheet" />
+
+<script src="~/js/DynamicControl.js"></script>
+
+<style type="text/css">
+    div {
+        padding: 0px;
+    }
+
+    .lbl {
+        float: left;
+    }
+
+    .textbox1 {
+        float: left;
+    }
+</style>
+@using (Html.BeginForm("Charges", "Shared", FormMethod.Post, new { ReturnUrl = ViewBag.ReturnUrl }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <div class="myTabs">
+        <ul class="myTabs">
+            <li class="active" rel="tab1">Charges</li>
+            <li rel="tab2">VAT Deatils</li>
+            <li rel="tab3">Remark</li>
+            @*<li rel="tab4"> Portal</li>*@
+        </ul>
+        <div class="tab_container">
+            <div id="tab1" class="tab_content">
+                <table width="400px" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <div id='TextBoxesGroup'>
+                                @*<div id="TextBoxDiv1">
+                                        <label id="lbl">Textbox #1 : </label><input type='textbox' id='textbox1'>
+                                    </div>*@
+                            </div>
+                            <table width="400px" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="150px">@Html.Label("Net Amount")</td>
+                                    <td><input type="text" id="txtamont" /></td>
+                                </tr>
+                            </table>
+                            @*<input type='button' value='Add Button' id='addButton'>*@
+                            @*<input type='button' value='Remove Button' id='removeButton'>
+                                <input type='button' value='Get TextBox Value' id='getButtonValue'>*@
+                            @*<div id="main">
+                                    NetAmount:
+                                    <input type="text" id="btAdd" value="Add Element" />
+                                   <br />
+                                </div>*@
+                        </td>
+                    </tr>
+                </table>
+            </div><!-- #tab1 -->
+            <div id="tab2" class="tab_content">
+                <table width="300px" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="150px">@Html.Label("Tax Code")</td>
+                        <td>@Html.Partial("_User", "Master1")  </td>@**@
+                    </tr>
+                    <tr>
+                        <td width="150px">@Html.Label("Taxable Amt:")</td>
+                        <td>
+                            <table cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="80px">@Html.Label("Tax Amount")</td>
+                                    <td width="50px">
+                                        <input type="text" name="Amount" id="TaxAmount" onfocus="value=''" />
+                                    </td>
+                                    <td width="80px">@Html.Label("Surchg")</td>
+                                    <td><input type="text" name="SurChaerge" id="txtSurCharge" onfocus="value=''" /></td>
+                                </tr>
+                                <tr>
+                                    <td width="80px">@Html.Label("Addnl.Tax")</td>
+                                    <td>
+                                        <input type="text" name="AdditionalTax" id="txtAdditTax" onfocus="value=''" />
+                                    </td>
+                                    <td width="80px">
+                                        @Html.Label("Cess")
+                                    </td>
+                                    <td>
+                                        <input type="text" name="Cess" id="txtCess" onfocus="value=''" />
+                                        @*<input type="button" id="btn1" value="Show Result" />*@
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div><!-- #tab2 -->
+            <div id="tab3" class="tab_content">
+            </div>
+        </div> <!-- .tab_container -->
+    </div>
+}
+@*<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        var calculate = {
+            TaxAmount: '0.00',
+
+        };
+        $("#btn1").click(function () {
+            var val1 = parseInt($("#TaxAmount").val());
+            var val2 = parseInt($("#txtSurCharge").val());
+            var val3 = parseFloat($("#txtAdditTax").val());
+            var val4 = parseFloat($("#txtCess").val());
+
+            var Amount = parseFloat($('#txtamont').val());
+            //var Tax = parseFloat($('txtName_@Model').val());
+             $("#txtAdditTax").val(Amount * (val2 / 100));
+          //  $("#txtAdditTax").val(Amount * (Tax / 100));
+            //  $("#txtAdditTax") = Val(txtTaxAmt.Text) + Val(txtAddTax.Text) + Val(txtCess.Text) + Val(txtSurCharge.Text)
+        });
+    });
+</script>*@

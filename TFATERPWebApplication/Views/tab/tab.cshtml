@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "tab";
+    Layout=null;
+}
+
+<h2>tab</h2>
+
+
+<html>
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" href="~/Content/themes/base/jquery.ui.all.css">
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Scripts/jquery.ui.core.js"></script>
+    <script src="~/Scripts/jquery.ui.widget.js"></script>
+    <script src="~/Scripts/jquery.ui.tabs.js"></script>
+    <link rel="stylesheet" href="~/Content/themes/base/demos.css">
+
+    @*<link href="~/Content/KendoUI/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Content/KendoUI/styles/kendo.default.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/Kendo/js/jquery.min.js"></script>
+    <script src="~/Scripts/Kendo/js/kendo.all.min.js"></script>
+    <script src="~/Scripts/Kendo/js/kendo.aspnetmvc.min.js"></script>*@
+    <script>
+    $(function () { $("#tabs").tabs(); });
+    </script>
+
+    @*<style scoped>
+    #forecast {
+        width: 360px;
+        height:128px;
+        margin: 30px auto;
+        padding: 80px 15px 0 15px;
+        background: url('@Url.Content("~/Content/web/tabstrip/forecast.png")') transparent no-repeat 0 0;
+    }
+
+    .sunny, .cloudy, .rainy {
+        display: inline-block;
+        margin: 20px 0 20px 10px;
+        width: 600px;
+        height: 128px;
+        background: url('@Url.Content("~/Content/web/tabstrip/weather.png")') transparent no-repeat 0 0;
+    }
+
+    .cloudy{
+        background-position: -128px 0;
+    }
+
+    .rainy{
+        background-position: -256px 0;
+    }
+
+    .weather {
+        width: 100px;
+        padding: 40px 0 0 0;
+        float: right;
+    }
+
+    #forecast h2 {
+        font-weight: lighter;
+        font-size: 5em;
+        padding: 0;
+        margin: 0;
+    }
+
+    #forecast h2 span {
+        background: none;
+        padding-left: 5px;
+        font-size: .5em;
+        vertical-align: top;
+    }
+
+    #forecast p {
+        margin: 0;
+        padding: 0;
+    }
+    </style>*@
+
+</head>
+<body>
+    <div class="demo">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Tab One</a></li>
+                <li><a href="#tabs-2">Tab Two</a></li>
+                <li><a href="#tabs-3">Tab Three</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>Tab One Content Here.</p>
+            </div>
+            <div id="tabs-2">
+                <p>Tab Two Contents Here</p>
+            </div>
+            <div id="tabs-3">
+                <p>Tab Three Contents Here.</p>
+            </div>
+        </div>
+    </div>
+
+
+    @*<div id="forecast">
+        @(Html.Kendo().TabStrip()
+          .Name("tabstrip")
+          .Items(tabstrip =>
+          {
+              tabstrip.Add().Text("Paris")
+                  .Selected(true)
+                  .Content(@<text>
+                    <div class="weather">
+                        <h2>17<span>&ordm;C</span></h2>
+                        <p>Rainy weather in Paris.</p>
+                    </div>
+                    <span class="rainy">&nbsp;</span>
+                </text>);
+
+              tabstrip.Add().Text("New York")
+                  .Content(@<text>
+                    <div class="weather">
+                        <h2>29<span>&ordm;C</span></h2>
+                        <p>Sunny weather in New York.</p>
+                    </div>
+                    <span class="sunny">&nbsp;</span>
+                </text>);
+
+              tabstrip.Add().Text("Moscow")
+                  .Content(@<text>
+                    <div class="weather">
+                        <h2>16<span>&ordm;C</span></h2>
+                        <p>Cloudy weather in Moscow.</p>
+                    </div>
+                    <span class="cloudy">&nbsp;</span>
+                </text>);
+
+              tabstrip.Add().Text("Sydney")
+                  .Content(@<text>
+                    <div class="weather">
+                        <h2>17<span>&ordm;C</span></h2>
+                        <p>Rainy weather in Sidney.</p>
+                    </div>
+                    <span class="rainy">&nbsp;</span>
+                </text>);
+          })
+        )
+    </div>*@
+        
+</body>
+</html>

@@ -1,0 +1,445 @@
+﻿@model TFATERPWebApplication.Dal.TFatBranch 
+@{
+    ViewBag.Title = "NewBranch";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>New Branch</title>
+    <link href="~/Content/Menu.css" rel="stylesheet" />
+    <link href="~/Content/Login.css" rel="stylesheet" />
+
+    <meta charset="utf-8">
+    <title>jQuery UI Tabs - Default functionality</title>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="~/Scripts/jquery-2.1.1.js"></script>
+
+    @*<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>*@
+    @*<link rel="stylesheet" href="/resources/demos/style.css">*@
+    <link rel="stylesheet" href="~/Content/themes/base/jquery.ui.all.css">
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Scripts/jquery.ui.core.js"></script>
+    <script src="~/Scripts/jquery.ui.widget.js"></script>
+    <script src="~/Scripts/jquery.ui.tabs.js"></script>
+    <link rel="stylesheet" href="~/Content/themes/base/demos.css">
+
+    @*<script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $("#aCountry").change(function () {
+                var code = $("#aCountry :selected").val();
+                var url = 'State';
+                var data1 = { "code": code };
+                $.post(url, data1, function (data) {
+                    var items = [];
+                    items.push("<option value=" + 0 + ">" + "Choose State" + "</option>");
+                    for (var i = 0; i < data.length; i++) {
+                        items.push("<option value=" + data[i].Value + ">" + data[i].Text + "</option>");
+                    }
+                    $("#aState").html(items.join(' '));
+                })
+            });
+
+            $("#aState").change(function () {
+                var code = $("#aState :selected").val();
+                var url = 'City';
+                var data1 = { "code": code };
+                $.post(url, data1, function (data) {
+                    var items = [];
+                    items.push("<option value=" + 0 + ">" + "Choose City" + "</option>");
+                    for (var i = 0; i < data.length; i++) {
+                        items.push("<option value=" + data[i].Value + ">" + data[i].Text + "</option>");
+                    }
+                    $("#aCity").html(items.join(' '));
+                })
+            });
+        });
+    </script>*@
+    <script>
+    $(function () { $("#tabs").tabs(); });
+    </script>
+
+    <script type="text/javascript">
+        function validate() {
+            var Company = document.getElementById('CompCode').value;
+            var Code = document.getElementById('Code').value;
+            var Name = document.getElementById('Name').value;
+            var Country = document.getElementById('aCountry').value;
+            var State = document.getElementById('aState').value;
+            var City = document.getElementById('aCity').value;
+
+            if (Company == "")
+            {
+                alert("Please select Company Name ");
+                return false;
+                            }
+
+            if (Code == "") {
+                alert("Please Enter Branch Code ");
+                return false;
+            }
+            if (Name == "") {
+                alert("Please Enter Branch Name ");
+                return false;
+            }
+            if (Country == "") {
+                alert("Please select Country");
+                return false;
+            }
+            if (State == "" || State == 0 ) {
+                alert("Please select State");
+                return false;
+            }
+            if (City == "" || City == 0) {
+                alert("Please select City");
+                return false;
+            }
+
+
+            return true;
+        }
+    </script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('#txtNumeric').keydown(function (e) {
+                if (e.shiftKey || e.ctrlKey || e.altKey) {
+                    e.preventDefault();
+                } else {
+                    var key = e.keyCode;
+                    if (!((key == 8) || (key == 46) || (key >= 35 && key <= 40) || (key >= 48 && key <= 57) || (key >= 96 && key <= 105))) {
+                        e.preventDefault();
+                    }
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        var specialKeys = new Array();
+        specialKeys.push(8); //Backspace
+        $(function () {
+            $(".numeric").bind("keypress", function (e) {
+                var keyCode = e.which ? e.which : e.keyCode
+                var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
+                $(".error").css("display", ret ? "none" : "inline");
+                return ret;
+            });
+            $(".numeric").bind("paste", function (e) {
+                return false;
+            });
+            $(".numeric").bind("drop", function (e) {
+                return false;
+            });
+        });
+    </script>
+</head>
+<body >
+
+    <div>
+        <img src="../Images/logo.png" style="Width:130px; Height:40px;" />
+
+    </div>
+    <div style="color:#f2e9e9;background-color:#f2e9e9">
+        <hr style="color:#f2e9e9;" />
+    </div>
+    <div style="padding-top:1em;padding-left:5em;">
+
+        @using (Html.BeginForm("NewBranch", "NewBranch", FormMethod.Post))
+        {
+            //this  is for create form tag
+            @Html.AntiForgeryToken()
+            // this is for prevent CSRF attack
+            if (@ViewBag.Message != null)
+            {
+                <div style="border:1px solid red;">
+                    @ViewBag.Message
+                </div>
+            }
+            <table style="vertical-align:top;" width="80%">
+                <tr height="10px">
+                    <td colspan="4" class="labelcss" valign="top">
+                        @Html.Label("Plant/Business Unit Definition ")
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" colspan="4" >
+                        <div class="hr"><hr /></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labelsigncss">@Html.Label("Company")</td>
+                    <td class="labelsigncss">@Html.DropDownList("CompCode", null, "Select Company", new { style = "height:20px; width:224px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="labelsigncss">@Html.Label("BU Code")</td>
+                    <td class="labelsigncss">@Html.TextBoxFor(m => m.Code, new { id = "Code", style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                    <td class="labelsigncss">@Html.Label("Name")</td>
+                    <td class="labelsigncss">@Html.TextBoxFor(m => m.Name, new { id = "Name", style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                </tr>
+               
+                @*<tr>
+                        <td width="50%" colspan="4" style="color:#000000;">
+                         <div class="hr"><hr /></div>
+                        </td>
+                    </tr>*@
+                <tr>
+                    <td colspan="4" width="100%">
+                        <div class="demo">
+                        <div id="tabs" style="width:100%;height:390px;text-align:left;">
+                            <ul>
+                                <li><a href="#tabs-1" style="font-family:Tahoma;font-size:11px;">Mailing Information</a></li>
+                                <li><a href="#tabs-2" style="font-family:Tahoma;font-size:11px;">More Details</a></li>
+                                <li><a href="#tabs-3" style="font-family:Tahoma;font-size:11px;">Login Details</a></li>
+                            </ul>
+                            <div id="tabs-1">
+                                <table width="100%">
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">@Html.Label("Flat/Door/Block")</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.Addrl1, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td width="20%"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">@Html.Label("Name Of Building")</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.Addrl2, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">@Html.Label("Road/Street/Lane")</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.Addrl3, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">@Html.Label("Area/Locality")</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.Addrl4, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">@Html.Label("Country") </td>
+
+                                        <td class="labelsigncss" width="30%"  >
+                                            @Html.DropDownList("aCountry", null, "Select Country", new { style = "height:20px; width:224px;font-size:11px;border:1px solid;border-color:gray;" })
+                                        </td>                                                    
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">
+                                            @Html.Label("State")
+                                        </td>
+                                        <td class="labelsigncss" width="30%"  >
+                                            @Html.DropDownList("aState", null, "Select State", new { style = "height:20px; width:224px;font-size:11px;border:1px solid;border-color:gray;" })
+                                        </td>
+                                        <td class="labelsigncss" width="30%">&nbsp; @Html.Label("City")</td>
+                                        <td class="labelsigncss" width="30%">
+                                            @Html.DropDownList("aCity", null, "Select City", new { style = "height:20px; width:224px;font-size:11px;border:1px solid;border-color:gray;" })
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="50%" colspan="4" style="color:#000000;">
+                                            <div class="hr"><hr /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">@Html.Label("Telephone Nos")</td>
+                                        <td class="labelsigncss" width="30%">
+                                            @Html.TextBoxFor(a => a.aTel1, new { @class = "numeric", style = "height:20px;width:106px;border:1px solid;border-color:gray;" })
+                                            @Html.TextBoxFor(a => a.aTel2, new { @class = "numeric", style = "height:20px;width:106px;border:1px solid;border-color:gray;" })
+                                        </td>
+                                        <td class="labelsigncss" width="20%">&nbsp; @Html.Label("Pin Code")</td>
+                                        <td class="labelsigncss" width="30%"  >@Html.TextBoxFor(a => a.aPin, new { @class = "numeric", style = "height:20px;width:220px;border:1px solid;border-color:gray;" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">&nbsp;</td>
+                                        <td class="labelsigncss" width="30%">
+                                            @Html.TextBoxFor(a => a.aTel3, new { @class = "numeric", id = "tel1", style = "height:20px;width:106px;border:1px solid;border-color:gray;" })
+                                            @Html.TextBoxFor(a => a.aTel4, new { @class = "numeric", id = "tel1", style = "height:20px;width:106px;border:1px solid;border-color:gray;" })
+                                        </td>
+                                        <td class="labelsigncss" width="30%">&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">@Html.Label("Fax No")</td>
+                                        <td class="labelsigncss" width="30%">
+                                            @Html.TextBoxFor(a => a.aFax, new { @class = "numeric", style = "height:20px;width:220px;border:1px solid;border-color:gray;" })
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%"  >
+                                            @Html.Label("E-Mail ID")
+                                        </td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.EMail, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td class="labelsigncss" width="30%">&nbsp; @Html.Label("Websites")</td>
+                                        <td class="labelsigncss">@Html.TextBoxFor(a => a.www, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                    </tr>
+
+
+                                </table>
+                            </div>
+                            <div id="tabs-2">
+                                <table width="100%">
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">Local S.T No.</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.aLstno, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td class="labelsigncss" width="30%">&nbsp; @Html.Label("Vat Reg No.")</td>
+                                        <td class="labelsigncss">@Html.TextBoxFor(a => a.VATReg, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">C.S.T No.</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.aCstNo, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td class="labelsigncss" width="30%">&nbsp; @Html.Label("Service Tax No.") </td>
+                                        <td class="labelsigncss">@Html.TextBoxFor(a => a.ServiceTax, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">GIR/PAN No</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.PanNo, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td class="labelsigncss">&nbsp;</td>
+                                        <td class="labelsigncss">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td class="labelsigncss" valign="top">Valid format:AABCS1234A</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">Auth No.</td>
+                                        <td class="labelsigncss" width="30%" >@Html.TextBoxFor(a => a.aAuthno, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="50%" colspan="4" style="color:#000000;">
+                                            <div class="hr"><hr /></div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">Other License /Reg.</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.Licence2, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">TDS Circle</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.TDSCir, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">TDS Reg.No.(TAN)</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.TDSReg, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">Tin No</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.TINNo, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labelsigncss" width="20%">Authorised Sign</td>
+                                        <td class="labelsigncss" width="30%">@Html.TextBoxFor(a => a.Authorise, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    @*<tr>
+                                            <td class="labelsigncss" width="30%"  height="25px">Assessing Office</td>
+                                            <td class="labelsigncss" width="30%"  height="25px">@Html.TextBoxFor(a => a., new { style = "height:22px;width:230px;border:1px solid;border-color:gray;" })</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>*@
+
+                                </table>
+                            </div>
+                            <div id="tabs-3">
+                                <table width="100%" >
+                                    <tr>
+                                        <td valign="top">
+                                            <table width="100%">
+                                              
+                                                @*<tr>
+                                                    <td class="labelsigncss" width="30%"  height="25px">@Html.CheckBox("Allow Login For This Location")Allow Login For This Location</td>
+                                                </tr>*@
+                                                <tr>
+                                                    <td class="labelsigncss" width="30%"  >
+                                                        @Html.Label("Users Authorised to Login", new { style = "font-family:Tahoma;font-size:11px;" })
+                                                       <br />
+                                                        <br>
+                                                       @Html.ListBoxFor(m => m.SelectedUsers1, Model.Users11, new { size = 8, style = "font-size:11px;width:220px;border:1px solid;border-color:gray;" })
+                                                    @*@Html.ListBoxFor(x => x.Users, Model.tfatusers1, new { id = "Users", name = "Users", size = 12, style = "font-size:12px;width:230px;border:1px solid;border-color:gray;" })*@
+                                                    @*@Html.ListBoxFor(x => x.Users, new MultiSelectList(ViewData["Users"] as System.Collections.IEnumerable, "Text", "Text", Model.Users))*@
+                                                    @*@Html.ListBoxFor(x => x.Users, new MultiSelectList(Model.tfatusers1, "Text", "Text", Model.tfatusers1))*@
+                                                </td>
+
+                                                </tr>
+
+                                            </table>
+                                        </td>
+                                        <td valign="top">
+
+                                            <table width="100%">
+                                                <tr>
+                                                    <td colspan="2" class="labelsigncss" width="30%"  valign="top">
+                                                        @Html.Label("Restrict Login on the following Days:", new { @class = "labelsigncss" })
+                                                        <br />
+                                                        <br />
+                                                        @Html.CheckBoxFor(a => a.Sun)@Html.Label("Sunday")<br /><br />
+                                                        @Html.CheckBoxFor(a => a.Mon)@Html.Label("Monday")<br /><br />
+                                                        @Html.CheckBoxFor(a => a.Tue)@Html.Label("Tuesday")<br /><br />
+                                                        @Html.CheckBoxFor(a => a.Wed)@Html.Label("Wednessday")<br /><br />
+                                                        @Html.CheckBoxFor(a => a.Thu)@Html.Label("Thursday")<br /><br />
+                                                        @Html.CheckBoxFor(a => a.Fri)@Html.Label("Friday")<br /><br />
+                                                        @Html.CheckBoxFor(a => a.Sat)@Html.Label("Saterday")<br /><br />
+                                                     
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="labelsigncss" width="30%"  >@Html.Label("Bussiness Type")</td>  
+                                                    <td class="labelsigncss" width="30%"  >@Html.DropDownList("Business", ViewData["Business"] as SelectList, new { style = "height:20px; width:220px;font-size:11px;border:1px solid;border-color:gray;" })</td>
+                                                </tr>
+
+                                            </table>
+
+                                        </td>
+
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td colspan="4" align="right"><input type="submit" class="button" value="Save" onclick="return validate();" />&nbsp;<input type="submit" class="button" value="Cancel" /></td></tr>
+            </table>
+
+        }
+        @* This below line is for create javascript section *@
+        @section Scripts{
+
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+        @*</fieldset>*@
+    </div>
+</body>
+</html>

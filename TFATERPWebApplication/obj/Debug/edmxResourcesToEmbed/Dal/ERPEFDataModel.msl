@@ -1,0 +1,2631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TFAT_WEBERPModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="ItemBOMs">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ItemBOM">
+        <MappingFragment StoreEntitySet="ItemBOM">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AddTolerance" ColumnName="AddTolerance" />
+          <ScalarProperty Name="AllowPartial" ColumnName="AllowPartial" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BasedQty2" ColumnName="BasedQty2" />
+          <ScalarProperty Name="BomCode" ColumnName="BomCode" />
+          <ScalarProperty Name="BomSrl" ColumnName="BomSrl" />
+          <ScalarProperty Name="ChgAmt1" ColumnName="ChgAmt1" />
+          <ScalarProperty Name="ChgAmt2" ColumnName="ChgAmt2" />
+          <ScalarProperty Name="ChgAmt3" ColumnName="ChgAmt3" />
+          <ScalarProperty Name="ChildBOM" ColumnName="ChildBOM" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ECNumber" ColumnName="ECNumber" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="EffectiveDateTo" ColumnName="EffectiveDateTo" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="Fixed" ColumnName="Fixed" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="FlagCost" ColumnName="FlagCost" />
+          <ScalarProperty Name="FlagJob" ColumnName="FlagJob" />
+          <ScalarProperty Name="FlagMFG" ColumnName="FlagMFG" />
+          <ScalarProperty Name="FlagPlan" ColumnName="FlagPlan" />
+          <ScalarProperty Name="FlagPM" ColumnName="FlagPM" />
+          <ScalarProperty Name="FlagSales" ColumnName="FlagSales" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="IsSubstitute" ColumnName="IsSubstitute" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="LabourAmt" ColumnName="LabourAmt" />
+          <ScalarProperty Name="Loss" ColumnName="Loss" />
+          <ScalarProperty Name="LossOnWaste" ColumnName="LossOnWaste" />
+          <ScalarProperty Name="MachineAmt" ColumnName="MachineAmt" />
+          <ScalarProperty Name="MfgProcess" ColumnName="MfgProcess" />
+          <ScalarProperty Name="MfgStore" ColumnName="MfgStore" />
+          <ScalarProperty Name="MultiLevel" ColumnName="MultiLevel" />
+          <ScalarProperty Name="MultiProd" ColumnName="MultiProd" />
+          <ScalarProperty Name="OtherAmt" ColumnName="OtherAmt" />
+          <ScalarProperty Name="PerUnit" ColumnName="PerUnit" />
+          <ScalarProperty Name="pLoss" ColumnName="pLoss" />
+          <ScalarProperty Name="pQty" ColumnName="pQty" />
+          <ScalarProperty Name="ProcessCode" ColumnName="ProcessCode" />
+          <ScalarProperty Name="ProductMfg" ColumnName="ProductMfg" />
+          <ScalarProperty Name="pWastage" ColumnName="pWastage" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Qty2" ColumnName="Qty2" />
+          <ScalarProperty Name="QtyBasis" ColumnName="QtyBasis" />
+          <ScalarProperty Name="QtyEqsn" ColumnName="QtyEqsn" />
+          <ScalarProperty Name="QtyPer" ColumnName="QtyPer" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="StockType" ColumnName="StockType" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="SubstituteWith" ColumnName="SubstituteWith" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+          <ScalarProperty Name="Wastage" ColumnName="Wastage" />
+          <ScalarProperty Name="WasteCode" ColumnName="WasteCode" />
+          <ScalarProperty Name="WasteStore" ColumnName="WasteStore" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemBOMHeaders">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ItemBOMHeader">
+        <MappingFragment StoreEntitySet="ItemBOMHeader">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="BatchQty" ColumnName="BatchQty" />
+          <ScalarProperty Name="BOMName" ColumnName="BOMName" />
+          <ScalarProperty Name="BOMSrl" ColumnName="BOMSrl" />
+          <ScalarProperty Name="BOMType" ColumnName="BOMType" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="EffectiveDateTo" ColumnName="EffectiveDateTo" />
+          <ScalarProperty Name="ExcludeKitParent" ColumnName="ExcludeKitParent" />
+          <ScalarProperty Name="ExpandKIT" ColumnName="ExpandKIT" />
+          <ScalarProperty Name="IsKIT" ColumnName="IsKIT" />
+          <ScalarProperty Name="LastUpdateBy" ColumnName="LastUpdateBy" />
+          <ScalarProperty Name="LastUpdateOn" ColumnName="LastUpdateOn" />
+          <ScalarProperty Name="OrdNumber" ColumnName="OrdNumber" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="StdWeight" ColumnName="StdWeight" />
+          <ScalarProperty Name="StdYield" ColumnName="StdYield" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemCategories">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ItemCategory">
+        <MappingFragment StoreEntitySet="ItemCategory">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemDetails">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ItemDetail">
+        <MappingFragment StoreEntitySet="ItemDetail">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="ABC" ColumnName="ABC" />
+          <ScalarProperty Name="ACCode" ColumnName="ACCode" />
+          <ScalarProperty Name="ACCodeX" ColumnName="ACCodeX" />
+          <ScalarProperty Name="AllowProdCat" ColumnName="AllowProdCat" />
+          <ScalarProperty Name="AllowUser" ColumnName="AllowUser" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="AutoBatch" ColumnName="AutoBatch" />
+          <ScalarProperty Name="AutoBatchIssue" ColumnName="AutoBatchIssue" />
+          <ScalarProperty Name="AutoMFG" ColumnName="AutoMFG" />
+          <ScalarProperty Name="AutoSerialGRN" ColumnName="AutoSerialGRN" />
+          <ScalarProperty Name="AutoSerialMFG" ColumnName="AutoSerialMFG" />
+          <ScalarProperty Name="Availability" ColumnName="Availability" />
+          <ScalarProperty Name="BatchAutoGRN" ColumnName="BatchAutoGRN" />
+          <ScalarProperty Name="BatchExp" ColumnName="BatchExp" />
+          <ScalarProperty Name="BatchExpDays" ColumnName="BatchExpDays" />
+          <ScalarProperty Name="BatchForce" ColumnName="BatchForce" />
+          <ScalarProperty Name="BatchMFG" ColumnName="BatchMFG" />
+          <ScalarProperty Name="BatchNoDupl" ColumnName="BatchNoDupl" />
+          <ScalarProperty Name="BatchPattern" ColumnName="BatchPattern" />
+          <ScalarProperty Name="BatchRates" ColumnName="BatchRates" />
+          <ScalarProperty Name="BatchReq" ColumnName="BatchReq" />
+          <ScalarProperty Name="BatchSizeQty" ColumnName="BatchSizeQty" />
+          <ScalarProperty Name="BatchWidth" ColumnName="BatchWidth" />
+          <ScalarProperty Name="BinNumber" ColumnName="BinNumber" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="CanMfg" ColumnName="CanMfg" />
+          <ScalarProperty Name="CanPurch" ColumnName="CanPurch" />
+          <ScalarProperty Name="CanSale" ColumnName="CanSale" />
+          <ScalarProperty Name="CanSubContract" ColumnName="CanSubContract" />
+          <ScalarProperty Name="CheckPending2" ColumnName="CheckPending2" />
+          <ScalarProperty Name="CheckStock" ColumnName="CheckStock" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CostRate" ColumnName="CostRate" />
+          <ScalarProperty Name="CostValue" ColumnName="CostValue" />
+          <ScalarProperty Name="DCCode" ColumnName="DCCode" />
+          <ScalarProperty Name="DefQty" ColumnName="DefQty" />
+          <ScalarProperty Name="DeliverPrice" ColumnName="DeliverPrice" />
+          <ScalarProperty Name="DelyTime" ColumnName="DelyTime" />
+          <ScalarProperty Name="EOQ" ColumnName="EOQ" />
+          <ScalarProperty Name="FIFORate" ColumnName="FIFORate" />
+          <ScalarProperty Name="FIFOValue" ColumnName="FIFOValue" />
+          <ScalarProperty Name="GRNLeadTime" ColumnName="GRNLeadTime" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="HalfPrice" ColumnName="HalfPrice" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="LastCostRate" ColumnName="LastCostRate" />
+          <ScalarProperty Name="LastPurchRate" ColumnName="LastPurchRate" />
+          <ScalarProperty Name="LastValue" ColumnName="LastValue" />
+          <ScalarProperty Name="LBTTaxCode" ColumnName="LBTTaxCode" />
+          <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+          <ScalarProperty Name="LIFORate" ColumnName="LIFORate" />
+          <ScalarProperty Name="LIFOValue" ColumnName="LIFOValue" />
+          <ScalarProperty Name="ListPrice" ColumnName="ListPrice" />
+          <ScalarProperty Name="MaxQty" ColumnName="MaxQty" />
+          <ScalarProperty Name="MfgLeadTime" ColumnName="MfgLeadTime" />
+          <ScalarProperty Name="MfgLocation" ColumnName="MfgLocation" />
+          <ScalarProperty Name="MinDelyQty" ColumnName="MinDelyQty" />
+          <ScalarProperty Name="MinDlyQty" ColumnName="MinDlyQty" />
+          <ScalarProperty Name="MinQty" ColumnName="MinQty" />
+          <ScalarProperty Name="MinSaleRate" ColumnName="MinSaleRate" />
+          <ScalarProperty Name="MRP" ColumnName="MRP" />
+          <ScalarProperty Name="MRPTaxP" ColumnName="MRPTaxP" />
+          <ScalarProperty Name="MRPTaxS" ColumnName="MRPTaxS" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OverReserve" ColumnName="OverReserve" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="PCCode" ColumnName="PCCode" />
+          <ScalarProperty Name="PointEarn" ColumnName="PointEarn" />
+          <ScalarProperty Name="PortionPrice" ColumnName="PortionPrice" />
+          <ScalarProperty Name="ProcLeadTime" ColumnName="ProcLeadTime" />
+          <ScalarProperty Name="PurchDisc" ColumnName="PurchDisc" />
+          <ScalarProperty Name="PurchDiscAmt" ColumnName="PurchDiscAmt" />
+          <ScalarProperty Name="PurchGroup" ColumnName="PurchGroup" />
+          <ScalarProperty Name="PurchPer" ColumnName="PurchPer" />
+          <ScalarProperty Name="PurchRate" ColumnName="PurchRate" />
+          <ScalarProperty Name="PurchTaxCode" ColumnName="PurchTaxCode" />
+          <ScalarProperty Name="PurchTaxOST" ColumnName="PurchTaxOST" />
+          <ScalarProperty Name="QCReqd" ColumnName="QCReqd" />
+          <ScalarProperty Name="QCReqdMfg" ColumnName="QCReqdMfg" />
+          <ScalarProperty Name="QCReqdSub" ColumnName="QCReqdSub" />
+          <ScalarProperty Name="QtyToleMinus" ColumnName="QtyToleMinus" />
+          <ScalarProperty Name="QtyTolePlus" ColumnName="QtyTolePlus" />
+          <ScalarProperty Name="QuarterPrice" ColumnName="QuarterPrice" />
+          <ScalarProperty Name="RateMethod" ColumnName="RateMethod" />
+          <ScalarProperty Name="RateOn2" ColumnName="RateOn2" />
+          <ScalarProperty Name="RedemptionCost" ColumnName="RedemptionCost" />
+          <ScalarProperty Name="ReOrdDays" ColumnName="ReOrdDays" />
+          <ScalarProperty Name="ReOrdDaysC" ColumnName="ReOrdDaysC" />
+          <ScalarProperty Name="ReOrdHighLow" ColumnName="ReOrdHighLow" />
+          <ScalarProperty Name="ReOrdLevel" ColumnName="ReOrdLevel" />
+          <ScalarProperty Name="ReOrdQty" ColumnName="ReOrdQty" />
+          <ScalarProperty Name="RestrictPR" ColumnName="RestrictPR" />
+          <ScalarProperty Name="SalesDisc" ColumnName="SalesDisc" />
+          <ScalarProperty Name="SalesDiscAmt" ColumnName="SalesDiscAmt" />
+          <ScalarProperty Name="SalesMargin" ColumnName="SalesMargin" />
+          <ScalarProperty Name="SalesMaxDisc" ColumnName="SalesMaxDisc" />
+          <ScalarProperty Name="SalesPer" ColumnName="SalesPer" />
+          <ScalarProperty Name="SalesRate" ColumnName="SalesRate" />
+          <ScalarProperty Name="SalesTaxCode" ColumnName="SalesTaxCode" />
+          <ScalarProperty Name="SalesTaxOST" ColumnName="SalesTaxOST" />
+          <ScalarProperty Name="SecondUnit" ColumnName="SecondUnit" />
+          <ScalarProperty Name="SerialNoDupl" ColumnName="SerialNoDupl" />
+          <ScalarProperty Name="SerialPatternGRN" ColumnName="SerialPatternGRN" />
+          <ScalarProperty Name="SerialPatternMFG" ColumnName="SerialPatternMFG" />
+          <ScalarProperty Name="SerialPrefix" ColumnName="SerialPrefix" />
+          <ScalarProperty Name="SerialReq" ColumnName="SerialReq" />
+          <ScalarProperty Name="SerialType" ColumnName="SerialType" />
+          <ScalarProperty Name="SerTax" ColumnName="SerTax" />
+          <ScalarProperty Name="SerTaxCode" ColumnName="SerTaxCode" />
+          <ScalarProperty Name="SourceListReq" ColumnName="SourceListReq" />
+          <ScalarProperty Name="StockReserve" ColumnName="StockReserve" />
+          <ScalarProperty Name="StockSerial" ColumnName="StockSerial" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="ThirdPrice" ColumnName="ThirdPrice" />
+          <ScalarProperty Name="TimePrice1" ColumnName="TimePrice1" />
+          <ScalarProperty Name="TimePrice2" ColumnName="TimePrice2" />
+          <ScalarProperty Name="TimePrice3" ColumnName="TimePrice3" />
+          <ScalarProperty Name="TimePrice4" ColumnName="TimePrice4" />
+          <ScalarProperty Name="TouchValue" ColumnName="TouchValue" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+          <ScalarProperty Name="VED" ColumnName="VED" />
+          <ScalarProperty Name="VerifyDate" ColumnName="VerifyDate" />
+          <ScalarProperty Name="VerifyDays" ColumnName="VerifyDays" />
+          <ScalarProperty Name="VerifyItem" ColumnName="VerifyItem" />
+          <ScalarProperty Name="WTRate" ColumnName="WTRate" />
+          <ScalarProperty Name="WTValue" ColumnName="WTValue" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemGroups">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ItemGroup">
+        <MappingFragment StoreEntitySet="ItemGroups">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AcCode" ColumnName="AcCode" />
+          <ScalarProperty Name="AcCodeX" ColumnName="AcCodeX" />
+          <ScalarProperty Name="AcType" ColumnName="AcType" />
+          <ScalarProperty Name="BaseGr" ColumnName="BaseGr" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Hide" ColumnName="Hide" />
+          <ScalarProperty Name="IsLast" ColumnName="IsLast" />
+          <ScalarProperty Name="IsPrefixCode" ColumnName="IsPrefixCode" />
+          <ScalarProperty Name="IsPrefixDescr" ColumnName="IsPrefixDescr" />
+          <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="PurchDisc" ColumnName="PurchDisc" />
+          <ScalarProperty Name="PurchPer" ColumnName="PurchPer" />
+          <ScalarProperty Name="PurchRate" ColumnName="PurchRate" />
+          <ScalarProperty Name="PurchTaxCode" ColumnName="PurchTaxCode" />
+          <ScalarProperty Name="SalesDisc" ColumnName="SalesDisc" />
+          <ScalarProperty Name="SalesMargin" ColumnName="SalesMargin" />
+          <ScalarProperty Name="SalesMaxDisc" ColumnName="SalesMaxDisc" />
+          <ScalarProperty Name="SalesPer" ColumnName="SalesPer" />
+          <ScalarProperty Name="SalesRate" ColumnName="SalesRate" />
+          <ScalarProperty Name="SalesTaxCode" ColumnName="SalesTaxCode" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemMasters">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ItemMaster">
+        <MappingFragment StoreEntitySet="ItemMaster">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AcType" ColumnName="AcType" />
+          <ScalarProperty Name="AppBranch" ColumnName="AppBranch" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="BaseGr" ColumnName="BaseGr" />
+          <ScalarProperty Name="BomExist" ColumnName="BomExist" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Hide" ColumnName="Hide" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="IsLast" ColumnName="IsLast" />
+          <ScalarProperty Name="IsPacking" ColumnName="IsPacking" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Narr" ColumnName="Narr" />
+          <ScalarProperty Name="PopupMsg" ColumnName="PopupMsg" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="RedemptionCost" ColumnName="RedemptionCost" />
+          <ScalarProperty Name="Stocking" ColumnName="Stocking" />
+          <ScalarProperty Name="TouchValue" ColumnName="TouchValue" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemMores">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ItemMore">
+        <MappingFragment StoreEntitySet="ItemMore">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AbtRate" ColumnName="AbtRate" />
+          <ScalarProperty Name="ADC" ColumnName="ADC" />
+          <ScalarProperty Name="AllowedPack" ColumnName="AllowedPack" />
+          <ScalarProperty Name="AltItem" ColumnName="AltItem" />
+          <ScalarProperty Name="AssetCategory" ColumnName="AssetCategory" />
+          <ScalarProperty Name="AssRate" ColumnName="AssRate" />
+          <ScalarProperty Name="BatchSize" ColumnName="BatchSize" />
+          <ScalarProperty Name="BCD" ColumnName="BCD" />
+          <ScalarProperty Name="BCDAmt" ColumnName="BCDAmt" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Cess" ColumnName="Cess" />
+          <ScalarProperty Name="ChargesOnQty2" ColumnName="ChargesOnQty2" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CurrYearExc" ColumnName="CurrYearExc" />
+          <ScalarProperty Name="ExcRate" ColumnName="ExcRate" />
+          <ScalarProperty Name="GoodsHSN" ColumnName="GoodsHSN" />
+          <ScalarProperty Name="GRNProcTime" ColumnName="GRNProcTime" />
+          <ScalarProperty Name="GroupTree" ColumnName="GroupTree" />
+          <ScalarProperty Name="GrWeight" ColumnName="GrWeight" />
+          <ScalarProperty Name="GSIRate" ColumnName="GSIRate" />
+          <ScalarProperty Name="Hazard" ColumnName="Hazard" />
+          <ScalarProperty Name="Humidity" ColumnName="Humidity" />
+          <ScalarProperty Name="iHeight" ColumnName="iHeight" />
+          <ScalarProperty Name="iLength" ColumnName="iLength" />
+          <ScalarProperty Name="iWidth" ColumnName="iWidth" />
+          <ScalarProperty Name="LastUpdateOn" ColumnName="LastUpdateOn" />
+          <ScalarProperty Name="LCharges" ColumnName="LCharges" />
+          <ScalarProperty Name="MaxLoad" ColumnName="MaxLoad" />
+          <ScalarProperty Name="MCharges" ColumnName="MCharges" />
+          <ScalarProperty Name="MRPbase" ColumnName="MRPbase" />
+          <ScalarProperty Name="MRPControlGroup" ColumnName="MRPControlGroup" />
+          <ScalarProperty Name="MRPIPType" ColumnName="MRPIPType" />
+          <ScalarProperty Name="MRPISType" ColumnName="MRPISType" />
+          <ScalarProperty Name="MRPReqd" ColumnName="MRPReqd" />
+          <ScalarProperty Name="MRPWOType" ColumnName="MRPWOType" />
+          <ScalarProperty Name="NCCDRate" ColumnName="NCCDRate" />
+          <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+          <ScalarProperty Name="NextYearExc" ColumnName="NextYearExc" />
+          <ScalarProperty Name="OCharges" ColumnName="OCharges" />
+          <ScalarProperty Name="oDuty1" ColumnName="oDuty1" />
+          <ScalarProperty Name="oDuty2" ColumnName="oDuty2" />
+          <ScalarProperty Name="oDuty3" ColumnName="oDuty3" />
+          <ScalarProperty Name="oDutyAmt1" ColumnName="oDutyAmt1" />
+          <ScalarProperty Name="oDutyAmt2" ColumnName="oDutyAmt2" />
+          <ScalarProperty Name="oDutyAmt3" ColumnName="oDutyAmt3" />
+          <ScalarProperty Name="PackingPlan" ColumnName="PackingPlan" />
+          <ScalarProperty Name="PackingSize" ColumnName="PackingSize" />
+          <ScalarProperty Name="pHeight" ColumnName="pHeight" />
+          <ScalarProperty Name="PicturePath" ColumnName="PicturePath" />
+          <ScalarProperty Name="pLength" ColumnName="pLength" />
+          <ScalarProperty Name="Potency" ColumnName="Potency" />
+          <ScalarProperty Name="PUPrefix" ColumnName="PUPrefix" />
+          <ScalarProperty Name="pWidth" ColumnName="pWidth" />
+          <ScalarProperty Name="QtyEqsn" ColumnName="QtyEqsn" />
+          <ScalarProperty Name="SEDRate" ColumnName="SEDRate" />
+          <ScalarProperty Name="SHECess" ColumnName="SHECess" />
+          <ScalarProperty Name="StockistID" ColumnName="StockistID" />
+          <ScalarProperty Name="Storage" ColumnName="Storage" />
+          <ScalarProperty Name="Tariff" ColumnName="Tariff" />
+          <ScalarProperty Name="TariffGrp" ColumnName="TariffGrp" />
+          <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+          <ScalarProperty Name="TTARate" ColumnName="TTARate" />
+          <ScalarProperty Name="UnitDim" ColumnName="UnitDim" />
+          <ScalarProperty Name="UnitMaxLoad" ColumnName="UnitMaxLoad" />
+          <ScalarProperty Name="UnitWt" ColumnName="UnitWt" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemWarranties">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ItemWarranty">
+        <MappingFragment StoreEntitySet="ItemWarranty">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AMCChgs" ColumnName="AMCChgs" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="CallChgs" ColumnName="CallChgs" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="FreeLabour" ColumnName="FreeLabour" />
+          <ScalarProperty Name="FreeParts" ColumnName="FreeParts" />
+          <ScalarProperty Name="FreeService" ColumnName="FreeService" />
+          <ScalarProperty Name="MinCharges" ColumnName="MinCharges" />
+          <ScalarProperty Name="OnSite" ColumnName="OnSite" />
+          <ScalarProperty Name="Pickup" ColumnName="Pickup" />
+          <ScalarProperty Name="Principle" ColumnName="Principle" />
+          <ScalarProperty Name="SCentreNo" ColumnName="SCentreNo" />
+          <ScalarProperty Name="ServiceCard" ColumnName="ServiceCard" />
+          <ScalarProperty Name="ServiceSch" ColumnName="ServiceSch" />
+          <ScalarProperty Name="Warranty" ColumnName="Warranty" />
+          <ScalarProperty Name="WarrantyCover" ColumnName="WarrantyCover" />
+          <ScalarProperty Name="WarrantyNote" ColumnName="WarrantyNote" />
+          <ScalarProperty Name="WarrantyPart" ColumnName="WarrantyPart" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="AddTax" ColumnName="AddTax" />
+          <ScalarProperty Name="AltAddress" ColumnName="AltAddress" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Amt1" ColumnName="Amt1" />
+          <ScalarProperty Name="Amt2" ColumnName="Amt2" />
+          <ScalarProperty Name="Amt3" ColumnName="Amt3" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BlanketOrder" ColumnName="BlanketOrder" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Broker" ColumnName="Broker" />
+          <ScalarProperty Name="Brokerage" ColumnName="Brokerage" />
+          <ScalarProperty Name="BrokerAmt" ColumnName="BrokerAmt" />
+          <ScalarProperty Name="BrokerOn" ColumnName="BrokerOn" />
+          <ScalarProperty Name="Campaign" ColumnName="Campaign" />
+          <ScalarProperty Name="CancFlag" ColumnName="CancFlag" />
+          <ScalarProperty Name="Cess" ColumnName="Cess" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Competitors" ColumnName="Competitors" />
+          <ScalarProperty Name="CRMStage" ColumnName="CRMStage" />
+          <ScalarProperty Name="CrPeriod" ColumnName="CrPeriod" />
+          <ScalarProperty Name="CurrAmount" ColumnName="CurrAmount" />
+          <ScalarProperty Name="CurrName" ColumnName="CurrName" />
+          <ScalarProperty Name="CurrRate" ColumnName="CurrRate" />
+          <ScalarProperty Name="DateWon" ColumnName="DateWon" />
+          <ScalarProperty Name="DCCode" ColumnName="DCCode" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="DeliveryDate2" ColumnName="DeliveryDate2" />
+          <ScalarProperty Name="DelyAltAdd" ColumnName="DelyAltAdd" />
+          <ScalarProperty Name="DelyCode" ColumnName="DelyCode" />
+          <ScalarProperty Name="Disc" ColumnName="Disc" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="DlyAddress" ColumnName="DlyAddress" />
+          <ScalarProperty Name="DlyArea" ColumnName="DlyArea" />
+          <ScalarProperty Name="DlyCity" ColumnName="DlyCity" />
+          <ScalarProperty Name="DlyCountry" ColumnName="DlyCountry" />
+          <ScalarProperty Name="DlyPerson" ColumnName="DlyPerson" />
+          <ScalarProperty Name="DlyPin" ColumnName="DlyPin" />
+          <ScalarProperty Name="DlyState" ColumnName="DlyState" />
+          <ScalarProperty Name="DlyTel" ColumnName="DlyTel" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="ExciseLess" ColumnName="ExciseLess" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="InchargeID" ColumnName="InchargeID" />
+          <ScalarProperty Name="IncoPlace" ColumnName="IncoPlace" />
+          <ScalarProperty Name="IncoTerms" ColumnName="IncoTerms" />
+          <ScalarProperty Name="InvNumber" ColumnName="InvNumber" />
+          <ScalarProperty Name="ITFNumber" ColumnName="ITFNumber" />
+          <ScalarProperty Name="JobTypeCode" ColumnName="JobTypeCode" />
+          <ScalarProperty Name="LCNo" ColumnName="LCNo" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="MediaType" ColumnName="MediaType" />
+          <ScalarProperty Name="MenuCode" ColumnName="MenuCode" />
+          <ScalarProperty Name="Narr" ColumnName="Narr" />
+          <ScalarProperty Name="OrdDate" ColumnName="OrdDate" />
+          <ScalarProperty Name="OrdNumber" ColumnName="OrdNumber" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="PayTerms" ColumnName="PayTerms" />
+          <ScalarProperty Name="Pending" ColumnName="Pending" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="PurposeFor" ColumnName="PurposeFor" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="ReasonWon" ColumnName="ReasonWon" />
+          <ScalarProperty Name="RevDate" ColumnName="RevDate" />
+          <ScalarProperty Name="RevNarr" ColumnName="RevNarr" />
+          <ScalarProperty Name="RevNo" ColumnName="RevNo" />
+          <ScalarProperty Name="RoundOff" ColumnName="RoundOff" />
+          <ScalarProperty Name="SalemanAmt" ColumnName="SalemanAmt" />
+          <ScalarProperty Name="SalemanOn" ColumnName="SalemanOn" />
+          <ScalarProperty Name="SalemanPer" ColumnName="SalemanPer" />
+          <ScalarProperty Name="Salesman" ColumnName="Salesman" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="STAmt" ColumnName="STAmt" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Staxable" ColumnName="Staxable" />
+          <ScalarProperty Name="STCess" ColumnName="STCess" />
+          <ScalarProperty Name="STCode" ColumnName="STCode" />
+          <ScalarProperty Name="STSheCess" ColumnName="STSheCess" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="SuccessRate" ColumnName="SuccessRate" />
+          <ScalarProperty Name="SurCharge" ColumnName="SurCharge" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Val1" ColumnName="Val1" />
+          <ScalarProperty Name="Val2" ColumnName="Val2" />
+          <ScalarProperty Name="Val3" ColumnName="Val3" />
+          <ScalarProperty Name="ValidDys" ColumnName="ValidDys" />
+          <ScalarProperty Name="WONumber" ColumnName="WONumber" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrdersRevs">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.OrdersRev">
+        <MappingFragment StoreEntitySet="OrdersRev">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="ACCPERIOD" ColumnName="ACCPERIOD" />
+          <ScalarProperty Name="ADDTAX" ColumnName="ADDTAX" />
+          <ScalarProperty Name="ALTADDRESS" ColumnName="ALTADDRESS" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="AMT1" ColumnName="AMT1" />
+          <ScalarProperty Name="AMT2" ColumnName="AMT2" />
+          <ScalarProperty Name="AMT3" ColumnName="AMT3" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="BLANKETORDER" ColumnName="BLANKETORDER" />
+          <ScalarProperty Name="BRANCH" ColumnName="BRANCH" />
+          <ScalarProperty Name="BROKER" ColumnName="BROKER" />
+          <ScalarProperty Name="BROKERAGE" ColumnName="BROKERAGE" />
+          <ScalarProperty Name="BROKERAMT" ColumnName="BROKERAMT" />
+          <ScalarProperty Name="BROKERON" ColumnName="BROKERON" />
+          <ScalarProperty Name="CAMPAIGN" ColumnName="CAMPAIGN" />
+          <ScalarProperty Name="CANCFLAG" ColumnName="CANCFLAG" />
+          <ScalarProperty Name="CESS" ColumnName="CESS" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="COMPETITORS" ColumnName="COMPETITORS" />
+          <ScalarProperty Name="CRMSTAGE" ColumnName="CRMSTAGE" />
+          <ScalarProperty Name="CRPERIOD" ColumnName="CRPERIOD" />
+          <ScalarProperty Name="CURRAMOUNT" ColumnName="CURRAMOUNT" />
+          <ScalarProperty Name="CURRNAME" ColumnName="CURRNAME" />
+          <ScalarProperty Name="CURRRATE" ColumnName="CURRRATE" />
+          <ScalarProperty Name="DATEWON" ColumnName="DATEWON" />
+          <ScalarProperty Name="DCCODE" ColumnName="DCCODE" />
+          <ScalarProperty Name="DELIVERYDATE" ColumnName="DELIVERYDATE" />
+          <ScalarProperty Name="DELIVERYDATE2" ColumnName="DELIVERYDATE2" />
+          <ScalarProperty Name="DELYALTADD" ColumnName="DELYALTADD" />
+          <ScalarProperty Name="DELYCODE" ColumnName="DELYCODE" />
+          <ScalarProperty Name="DISC" ColumnName="DISC" />
+          <ScalarProperty Name="DIVISION" ColumnName="DIVISION" />
+          <ScalarProperty Name="DLYADDRESS" ColumnName="DLYADDRESS" />
+          <ScalarProperty Name="DLYAREA" ColumnName="DLYAREA" />
+          <ScalarProperty Name="DLYCITY" ColumnName="DLYCITY" />
+          <ScalarProperty Name="DLYCOUNTRY" ColumnName="DLYCOUNTRY" />
+          <ScalarProperty Name="DLYPERSON" ColumnName="DLYPERSON" />
+          <ScalarProperty Name="DLYPIN" ColumnName="DLYPIN" />
+          <ScalarProperty Name="DLYSTATE" ColumnName="DLYSTATE" />
+          <ScalarProperty Name="DLYTEL" ColumnName="DLYTEL" />
+          <ScalarProperty Name="DOCDATE" ColumnName="DOCDATE" />
+          <ScalarProperty Name="EXCISELESS" ColumnName="EXCISELESS" />
+          <ScalarProperty Name="INCHARGEID" ColumnName="INCHARGEID" />
+          <ScalarProperty Name="INCOPLACE" ColumnName="INCOPLACE" />
+          <ScalarProperty Name="INCOTERMS" ColumnName="INCOTERMS" />
+          <ScalarProperty Name="INVNUMBER" ColumnName="INVNUMBER" />
+          <ScalarProperty Name="ITFNUMBER" ColumnName="ITFNUMBER" />
+          <ScalarProperty Name="JOBTYPECODE" ColumnName="JOBTYPECODE" />
+          <ScalarProperty Name="LCNO" ColumnName="LCNO" />
+          <ScalarProperty Name="MAINTYPE" ColumnName="MAINTYPE" />
+          <ScalarProperty Name="MEDIATYPE" ColumnName="MEDIATYPE" />
+          <ScalarProperty Name="MENUCODE" ColumnName="MENUCODE" />
+          <ScalarProperty Name="NARR" ColumnName="NARR" />
+          <ScalarProperty Name="ORDDATE" ColumnName="ORDDATE" />
+          <ScalarProperty Name="ORDNUMBER" ColumnName="ORDNUMBER" />
+          <ScalarProperty Name="PAYMENTMODE" ColumnName="PAYMENTMODE" />
+          <ScalarProperty Name="PAYTERMS" ColumnName="PAYTERMS" />
+          <ScalarProperty Name="PENDING" ColumnName="PENDING" />
+          <ScalarProperty Name="PERIODCODE" ColumnName="PERIODCODE" />
+          <ScalarProperty Name="PREFIX" ColumnName="PREFIX" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="PROJECTCODE" ColumnName="PROJECTCODE" />
+          <ScalarProperty Name="PURPOSEFOR" ColumnName="PURPOSEFOR" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="REASONWON" ColumnName="REASONWON" />
+          <ScalarProperty Name="REVDATE" ColumnName="REVDATE" />
+          <ScalarProperty Name="REVNARR" ColumnName="REVNARR" />
+          <ScalarProperty Name="REVNO" ColumnName="REVNO" />
+          <ScalarProperty Name="ROUNDOFF" ColumnName="ROUNDOFF" />
+          <ScalarProperty Name="SALEMANAMT" ColumnName="SALEMANAMT" />
+          <ScalarProperty Name="SALEMANON" ColumnName="SALEMANON" />
+          <ScalarProperty Name="SALEMANPER" ColumnName="SALEMANPER" />
+          <ScalarProperty Name="SALESMAN" ColumnName="SALESMAN" />
+          <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+          <ScalarProperty Name="SRL" ColumnName="SRL" />
+          <ScalarProperty Name="STAGE" ColumnName="STAGE" />
+          <ScalarProperty Name="STAMT" ColumnName="STAMT" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="STAXABLE" ColumnName="STAXABLE" />
+          <ScalarProperty Name="STCESS" ColumnName="STCESS" />
+          <ScalarProperty Name="STCODE" ColumnName="STCODE" />
+          <ScalarProperty Name="STSHECESS" ColumnName="STSHECESS" />
+          <ScalarProperty Name="SUBTYPE" ColumnName="SUBTYPE" />
+          <ScalarProperty Name="SUCCESSRATE" ColumnName="SUCCESSRATE" />
+          <ScalarProperty Name="SURCHARGE" ColumnName="SURCHARGE" />
+          <ScalarProperty Name="TAXABLE" ColumnName="TAXABLE" />
+          <ScalarProperty Name="TAXAMT" ColumnName="TAXAMT" />
+          <ScalarProperty Name="TAXCODE" ColumnName="TAXCODE" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="VAL1" ColumnName="VAL1" />
+          <ScalarProperty Name="VAL2" ColumnName="VAL2" />
+          <ScalarProperty Name="VAL3" ColumnName="VAL3" />
+          <ScalarProperty Name="VALIDDYS" ColumnName="VALIDDYS" />
+          <ScalarProperty Name="WONUMBER" ColumnName="WONUMBER" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="ENTEREDBY" ColumnName="ENTEREDBY" />
+          <ScalarProperty Name="LASTUPDATEDATE" ColumnName="LASTUPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrdersStks">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.OrdersStk">
+        <MappingFragment StoreEntitySet="OrdersStk">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="AddTax" ColumnName="AddTax" />
+          <ScalarProperty Name="Allocation" ColumnName="Allocation" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="BlanketOrder" ColumnName="BlanketOrder" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="CancelOrder" ColumnName="CancelOrder" />
+          <ScalarProperty Name="CancFlag" ColumnName="CancFlag" />
+          <ScalarProperty Name="CatNo" ColumnName="CatNo" />
+          <ScalarProperty Name="Cess" ColumnName="Cess" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="cRate" ColumnName="cRate" />
+          <ScalarProperty Name="CurrName" ColumnName="CurrName" />
+          <ScalarProperty Name="CurrRate" ColumnName="CurrRate" />
+          <ScalarProperty Name="DCCode" ColumnName="DCCode" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="DeliveryDate2" ColumnName="DeliveryDate2" />
+          <ScalarProperty Name="Dely" ColumnName="Dely" />
+          <ScalarProperty Name="Disc" ColumnName="Disc" />
+          <ScalarProperty Name="DiscAmt" ColumnName="DiscAmt" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="EnqNumber" ColumnName="EnqNumber" />
+          <ScalarProperty Name="Excisable" ColumnName="Excisable" />
+          <ScalarProperty Name="ExciseAs" ColumnName="ExciseAs" />
+          <ScalarProperty Name="ExcUnits" ColumnName="ExcUnits" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="FirstSno" ColumnName="FirstSno" />
+          <ScalarProperty Name="FreeQty" ColumnName="FreeQty" />
+          <ScalarProperty Name="FromSO" ColumnName="FromSO" />
+          <ScalarProperty Name="Fvalue" ColumnName="Fvalue" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="IndNumber" ColumnName="IndNumber" />
+          <ScalarProperty Name="InvNumber" ColumnName="InvNumber" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="JobTypeCode" ColumnName="JobTypeCode" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="MenuCode" ColumnName="MenuCode" />
+          <ScalarProperty Name="Narr" ColumnName="Narr" />
+          <ScalarProperty Name="NewRate" ColumnName="NewRate" />
+          <ScalarProperty Name="NewRateEntry" ColumnName="NewRateEntry" />
+          <ScalarProperty Name="NewRateLink" ColumnName="NewRateLink" />
+          <ScalarProperty Name="OpQty" ColumnName="OpQty" />
+          <ScalarProperty Name="OrdNumber" ColumnName="OrdNumber" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="PCCode" ColumnName="PCCode" />
+          <ScalarProperty Name="Pending" ColumnName="Pending" />
+          <ScalarProperty Name="Pending2" ColumnName="Pending2" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="PerUnit" ColumnName="PerUnit" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="ProcessCode" ColumnName="ProcessCode" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="QtnNumber" ColumnName="QtnNumber" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Qty2" ColumnName="Qty2" />
+          <ScalarProperty Name="QtyEqsn" ColumnName="QtyEqsn" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="RateOn" ColumnName="RateOn" />
+          <ScalarProperty Name="RatePer" ColumnName="RatePer" />
+          <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+          <ScalarProperty Name="RefNumber" ColumnName="RefNumber" />
+          <ScalarProperty Name="Reserved" ColumnName="Reserved" />
+          <ScalarProperty Name="ReservedQty" ColumnName="ReservedQty" />
+          <ScalarProperty Name="RevDate" ColumnName="RevDate" />
+          <ScalarProperty Name="RevNarr" ColumnName="RevNarr" />
+          <ScalarProperty Name="RevNo" ColumnName="RevNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="STAmt" ColumnName="STAmt" />
+          <ScalarProperty Name="Staxable" ColumnName="Staxable" />
+          <ScalarProperty Name="STCess" ColumnName="STCess" />
+          <ScalarProperty Name="STCode" ColumnName="STCode" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="STSheCess" ColumnName="STSheCess" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="SurCharge" ColumnName="SurCharge" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+          <ScalarProperty Name="WasteFlag" ColumnName="WasteFlag" />
+          <ScalarProperty Name="WorkOrder" ColumnName="WorkOrder" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrdersStkRevs">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.OrdersStkRev">
+        <MappingFragment StoreEntitySet="OrdersStkRev">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="ACCPERIOD" ColumnName="ACCPERIOD" />
+          <ScalarProperty Name="ADDTAX" ColumnName="ADDTAX" />
+          <ScalarProperty Name="ALLOCATION" ColumnName="ALLOCATION" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="BATCH" ColumnName="BATCH" />
+          <ScalarProperty Name="BLANKETORDER" ColumnName="BLANKETORDER" />
+          <ScalarProperty Name="BRANCH" ColumnName="BRANCH" />
+          <ScalarProperty Name="CANCELORDER" ColumnName="CANCELORDER" />
+          <ScalarProperty Name="CANCFLAG" ColumnName="CANCFLAG" />
+          <ScalarProperty Name="CATNO" ColumnName="CATNO" />
+          <ScalarProperty Name="CESS" ColumnName="CESS" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="CRATE" ColumnName="CRATE" />
+          <ScalarProperty Name="CURRNAME" ColumnName="CURRNAME" />
+          <ScalarProperty Name="CURRRATE" ColumnName="CURRRATE" />
+          <ScalarProperty Name="DCCODE" ColumnName="DCCODE" />
+          <ScalarProperty Name="DELIVERYDATE" ColumnName="DELIVERYDATE" />
+          <ScalarProperty Name="DELIVERYDATE2" ColumnName="DELIVERYDATE2" />
+          <ScalarProperty Name="DELY" ColumnName="DELY" />
+          <ScalarProperty Name="DISC" ColumnName="DISC" />
+          <ScalarProperty Name="DISCAMT" ColumnName="DISCAMT" />
+          <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+          <ScalarProperty Name="DIVISION" ColumnName="DIVISION" />
+          <ScalarProperty Name="DOCDATE" ColumnName="DOCDATE" />
+          <ScalarProperty Name="ENQNUMBER" ColumnName="ENQNUMBER" />
+          <ScalarProperty Name="EXCISABLE" ColumnName="EXCISABLE" />
+          <ScalarProperty Name="EXCISEAS" ColumnName="EXCISEAS" />
+          <ScalarProperty Name="EXCUNITS" ColumnName="EXCUNITS" />
+          <ScalarProperty Name="FACTOR" ColumnName="FACTOR" />
+          <ScalarProperty Name="FIRSTSNO" ColumnName="FIRSTSNO" />
+          <ScalarProperty Name="FREEQTY" ColumnName="FREEQTY" />
+          <ScalarProperty Name="FROMSO" ColumnName="FROMSO" />
+          <ScalarProperty Name="FVALUE" ColumnName="FVALUE" />
+          <ScalarProperty Name="INDNUMBER" ColumnName="INDNUMBER" />
+          <ScalarProperty Name="INVNUMBER" ColumnName="INVNUMBER" />
+          <ScalarProperty Name="ITEMCATEGORY" ColumnName="ITEMCATEGORY" />
+          <ScalarProperty Name="JOBTYPECODE" ColumnName="JOBTYPECODE" />
+          <ScalarProperty Name="MAINTYPE" ColumnName="MAINTYPE" />
+          <ScalarProperty Name="MENUCODE" ColumnName="MENUCODE" />
+          <ScalarProperty Name="NARR" ColumnName="NARR" />
+          <ScalarProperty Name="NEWRATE" ColumnName="NEWRATE" />
+          <ScalarProperty Name="NEWRATEENTRY" ColumnName="NEWRATEENTRY" />
+          <ScalarProperty Name="NEWRATELINK" ColumnName="NEWRATELINK" />
+          <ScalarProperty Name="OPQTY" ColumnName="OPQTY" />
+          <ScalarProperty Name="ORDNUMBER" ColumnName="ORDNUMBER" />
+          <ScalarProperty Name="PARTY" ColumnName="PARTY" />
+          <ScalarProperty Name="PCCODE" ColumnName="PCCODE" />
+          <ScalarProperty Name="PENDING" ColumnName="PENDING" />
+          <ScalarProperty Name="PENDING2" ColumnName="PENDING2" />
+          <ScalarProperty Name="PERIODCODE" ColumnName="PERIODCODE" />
+          <ScalarProperty Name="PERUNIT" ColumnName="PERUNIT" />
+          <ScalarProperty Name="PREFIX" ColumnName="PREFIX" />
+          <ScalarProperty Name="PROCESSCODE" ColumnName="PROCESSCODE" />
+          <ScalarProperty Name="PROJECTCODE" ColumnName="PROJECTCODE" />
+          <ScalarProperty Name="QTNNUMBER" ColumnName="QTNNUMBER" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="QTY2" ColumnName="QTY2" />
+          <ScalarProperty Name="QTYEQSN" ColumnName="QTYEQSN" />
+          <ScalarProperty Name="RATE" ColumnName="RATE" />
+          <ScalarProperty Name="RATEON" ColumnName="RATEON" />
+          <ScalarProperty Name="RATEPER" ColumnName="RATEPER" />
+          <ScalarProperty Name="REASONCODE" ColumnName="REASONCODE" />
+          <ScalarProperty Name="REFNUMBER" ColumnName="REFNUMBER" />
+          <ScalarProperty Name="RESERVED" ColumnName="RESERVED" />
+          <ScalarProperty Name="RESERVEDQTY" ColumnName="RESERVEDQTY" />
+          <ScalarProperty Name="REVDATE" ColumnName="REVDATE" />
+          <ScalarProperty Name="REVNARR" ColumnName="REVNARR" />
+          <ScalarProperty Name="REVNO" ColumnName="REVNO" />
+          <ScalarProperty Name="SNO" ColumnName="SNO" />
+          <ScalarProperty Name="SRL" ColumnName="SRL" />
+          <ScalarProperty Name="STAMT" ColumnName="STAMT" />
+          <ScalarProperty Name="STAXABLE" ColumnName="STAXABLE" />
+          <ScalarProperty Name="STCESS" ColumnName="STCESS" />
+          <ScalarProperty Name="STCODE" ColumnName="STCODE" />
+          <ScalarProperty Name="STORE" ColumnName="STORE" />
+          <ScalarProperty Name="STSHECESS" ColumnName="STSHECESS" />
+          <ScalarProperty Name="SUBTYPE" ColumnName="SUBTYPE" />
+          <ScalarProperty Name="SURCHARGE" ColumnName="SURCHARGE" />
+          <ScalarProperty Name="TAXABLE" ColumnName="TAXABLE" />
+          <ScalarProperty Name="TAXAMT" ColumnName="TAXAMT" />
+          <ScalarProperty Name="TAXCODE" ColumnName="TAXCODE" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="UNIT2" ColumnName="UNIT2" />
+          <ScalarProperty Name="WASTEFLAG" ColumnName="WASTEFLAG" />
+          <ScalarProperty Name="WORKORDER" ColumnName="WORKORDER" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="ENTEREDBY" ColumnName="ENTEREDBY" />
+          <ScalarProperty Name="LASTUPDATEDATE" ColumnName="LASTUPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderStatus">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.OrderStatu">
+        <MappingFragment StoreEntitySet="OrderStatus">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Purchases">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.Purchase">
+        <MappingFragment StoreEntitySet="Purchase">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccAmt" ColumnName="AccAmt" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="AcHeadCode" ColumnName="AcHeadCode" />
+          <ScalarProperty Name="AcHeadPerc" ColumnName="AcHeadPerc" />
+          <ScalarProperty Name="AddTax" ColumnName="AddTax" />
+          <ScalarProperty Name="AltAddress" ColumnName="AltAddress" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Amt1" ColumnName="Amt1" />
+          <ScalarProperty Name="Amt2" ColumnName="Amt2" />
+          <ScalarProperty Name="Amt3" ColumnName="Amt3" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="BillNumber" ColumnName="BillNumber" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Broker" ColumnName="Broker" />
+          <ScalarProperty Name="Brokerage" ColumnName="Brokerage" />
+          <ScalarProperty Name="BrokerAmt" ColumnName="BrokerAmt" />
+          <ScalarProperty Name="BrokerOn" ColumnName="BrokerOn" />
+          <ScalarProperty Name="Cess" ColumnName="Cess" />
+          <ScalarProperty Name="ChlnDate" ColumnName="ChlnDate" />
+          <ScalarProperty Name="ChlnNumber" ColumnName="ChlnNumber" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CostCentre" ColumnName="CostCentre" />
+          <ScalarProperty Name="CrPeriod" ColumnName="CrPeriod" />
+          <ScalarProperty Name="CurrAmount" ColumnName="CurrAmount" />
+          <ScalarProperty Name="CurrName" ColumnName="CurrName" />
+          <ScalarProperty Name="CurrRate" ColumnName="CurrRate" />
+          <ScalarProperty Name="DCCode" ColumnName="DCCode" />
+          <ScalarProperty Name="DeliverBy" ColumnName="DeliverBy" />
+          <ScalarProperty Name="DelyAltAdd" ColumnName="DelyAltAdd" />
+          <ScalarProperty Name="Delycode" ColumnName="Delycode" />
+          <ScalarProperty Name="DelyDate" ColumnName="DelyDate" />
+          <ScalarProperty Name="Disc" ColumnName="Disc" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="ExciseLess" ColumnName="ExciseLess" />
+          <ScalarProperty Name="ForceOrderS" ColumnName="ForceOrderS" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="IncoPlace" ColumnName="IncoPlace" />
+          <ScalarProperty Name="IncoTerms" ColumnName="IncoTerms" />
+          <ScalarProperty Name="ITFNumber" ColumnName="ITFNumber" />
+          <ScalarProperty Name="LCNo" ColumnName="LCNo" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="Narr" ColumnName="Narr" />
+          <ScalarProperty Name="OrdNumber" ColumnName="OrdNumber" />
+          <ScalarProperty Name="PayTerms" ColumnName="PayTerms" />
+          <ScalarProperty Name="PCCode" ColumnName="PCCode" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="ProjectStage" ColumnName="ProjectStage" />
+          <ScalarProperty Name="ProjectUnit" ColumnName="ProjectUnit" />
+          <ScalarProperty Name="PurchBreakup" ColumnName="PurchBreakup" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="ReceiveBy" ColumnName="ReceiveBy" />
+          <ScalarProperty Name="RefBy" ColumnName="RefBy" />
+          <ScalarProperty Name="RefDoc" ColumnName="RefDoc" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="RefSno" ColumnName="RefSno" />
+          <ScalarProperty Name="RoundOff" ColumnName="RoundOff" />
+          <ScalarProperty Name="SalesNumber" ColumnName="SalesNumber" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="STAmt" ColumnName="STAmt" />
+          <ScalarProperty Name="Staxable" ColumnName="Staxable" />
+          <ScalarProperty Name="sTaxPaidBy" ColumnName="sTaxPaidBy" />
+          <ScalarProperty Name="sTaxPay" ColumnName="sTaxPay" />
+          <ScalarProperty Name="STCess" ColumnName="STCess" />
+          <ScalarProperty Name="STCode" ColumnName="STCode" />
+          <ScalarProperty Name="STSheCess" ColumnName="STSheCess" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="SurCharge" ColumnName="SurCharge" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="TDSAble" ColumnName="TDSAble" />
+          <ScalarProperty Name="TDSAmt" ColumnName="TDSAmt" />
+          <ScalarProperty Name="TDSCess" ColumnName="TDSCess" />
+          <ScalarProperty Name="TDSCode" ColumnName="TDSCode" />
+          <ScalarProperty Name="TDSFlag" ColumnName="TDSFlag" />
+          <ScalarProperty Name="TDSReason" ColumnName="TDSReason" />
+          <ScalarProperty Name="TDSSchg" ColumnName="TDSSchg" />
+          <ScalarProperty Name="TDSTax" ColumnName="TDSTax" />
+          <ScalarProperty Name="TrackNo" ColumnName="TrackNo" />
+          <ScalarProperty Name="TrayNo" ColumnName="TrayNo" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Val1" ColumnName="Val1" />
+          <ScalarProperty Name="Val2" ColumnName="Val2" />
+          <ScalarProperty Name="Val3" ColumnName="Val3" />
+          <ScalarProperty Name="WONumber" ColumnName="WONumber" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseGroups">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.PurchaseGroup">
+        <MappingFragment StoreEntitySet="PurchaseGroup">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SalesPerson" ColumnName="SalesPerson" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReasonCategories">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ReasonCategory">
+        <MappingFragment StoreEntitySet="ReasonCategory">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReasonMasters">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ReasonMaster">
+        <MappingFragment StoreEntitySet="ReasonMaster">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ReasonCategory" ColumnName="ReasonCategory" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Receipes">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.Receipe">
+        <MappingFragment StoreEntitySet="Receipe">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.Sale">
+        <MappingFragment StoreEntitySet="Sales">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="AcHeadCode" ColumnName="AcHeadCode" />
+          <ScalarProperty Name="AcHeadPerc" ColumnName="AcHeadPerc" />
+          <ScalarProperty Name="AddTax" ColumnName="AddTax" />
+          <ScalarProperty Name="AltAddress" ColumnName="AltAddress" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="Amt1" ColumnName="Amt1" />
+          <ScalarProperty Name="Amt2" ColumnName="Amt2" />
+          <ScalarProperty Name="Amt3" ColumnName="Amt3" />
+          <ScalarProperty Name="AssAmt" ColumnName="AssAmt" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="BillNumber" ColumnName="BillNumber" />
+          <ScalarProperty Name="BomUpdated" ColumnName="BomUpdated" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Broker" ColumnName="Broker" />
+          <ScalarProperty Name="Brokerage" ColumnName="Brokerage" />
+          <ScalarProperty Name="BrokerAmt" ColumnName="BrokerAmt" />
+          <ScalarProperty Name="BrokerOn" ColumnName="BrokerOn" />
+          <ScalarProperty Name="CardAmt" ColumnName="CardAmt" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+          <ScalarProperty Name="CashAmt" ColumnName="CashAmt" />
+          <ScalarProperty Name="Cess" ColumnName="Cess" />
+          <ScalarProperty Name="ChlnDate" ColumnName="ChlnDate" />
+          <ScalarProperty Name="ChlnNumber" ColumnName="ChlnNumber" />
+          <ScalarProperty Name="ChqAmt" ColumnName="ChqAmt" />
+          <ScalarProperty Name="ChqNo" ColumnName="ChqNo" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CostCentre" ColumnName="CostCentre" />
+          <ScalarProperty Name="Coupan" ColumnName="Coupan" />
+          <ScalarProperty Name="CouponNumber" ColumnName="CouponNumber" />
+          <ScalarProperty Name="CrCardAmt" ColumnName="CrCardAmt" />
+          <ScalarProperty Name="CrCardNo" ColumnName="CrCardNo" />
+          <ScalarProperty Name="CreditAmt" ColumnName="CreditAmt" />
+          <ScalarProperty Name="CrPeriod" ColumnName="CrPeriod" />
+          <ScalarProperty Name="CurrAmount" ColumnName="CurrAmount" />
+          <ScalarProperty Name="CurrName" ColumnName="CurrName" />
+          <ScalarProperty Name="CurrRate" ColumnName="CurrRate" />
+          <ScalarProperty Name="DCCode" ColumnName="DCCode" />
+          <ScalarProperty Name="DeliverBy" ColumnName="DeliverBy" />
+          <ScalarProperty Name="DelyAltAdd" ColumnName="DelyAltAdd" />
+          <ScalarProperty Name="Delycode" ColumnName="Delycode" />
+          <ScalarProperty Name="DelyDate" ColumnName="DelyDate" />
+          <ScalarProperty Name="Disc" ColumnName="Disc" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Discounted" ColumnName="Discounted" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="ExcAmt" ColumnName="ExcAmt" />
+          <ScalarProperty Name="ExcInvNo" ColumnName="ExcInvNo" />
+          <ScalarProperty Name="ExciseAs" ColumnName="ExciseAs" />
+          <ScalarProperty Name="ExciseLess" ColumnName="ExciseLess" />
+          <ScalarProperty Name="ExcRate" ColumnName="ExcRate" />
+          <ScalarProperty Name="FCAmt1" ColumnName="FCAmt1" />
+          <ScalarProperty Name="FCAmt2" ColumnName="FCAmt2" />
+          <ScalarProperty Name="FCAmt3" ColumnName="FCAmt3" />
+          <ScalarProperty Name="FCCode1" ColumnName="FCCode1" />
+          <ScalarProperty Name="FCCode2" ColumnName="FCCode2" />
+          <ScalarProperty Name="FCCode3" ColumnName="FCCode3" />
+          <ScalarProperty Name="ForceOrderP" ColumnName="ForceOrderP" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="IncoPlace" ColumnName="IncoPlace" />
+          <ScalarProperty Name="IncoTerms" ColumnName="IncoTerms" />
+          <ScalarProperty Name="ITFNumber" ColumnName="ITFNumber" />
+          <ScalarProperty Name="LCNo" ColumnName="LCNo" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="Narr" ColumnName="Narr" />
+          <ScalarProperty Name="OrdNumber" ColumnName="OrdNumber" />
+          <ScalarProperty Name="PayTerms" ColumnName="PayTerms" />
+          <ScalarProperty Name="PCCode" ColumnName="PCCode" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="PKNumber" ColumnName="PKNumber" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="ProjectStage" ColumnName="ProjectStage" />
+          <ScalarProperty Name="ProjectUnit" ColumnName="ProjectUnit" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="ReceiveBy" ColumnName="ReceiveBy" />
+          <ScalarProperty Name="RefParty" ColumnName="RefParty" />
+          <ScalarProperty Name="RefSno" ColumnName="RefSno" />
+          <ScalarProperty Name="RoundOff" ColumnName="RoundOff" />
+          <ScalarProperty Name="RunBal" ColumnName="RunBal" />
+          <ScalarProperty Name="SalemanAmt" ColumnName="SalemanAmt" />
+          <ScalarProperty Name="SalemanOn" ColumnName="SalemanOn" />
+          <ScalarProperty Name="SalemanPer" ColumnName="SalemanPer" />
+          <ScalarProperty Name="SalesMan" ColumnName="SalesMan" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="STAmt" ColumnName="STAmt" />
+          <ScalarProperty Name="Staxable" ColumnName="Staxable" />
+          <ScalarProperty Name="STCess" ColumnName="STCess" />
+          <ScalarProperty Name="STCode" ColumnName="STCode" />
+          <ScalarProperty Name="STSheCess" ColumnName="STSheCess" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="SurCharge" ColumnName="SurCharge" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="TDSAble" ColumnName="TDSAble" />
+          <ScalarProperty Name="TDSAmt" ColumnName="TDSAmt" />
+          <ScalarProperty Name="TDSCess" ColumnName="TDSCess" />
+          <ScalarProperty Name="TDSCode" ColumnName="TDSCode" />
+          <ScalarProperty Name="TDSFlag" ColumnName="TDSFlag" />
+          <ScalarProperty Name="TDSReason" ColumnName="TDSReason" />
+          <ScalarProperty Name="TDSSchg" ColumnName="TDSSchg" />
+          <ScalarProperty Name="TDSTax" ColumnName="TDSTax" />
+          <ScalarProperty Name="TrackNo" ColumnName="TrackNo" />
+          <ScalarProperty Name="TrayNo" ColumnName="TrayNo" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Val1" ColumnName="Val1" />
+          <ScalarProperty Name="Val2" ColumnName="Val2" />
+          <ScalarProperty Name="Val3" ColumnName="Val3" />
+          <ScalarProperty Name="WONumber" ColumnName="WONumber" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesChannels">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.SalesChannel">
+        <MappingFragment StoreEntitySet="SalesChannel">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AppBranch" ColumnName="AppBranch" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PayTerms" ColumnName="PayTerms" />
+          <ScalarProperty Name="SalesPerson" ColumnName="SalesPerson" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesDivisions">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.SalesDivision">
+        <MappingFragment StoreEntitySet="SalesDivision">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Person" ColumnName="Person" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesMen">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.SalesMan">
+        <MappingFragment StoreEntitySet="SalesMan">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Adrl1" ColumnName="Adrl1" />
+          <ScalarProperty Name="Adrl2" ColumnName="Adrl2" />
+          <ScalarProperty Name="Adrl3" ColumnName="Adrl3" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Comm" ColumnName="Comm" />
+          <ScalarProperty Name="CorpID" ColumnName="CorpID" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Hide" ColumnName="Hide" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="InOutFlag" ColumnName="InOutFlag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="LowerList" ColumnName="LowerList" />
+          <ScalarProperty Name="Member" ColumnName="Member" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Pin" ColumnName="Pin" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesmanCategories">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.SalesmanCategory">
+        <MappingFragment StoreEntitySet="SalesmanCategory">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesTaxDetails">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.SalesTaxDetail">
+        <MappingFragment StoreEntitySet="SalesTaxDetails">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="AddTax" ColumnName="AddTax" />
+          <ScalarProperty Name="AddTax2" ColumnName="AddTax2" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="aSurcharge" ColumnName="aSurcharge" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Cess" ColumnName="Cess" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CurrName" ColumnName="CurrName" />
+          <ScalarProperty Name="CurrRate" ColumnName="CurrRate" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="NotInStock" ColumnName="NotInStock" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="SurCharge" ColumnName="SurCharge" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stocks">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.Stock">
+        <MappingFragment StoreEntitySet="Stock">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="AddTax" ColumnName="AddTax" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="aSurcharge" ColumnName="aSurcharge" />
+          <ScalarProperty Name="Audited" ColumnName="Audited" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="BCD" ColumnName="BCD" />
+          <ScalarProperty Name="BCDAmt" ColumnName="BCDAmt" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="BillNumber" ColumnName="BillNumber" />
+          <ScalarProperty Name="BOMSrl" ColumnName="BOMSrl" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Cess" ColumnName="Cess" />
+          <ScalarProperty Name="ChlnDate" ColumnName="ChlnDate" />
+          <ScalarProperty Name="ChlnNumber" ColumnName="ChlnNumber" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="cRate" ColumnName="cRate" />
+          <ScalarProperty Name="CurrName" ColumnName="CurrName" />
+          <ScalarProperty Name="CurrRate" ColumnName="CurrRate" />
+          <ScalarProperty Name="DCCode" ColumnName="DCCode" />
+          <ScalarProperty Name="Disc" ColumnName="Disc" />
+          <ScalarProperty Name="DiscAmt" ColumnName="DiscAmt" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="Excisable" ColumnName="Excisable" />
+          <ScalarProperty Name="ExciseAs" ColumnName="ExciseAs" />
+          <ScalarProperty Name="ExcUnits" ColumnName="ExcUnits" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="FirstSno" ColumnName="FirstSno" />
+          <ScalarProperty Name="FreeQty" ColumnName="FreeQty" />
+          <ScalarProperty Name="Fvalue" ColumnName="Fvalue" />
+          <ScalarProperty Name="GINNumber" ColumnName="GINNumber" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="IndNumber" ColumnName="IndNumber" />
+          <ScalarProperty Name="IsChargeable" ColumnName="IsChargeable" />
+          <ScalarProperty Name="IsReturnable" ColumnName="IsReturnable" />
+          <ScalarProperty Name="IssueNo" ColumnName="IssueNo" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="Narr" ColumnName="Narr" />
+          <ScalarProperty Name="NewRate" ColumnName="NewRate" />
+          <ScalarProperty Name="NewRateEntry" ColumnName="NewRateEntry" />
+          <ScalarProperty Name="NewRateLink" ColumnName="NewRateLink" />
+          <ScalarProperty Name="NotInStock" ColumnName="NotInStock" />
+          <ScalarProperty Name="oDuty1" ColumnName="oDuty1" />
+          <ScalarProperty Name="oDuty2" ColumnName="oDuty2" />
+          <ScalarProperty Name="oDuty3" ColumnName="oDuty3" />
+          <ScalarProperty Name="oDutyAmt1" ColumnName="oDutyAmt1" />
+          <ScalarProperty Name="oDutyAmt2" ColumnName="oDutyAmt2" />
+          <ScalarProperty Name="oDutyAmt3" ColumnName="oDutyAmt3" />
+          <ScalarProperty Name="OrdDate" ColumnName="OrdDate" />
+          <ScalarProperty Name="OrdNumber" ColumnName="OrdNumber" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="PCCode" ColumnName="PCCode" />
+          <ScalarProperty Name="Pending" ColumnName="Pending" />
+          <ScalarProperty Name="Pending2" ColumnName="Pending2" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="PerUnit" ColumnName="PerUnit" />
+          <ScalarProperty Name="pQty" ColumnName="pQty" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="ProcessCode" ColumnName="ProcessCode" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="ProjectStage" ColumnName="ProjectStage" />
+          <ScalarProperty Name="ProjectUnit" ColumnName="ProjectUnit" />
+          <ScalarProperty Name="QCDone" ColumnName="QCDone" />
+          <ScalarProperty Name="QCIssued" ColumnName="QCIssued" />
+          <ScalarProperty Name="QCQty" ColumnName="QCQty" />
+          <ScalarProperty Name="QCRequire" ColumnName="QCRequire" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Qty2" ColumnName="Qty2" />
+          <ScalarProperty Name="QtyEqsn" ColumnName="QtyEqsn" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="RateOn" ColumnName="RateOn" />
+          <ScalarProperty Name="RatePer" ColumnName="RatePer" />
+          <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+          <ScalarProperty Name="RouteCode" ColumnName="RouteCode" />
+          <ScalarProperty Name="SHECess" ColumnName="SHECess" />
+          <ScalarProperty Name="SHECessAmt" ColumnName="SHECessAmt" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="STAmt" ColumnName="STAmt" />
+          <ScalarProperty Name="STaxable" ColumnName="STaxable" />
+          <ScalarProperty Name="STCess" ColumnName="STCess" />
+          <ScalarProperty Name="STCode" ColumnName="STCode" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="STSheCess" ColumnName="STSheCess" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="SuppInvoice" ColumnName="SuppInvoice" />
+          <ScalarProperty Name="SurCharge" ColumnName="SurCharge" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+          <ScalarProperty Name="WasteFlag" ColumnName="WasteFlag" />
+          <ScalarProperty Name="Weightage" ColumnName="Weightage" />
+          <ScalarProperty Name="WONumber" ColumnName="WONumber" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockMores">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockMore">
+        <MappingFragment StoreEntitySet="StockMore">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AcceptedQty" ColumnName="AcceptedQty" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="AltAddress" ColumnName="AltAddress" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BatchQty" ColumnName="BatchQty" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Broker" ColumnName="Broker" />
+          <ScalarProperty Name="Brokerage" ColumnName="Brokerage" />
+          <ScalarProperty Name="BrokerAmt" ColumnName="BrokerAmt" />
+          <ScalarProperty Name="BrokerOn" ColumnName="BrokerOn" />
+          <ScalarProperty Name="CatNo" ColumnName="CatNo" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CrPeriod" ColumnName="CrPeriod" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="ExpDate" ColumnName="ExpDate" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="IDisc" ColumnName="IDisc" />
+          <ScalarProperty Name="IDiscAmt" ColumnName="IDiscAmt" />
+          <ScalarProperty Name="InvoiceQty" ColumnName="InvoiceQty" />
+          <ScalarProperty Name="IRate" ColumnName="IRate" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="LabourAmt" ColumnName="LabourAmt" />
+          <ScalarProperty Name="MachineAmt" ColumnName="MachineAmt" />
+          <ScalarProperty Name="MachineChgs" ColumnName="MachineChgs" />
+          <ScalarProperty Name="MachineCode" ColumnName="MachineCode" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="MfgDate" ColumnName="MfgDate" />
+          <ScalarProperty Name="MRP" ColumnName="MRP" />
+          <ScalarProperty Name="NoExpiry" ColumnName="NoExpiry" />
+          <ScalarProperty Name="NoHrs" ColumnName="NoHrs" />
+          <ScalarProperty Name="OtherAmt" ColumnName="OtherAmt" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="PDisc" ColumnName="PDisc" />
+          <ScalarProperty Name="PDiscAmt" ColumnName="PDiscAmt" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="PRate" ColumnName="PRate" />
+          <ScalarProperty Name="PreDisc" ColumnName="PreDisc" />
+          <ScalarProperty Name="PreDiscAmt" ColumnName="PreDiscAmt" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="PreRate" ColumnName="PreRate" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="ProjectStage" ColumnName="ProjectStage" />
+          <ScalarProperty Name="ProjectUnit" ColumnName="ProjectUnit" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Qty2" ColumnName="Qty2" />
+          <ScalarProperty Name="QtyEqsn" ColumnName="QtyEqsn" />
+          <ScalarProperty Name="RatePerHr" ColumnName="RatePerHr" />
+          <ScalarProperty Name="RateVerify" ColumnName="RateVerify" />
+          <ScalarProperty Name="ReasonType" ColumnName="ReasonType" />
+          <ScalarProperty Name="RejectedQty" ColumnName="RejectedQty" />
+          <ScalarProperty Name="RejStore" ColumnName="RejStore" />
+          <ScalarProperty Name="SalemanAmt" ColumnName="SalemanAmt" />
+          <ScalarProperty Name="SalemanOn" ColumnName="SalemanOn" />
+          <ScalarProperty Name="SalemanPer" ColumnName="SalemanPer" />
+          <ScalarProperty Name="SalesMan" ColumnName="SalesMan" />
+          <ScalarProperty Name="Shift" ColumnName="Shift" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+          <ScalarProperty Name="WasteFlag" ColumnName="WasteFlag" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockSerialDatas">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockSerialData">
+        <MappingFragment StoreEntitySet="StockSerialData">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stores">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.Store">
+        <MappingFragment StoreEntitySet="Stores">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Adrl1" ColumnName="Adrl1" />
+          <ScalarProperty Name="Adrl2" ColumnName="Adrl2" />
+          <ScalarProperty Name="Adrl3" ColumnName="Adrl3" />
+          <ScalarProperty Name="AllowCrCard" ColumnName="AllowCrCard" />
+          <ScalarProperty Name="AllowNeg" ColumnName="AllowNeg" />
+          <ScalarProperty Name="AllowRateChange" ColumnName="AllowRateChange" />
+          <ScalarProperty Name="AppBranch" ColumnName="AppBranch" />
+          <ScalarProperty Name="AppGroup" ColumnName="AppGroup" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BillFormat" ColumnName="BillFormat" />
+          <ScalarProperty Name="BillPrinter" ColumnName="BillPrinter" />
+          <ScalarProperty Name="CardMode" ColumnName="CardMode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CostCentre" ColumnName="CostCentre" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CrewSize" ColumnName="CrewSize" />
+          <ScalarProperty Name="DefaultServiceType" ColumnName="DefaultServiceType" />
+          <ScalarProperty Name="DirectBill" ColumnName="DirectBill" />
+          <ScalarProperty Name="DirectSettlement" ColumnName="DirectSettlement" />
+          <ScalarProperty Name="Efficiency" ColumnName="Efficiency" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="ForceCaptain" ColumnName="ForceCaptain" />
+          <ScalarProperty Name="ForceServer" ColumnName="ForceServer" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="HappyFriFrom" ColumnName="HappyFriFrom" />
+          <ScalarProperty Name="HappyFriTo" ColumnName="HappyFriTo" />
+          <ScalarProperty Name="HappyMenuCode" ColumnName="HappyMenuCode" />
+          <ScalarProperty Name="HappyMonFrom" ColumnName="HappyMonFrom" />
+          <ScalarProperty Name="HappyMonTo" ColumnName="HappyMonTo" />
+          <ScalarProperty Name="HappySatFrom" ColumnName="HappySatFrom" />
+          <ScalarProperty Name="HappySatTo" ColumnName="HappySatTo" />
+          <ScalarProperty Name="HappySunFrom" ColumnName="HappySunFrom" />
+          <ScalarProperty Name="HappySunTo" ColumnName="HappySunTo" />
+          <ScalarProperty Name="HappyThuFrom" ColumnName="HappyThuFrom" />
+          <ScalarProperty Name="HappyThuTo" ColumnName="HappyThuTo" />
+          <ScalarProperty Name="HappyTueFrom" ColumnName="HappyTueFrom" />
+          <ScalarProperty Name="HappyTueTo" ColumnName="HappyTueTo" />
+          <ScalarProperty Name="HappyWedFrom" ColumnName="HappyWedFrom" />
+          <ScalarProperty Name="HappyWedTo" ColumnName="HappyWedTo" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Hide" ColumnName="Hide" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="Incharge" ColumnName="Incharge" />
+          <ScalarProperty Name="IsLast" ColumnName="IsLast" />
+          <ScalarProperty Name="KOTFormat" ColumnName="KOTFormat" />
+          <ScalarProperty Name="KOTFormatCancel" ColumnName="KOTFormatCancel" />
+          <ScalarProperty Name="KOTPrinter" ColumnName="KOTPrinter" />
+          <ScalarProperty Name="LocalPrinter" ColumnName="LocalPrinter" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="Machines" ColumnName="Machines" />
+          <ScalarProperty Name="MenuCode" ColumnName="MenuCode" />
+          <ScalarProperty Name="MoveHour" ColumnName="MoveHour" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OverReserve" ColumnName="OverReserve" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="Pin" ColumnName="Pin" />
+          <ScalarProperty Name="ProcessCode" ColumnName="ProcessCode" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="QueueHour" ColumnName="QueueHour" />
+          <ScalarProperty Name="QuickService" ColumnName="QuickService" />
+          <ScalarProperty Name="ReplHour" ColumnName="ReplHour" />
+          <ScalarProperty Name="Shift1" ColumnName="Shift1" />
+          <ScalarProperty Name="Shift1B1" ColumnName="Shift1B1" />
+          <ScalarProperty Name="Shift1End" ColumnName="Shift1End" />
+          <ScalarProperty Name="Shift2" ColumnName="Shift2" />
+          <ScalarProperty Name="Shift2B1" ColumnName="Shift2B1" />
+          <ScalarProperty Name="Shift2End" ColumnName="Shift2End" />
+          <ScalarProperty Name="Shift3" ColumnName="Shift3" />
+          <ScalarProperty Name="Shift3B1" ColumnName="Shift3B1" />
+          <ScalarProperty Name="Shift3End" ColumnName="Shift3End" />
+          <ScalarProperty Name="ShiftApp2" ColumnName="ShiftApp2" />
+          <ScalarProperty Name="ShiftApp3" ColumnName="ShiftApp3" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="StockReserve" ColumnName="StockReserve" />
+          <ScalarProperty Name="StopBill" ColumnName="StopBill" />
+          <ScalarProperty Name="StopKOT" ColumnName="StopKOT" />
+          <ScalarProperty Name="StopSettlement" ColumnName="StopSettlement" />
+          <ScalarProperty Name="StoreType" ColumnName="StoreType" />
+          <ScalarProperty Name="TaxApplicable" ColumnName="TaxApplicable" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="TypeBill" ColumnName="TypeBill" />
+          <ScalarProperty Name="TypeKOT" ColumnName="TypeKOT" />
+          <ScalarProperty Name="TypeSettle" ColumnName="TypeSettle" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="Utilisation" ColumnName="Utilisation" />
+          <ScalarProperty Name="WorkHours" ColumnName="WorkHours" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TFatBranches">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.TFatBranch">
+        <MappingFragment StoreEntitySet="TFatBranch">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="aAuthno" ColumnName="aAuthno" />
+          <ScalarProperty Name="aCity" ColumnName="aCity" />
+          <ScalarProperty Name="aCountry" ColumnName="aCountry" />
+          <ScalarProperty Name="aCstNo" ColumnName="aCstNo" />
+          <ScalarProperty Name="Addrl1" ColumnName="Addrl1" />
+          <ScalarProperty Name="Addrl2" ColumnName="Addrl2" />
+          <ScalarProperty Name="Addrl3" ColumnName="Addrl3" />
+          <ScalarProperty Name="Addrl4" ColumnName="Addrl4" />
+          <ScalarProperty Name="aFax" ColumnName="aFax" />
+          <ScalarProperty Name="aLstno" ColumnName="aLstno" />
+          <ScalarProperty Name="aPin" ColumnName="aPin" />
+          <ScalarProperty Name="AssAreaCode" ColumnName="AssAreaCode" />
+          <ScalarProperty Name="AssCityCode" ColumnName="AssCityCode" />
+          <ScalarProperty Name="AssPincode" ColumnName="AssPincode" />
+          <ScalarProperty Name="aState" ColumnName="aState" />
+          <ScalarProperty Name="aTel1" ColumnName="aTel1" />
+          <ScalarProperty Name="aTel2" ColumnName="aTel2" />
+          <ScalarProperty Name="aTel3" ColumnName="aTel3" />
+          <ScalarProperty Name="aTel4" ColumnName="aTel4" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BranchLocation" ColumnName="BranchLocation" />
+          <ScalarProperty Name="Business" ColumnName="Business" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Coll" ColumnName="Coll" />
+          <ScalarProperty Name="CompCode" ColumnName="CompCode" />
+          <ScalarProperty Name="Custom" ColumnName="Custom" />
+          <ScalarProperty Name="Div" ColumnName="Div" />
+          <ScalarProperty Name="ECCNo" ColumnName="ECCNo" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="Fri" ColumnName="Fri" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="LastBranch" ColumnName="LastBranch" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="Licence2" ColumnName="Licence2" />
+          <ScalarProperty Name="LogIn" ColumnName="LogIn" />
+          <ScalarProperty Name="Mon" ColumnName="Mon" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NoteAvail" ColumnName="NoteAvail" />
+          <ScalarProperty Name="NoteSno" ColumnName="NoteSno" />
+          <ScalarProperty Name="OpCredit" ColumnName="OpCredit" />
+          <ScalarProperty Name="OpDebit" ColumnName="OpDebit" />
+          <ScalarProperty Name="PanNo" ColumnName="PanNo" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
+          <ScalarProperty Name="Sat" ColumnName="Sat" />
+          <ScalarProperty Name="ServiceTax" ColumnName="ServiceTax" />
+          <ScalarProperty Name="Sun" ColumnName="Sun" />
+          <ScalarProperty Name="Supp" ColumnName="Supp" />
+          <ScalarProperty Name="TDSAuthorise" ColumnName="TDSAuthorise" />
+          <ScalarProperty Name="TDSCir" ColumnName="TDSCir" />
+          <ScalarProperty Name="TDSOffice" ColumnName="TDSOffice" />
+          <ScalarProperty Name="TDSReg" ColumnName="TDSReg" />
+          <ScalarProperty Name="Thu" ColumnName="Thu" />
+          <ScalarProperty Name="TINNo" ColumnName="TINNo" />
+          <ScalarProperty Name="TouchValue" ColumnName="TouchValue" />
+          <ScalarProperty Name="Tue" ColumnName="Tue" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="VATReg" ColumnName="VATReg" />
+          <ScalarProperty Name="Wed" ColumnName="Wed" />
+          <ScalarProperty Name="www" ColumnName="www" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TfatComps">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.TfatComp">
+        <MappingFragment StoreEntitySet="TfatComp">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Adrl1" ColumnName="Adrl1" />
+          <ScalarProperty Name="Adrl2" ColumnName="Adrl2" />
+          <ScalarProperty Name="Adrl3" ColumnName="Adrl3" />
+          <ScalarProperty Name="Adrl4" ColumnName="Adrl4" />
+          <ScalarProperty Name="AssessOffice" ColumnName="AssessOffice" />
+          <ScalarProperty Name="AuthCap" ColumnName="AuthCap" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="AuthNo" ColumnName="AuthNo" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="Business" ColumnName="Business" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+          <ScalarProperty Name="CompanyType" ColumnName="CompanyType" />
+          <ScalarProperty Name="CompInfo" ColumnName="CompInfo" />
+          <ScalarProperty Name="Const" ColumnName="Const" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="cstno" ColumnName="cstno" />
+          <ScalarProperty Name="DDOCode" ColumnName="DDOCode" />
+          <ScalarProperty Name="DDOReg" ColumnName="DDOReg" />
+          <ScalarProperty Name="DeductorType" ColumnName="DeductorType" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="LastBranch" ColumnName="LastBranch" />
+          <ScalarProperty Name="LastPeriod" ColumnName="LastPeriod" />
+          <ScalarProperty Name="Licence1" ColumnName="Licence1" />
+          <ScalarProperty Name="Licence2" ColumnName="Licence2" />
+          <ScalarProperty Name="lstno" ColumnName="lstno" />
+          <ScalarProperty Name="Ministry" ColumnName="Ministry" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Nature" ColumnName="Nature" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+          <ScalarProperty Name="PAOCode" ColumnName="PAOCode" />
+          <ScalarProperty Name="PAOReg" ColumnName="PAOReg" />
+          <ScalarProperty Name="PFFix" ColumnName="PFFix" />
+          <ScalarProperty Name="PFupLimit" ColumnName="PFupLimit" />
+          <ScalarProperty Name="Pin" ColumnName="Pin" />
+          <ScalarProperty Name="ServiceTaxNo" ColumnName="ServiceTaxNo" />
+          <ScalarProperty Name="SMSURL" ColumnName="SMSURL" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="STDCode" ColumnName="STDCode" />
+          <ScalarProperty Name="Taluka" ColumnName="Taluka" />
+          <ScalarProperty Name="TDSCir" ColumnName="TDSCir" />
+          <ScalarProperty Name="TDSReg" ColumnName="TDSReg" />
+          <ScalarProperty Name="Tel1" ColumnName="Tel1" />
+          <ScalarProperty Name="Tel2" ColumnName="Tel2" />
+          <ScalarProperty Name="Tel3" ColumnName="Tel3" />
+          <ScalarProperty Name="Tel4" ColumnName="Tel4" />
+          <ScalarProperty Name="TINNo" ColumnName="TINNo" />
+          <ScalarProperty Name="TouchValue" ColumnName="TouchValue" />
+          <ScalarProperty Name="USERPass" ColumnName="USERPass" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="VATReg" ColumnName="VATReg" />
+          <ScalarProperty Name="www" ColumnName="www" />
+          <ScalarProperty Name="xState" ColumnName="xState" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TfatCountries">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.TfatCountry">
+        <MappingFragment StoreEntitySet="TfatCountry">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ResourceOffset" ColumnName="ResourceOffset" />
+          <ScalarProperty Name="CurCode" ColumnName="CurCode" />
+          <ScalarProperty Name="CurDec" ColumnName="CurDec" />
+          <ScalarProperty Name="CurDecName" ColumnName="CurDecName" />
+          <ScalarProperty Name="CurName" ColumnName="CurName" />
+          <ScalarProperty Name="CurrRate" ColumnName="CurrRate" />
+          <ScalarProperty Name="DialCode" ColumnName="DialCode" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="LockCode" ColumnName="LockCode" />
+          <ScalarProperty Name="TouchValue" ColumnName="TouchValue" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TfatDesignForms">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.TfatDesignForm">
+        <MappingFragment StoreEntitySet="TfatDesignForm">
+          <ScalarProperty Name="FormRecordKey" ColumnName="FormRecordKey" />
+          <ScalarProperty Name="HeaderRecordKey" ColumnName="HeaderRecordKey" />
+          <ScalarProperty Name="Fle" ColumnName="Fle" />
+          <ScalarProperty Name="Fld" ColumnName="Fld" />
+          <ScalarProperty Name="FldSize" ColumnName="FldSize" />
+          <ScalarProperty Name="fType" ColumnName="fType" />
+          <ScalarProperty Name="ControlType" ColumnName="ControlType" />
+          <ScalarProperty Name="NotZero" ColumnName="NotZero" />
+          <ScalarProperty Name="Decs" ColumnName="Decs" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="CarryForward" ColumnName="CarryForward" />
+          <ScalarProperty Name="LabelCaption" ColumnName="LabelCaption" />
+          <ScalarProperty Name="NewGroup" ColumnName="NewGroup" />
+          <ScalarProperty Name="LabelAutoSize" ColumnName="LabelAutoSize" />
+          <ScalarProperty Name="TabName" ColumnName="TabName" />
+          <ScalarProperty Name="IsButton" ColumnName="IsButton" />
+          <ScalarProperty Name="LetterCase" ColumnName="LetterCase" />
+          <ScalarProperty Name="AllowBlank" ColumnName="AllowBlank" />
+          <ScalarProperty Name="eDepend" ColumnName="eDepend" />
+          <ScalarProperty Name="vDepend" ColumnName="vDepend" />
+          <ScalarProperty Name="FldValues" ColumnName="FldValues" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="DontAllow" ColumnName="DontAllow" />
+          <ScalarProperty Name="Meaning" ColumnName="Meaning" />
+          <ScalarProperty Name="FontName" ColumnName="FontName" />
+          <ScalarProperty Name="FontSize" ColumnName="FontSize" />
+          <ScalarProperty Name="FontItalics" ColumnName="FontItalics" />
+          <ScalarProperty Name="FontBold" ColumnName="FontBold" />
+          <ScalarProperty Name="FontUnderLine" ColumnName="FontUnderLine" />
+          <ScalarProperty Name="FontStrikethru" ColumnName="FontStrikethru" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="ColWidth" ColumnName="ColWidth" />
+          <ScalarProperty Name="Triggers" ColumnName="Triggers" />
+          <ScalarProperty Name="Columns" ColumnName="Columns" />
+          <ScalarProperty Name="GridFldValueUrl" ColumnName="GridFldValueUrl" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemBOMRoutes">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ItemBOMRoute">
+        <MappingFragment StoreEntitySet="ItemBOMRoute">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="BOMCode" ColumnName="BOMCode" />
+          <ScalarProperty Name="BOMSrl" ColumnName="BOMSrl" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="QtyPercent" ColumnName="QtyPercent" />
+          <ScalarProperty Name="RouteCode" ColumnName="RouteCode" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemClasses">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.ItemClass">
+        <MappingFragment StoreEntitySet="ItemClass">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalPolicies">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.SalPolicy">
+        <MappingFragment StoreEntitySet="SalPolicy">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockAdjs">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockAdj">
+        <MappingFragment StoreEntitySet="StockAdj">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="aMainType" ColumnName="aMainType" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="APrefix" ColumnName="APrefix" />
+          <ScalarProperty Name="ASerial" ColumnName="ASerial" />
+          <ScalarProperty Name="ASno" ColumnName="ASno" />
+          <ScalarProperty Name="ASubType" ColumnName="ASubType" />
+          <ScalarProperty Name="AType" ColumnName="AType" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="BillDt" ColumnName="BillDt" />
+          <ScalarProperty Name="BillNo" ColumnName="BillNo" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="ChlnNumber" ColumnName="ChlnNumber" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CurrName" ColumnName="CurrName" />
+          <ScalarProperty Name="CurrRate" ColumnName="CurrRate" />
+          <ScalarProperty Name="Disc" ColumnName="Disc" />
+          <ScalarProperty Name="DiscAmt" ColumnName="DiscAmt" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="Narr" ColumnName="Narr" />
+          <ScalarProperty Name="NotInStock" ColumnName="NotInStock" />
+          <ScalarProperty Name="OrdNumber" ColumnName="OrdNumber" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="PendQty" ColumnName="PendQty" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="PerUnit" ColumnName="PerUnit" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="RatePer" ColumnName="RatePer" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockBatches">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockBatch">
+        <MappingFragment StoreEntitySet="StockBatch">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="BatchParent" ColumnName="BatchParent" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="ExpDate" ColumnName="ExpDate" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="MfgDate" ColumnName="MfgDate" />
+          <ScalarProperty Name="MRP" ColumnName="MRP" />
+          <ScalarProperty Name="Narr" ColumnName="Narr" />
+          <ScalarProperty Name="NewRate" ColumnName="NewRate" />
+          <ScalarProperty Name="NoExpiry" ColumnName="NoExpiry" />
+          <ScalarProperty Name="NotInStock" ColumnName="NotInStock" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Qty2" ColumnName="Qty2" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockClasses">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockClass">
+        <MappingFragment StoreEntitySet="StockClass">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="AddTax" ColumnName="AddTax" />
+          <ScalarProperty Name="Allocation" ColumnName="Allocation" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BCD" ColumnName="BCD" />
+          <ScalarProperty Name="BCDAmt" ColumnName="BCDAmt" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="CancFlag" ColumnName="CancFlag" />
+          <ScalarProperty Name="Cess" ColumnName="Cess" />
+          <ScalarProperty Name="ClassValue" ColumnName="ClassValue" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="cValues" ColumnName="cValues" />
+          <ScalarProperty Name="DispCol" ColumnName="DispCol" />
+          <ScalarProperty Name="DispRow" ColumnName="DispRow" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="Fld" ColumnName="Fld" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="MRP" ColumnName="MRP" />
+          <ScalarProperty Name="NotInStock" ColumnName="NotInStock" />
+          <ScalarProperty Name="oDuty1" ColumnName="oDuty1" />
+          <ScalarProperty Name="oDuty2" ColumnName="oDuty2" />
+          <ScalarProperty Name="oDuty3" ColumnName="oDuty3" />
+          <ScalarProperty Name="oDutyAmt1" ColumnName="oDutyAmt1" />
+          <ScalarProperty Name="oDutyAmt2" ColumnName="oDutyAmt2" />
+          <ScalarProperty Name="oDutyAmt3" ColumnName="oDutyAmt3" />
+          <ScalarProperty Name="Pending" ColumnName="Pending" />
+          <ScalarProperty Name="Pending2" ColumnName="Pending2" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="ProcessCode" ColumnName="ProcessCode" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="RefNumber" ColumnName="RefNumber" />
+          <ScalarProperty Name="RevEntry" ColumnName="RevEntry" />
+          <ScalarProperty Name="SHECess" ColumnName="SHECess" />
+          <ScalarProperty Name="SHECessAmt" ColumnName="SHECessAmt" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="SurCharge" ColumnName="SurCharge" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="xValue1" ColumnName="xValue1" />
+          <ScalarProperty Name="xValue2" ColumnName="xValue2" />
+          <ScalarProperty Name="xValue3" ColumnName="xValue3" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockExcises">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockExcise">
+        <MappingFragment StoreEntitySet="StockExcise">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AbtRate" ColumnName="AbtRate" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="ADC" ColumnName="ADC" />
+          <ScalarProperty Name="ADCAmt" ColumnName="ADCAmt" />
+          <ScalarProperty Name="AssAmt" ColumnName="AssAmt" />
+          <ScalarProperty Name="AssRate" ColumnName="AssRate" />
+          <ScalarProperty Name="AssRt" ColumnName="AssRt" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BCD" ColumnName="BCD" />
+          <ScalarProperty Name="BCDAmt" ColumnName="BCDAmt" />
+          <ScalarProperty Name="BEDAmt" ColumnName="BEDAmt" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="BillNumber" ColumnName="BillNumber" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Cess" ColumnName="Cess" />
+          <ScalarProperty Name="CessAmt" ColumnName="CessAmt" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="ECCode" ColumnName="ECCode" />
+          <ScalarProperty Name="ExcAmt" ColumnName="ExcAmt" />
+          <ScalarProperty Name="ExcClaim" ColumnName="ExcClaim" />
+          <ScalarProperty Name="ExcInvDt" ColumnName="ExcInvDt" />
+          <ScalarProperty Name="ExcInvNo" ColumnName="ExcInvNo" />
+          <ScalarProperty Name="Excise000009968" ColumnName="Excise000009968" />
+          <ScalarProperty Name="Excise000009971" ColumnName="Excise000009971" />
+          <ScalarProperty Name="Excise000009972" ColumnName="Excise000009972" />
+          <ScalarProperty Name="Excise000009973" ColumnName="Excise000009973" />
+          <ScalarProperty Name="Excise000009974" ColumnName="Excise000009974" />
+          <ScalarProperty Name="Excise000009975" ColumnName="Excise000009975" />
+          <ScalarProperty Name="Excise000009978" ColumnName="Excise000009978" />
+          <ScalarProperty Name="Excise000009979" ColumnName="Excise000009979" />
+          <ScalarProperty Name="Excise000009983" ColumnName="Excise000009983" />
+          <ScalarProperty Name="Excise000009984" ColumnName="Excise000009984" />
+          <ScalarProperty Name="Excise000009985" ColumnName="Excise000009985" />
+          <ScalarProperty Name="Excise000009986" ColumnName="Excise000009986" />
+          <ScalarProperty Name="Excise000009987" ColumnName="Excise000009987" />
+          <ScalarProperty Name="Excise000009988" ColumnName="Excise000009988" />
+          <ScalarProperty Name="Excise000009993" ColumnName="Excise000009993" />
+          <ScalarProperty Name="Excise000009995" ColumnName="Excise000009995" />
+          <ScalarProperty Name="Excise000009998" ColumnName="Excise000009998" />
+          <ScalarProperty Name="Excise000009999" ColumnName="Excise000009999" />
+          <ScalarProperty Name="Excise000100000" ColumnName="Excise000100000" />
+          <ScalarProperty Name="Excise000100006" ColumnName="Excise000100006" />
+          <ScalarProperty Name="Excise000100010" ColumnName="Excise000100010" />
+          <ScalarProperty Name="Excise000100011" ColumnName="Excise000100011" />
+          <ScalarProperty Name="Excise000100012" ColumnName="Excise000100012" />
+          <ScalarProperty Name="Excise000100013" ColumnName="Excise000100013" />
+          <ScalarProperty Name="ExciseAs" ColumnName="ExciseAs" />
+          <ScalarProperty Name="ExciseReason" ColumnName="ExciseReason" />
+          <ScalarProperty Name="ExciseRebate" ColumnName="ExciseRebate" />
+          <ScalarProperty Name="ExcRate" ColumnName="ExcRate" />
+          <ScalarProperty Name="ExcUnits" ColumnName="ExcUnits" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="GSIAmt" ColumnName="GSIAmt" />
+          <ScalarProperty Name="GSIRate" ColumnName="GSIRate" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="IsNotExcise" ColumnName="IsNotExcise" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="MRPRate" ColumnName="MRPRate" />
+          <ScalarProperty Name="NCCDAmt" ColumnName="NCCDAmt" />
+          <ScalarProperty Name="NCCDRate" ColumnName="NCCDRate" />
+          <ScalarProperty Name="oDuty1" ColumnName="oDuty1" />
+          <ScalarProperty Name="oDuty2" ColumnName="oDuty2" />
+          <ScalarProperty Name="oDuty3" ColumnName="oDuty3" />
+          <ScalarProperty Name="oDutyAmt1" ColumnName="oDutyAmt1" />
+          <ScalarProperty Name="oDutyAmt2" ColumnName="oDutyAmt2" />
+          <ScalarProperty Name="oDutyAmt3" ColumnName="oDutyAmt3" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Qty2" ColumnName="Qty2" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="ReasonType" ColumnName="ReasonType" />
+          <ScalarProperty Name="SEDAmt" ColumnName="SEDAmt" />
+          <ScalarProperty Name="SEDRate" ColumnName="SEDRate" />
+          <ScalarProperty Name="SHECess" ColumnName="SHECess" />
+          <ScalarProperty Name="SHECessAmt" ColumnName="SHECessAmt" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="SuppInvoice" ColumnName="SuppInvoice" />
+          <ScalarProperty Name="Tariff" ColumnName="Tariff" />
+          <ScalarProperty Name="TariffGrp" ColumnName="TariffGrp" />
+          <ScalarProperty Name="TotADC" ColumnName="TotADC" />
+          <ScalarProperty Name="TotADCAmt" ColumnName="TotADCAmt" />
+          <ScalarProperty Name="TotAssAmt" ColumnName="TotAssAmt" />
+          <ScalarProperty Name="TotBCD" ColumnName="TotBCD" />
+          <ScalarProperty Name="TotBCDAmt" ColumnName="TotBCDAmt" />
+          <ScalarProperty Name="TotBEDAmt" ColumnName="TotBEDAmt" />
+          <ScalarProperty Name="TotCess" ColumnName="TotCess" />
+          <ScalarProperty Name="TotCessAmt" ColumnName="TotCessAmt" />
+          <ScalarProperty Name="TotExcAmt" ColumnName="TotExcAmt" />
+          <ScalarProperty Name="TotExcRate" ColumnName="TotExcRate" />
+          <ScalarProperty Name="TotGSIAmt" ColumnName="TotGSIAmt" />
+          <ScalarProperty Name="TotGSIRate" ColumnName="TotGSIRate" />
+          <ScalarProperty Name="TotNCCDAmt" ColumnName="TotNCCDAmt" />
+          <ScalarProperty Name="TotNCCDRate" ColumnName="TotNCCDRate" />
+          <ScalarProperty Name="TotoDuty1" ColumnName="TotoDuty1" />
+          <ScalarProperty Name="TotoDuty2" ColumnName="TotoDuty2" />
+          <ScalarProperty Name="TotoDuty3" ColumnName="TotoDuty3" />
+          <ScalarProperty Name="TotoDutyAmt1" ColumnName="TotoDutyAmt1" />
+          <ScalarProperty Name="TotoDutyAmt2" ColumnName="TotoDutyAmt2" />
+          <ScalarProperty Name="TotoDutyAmt3" ColumnName="TotoDutyAmt3" />
+          <ScalarProperty Name="TotSEDAmt" ColumnName="TotSEDAmt" />
+          <ScalarProperty Name="TotSEDRate" ColumnName="TotSEDRate" />
+          <ScalarProperty Name="TotSHECess" ColumnName="TotSHECess" />
+          <ScalarProperty Name="TotSHECessAmt" ColumnName="TotSHECessAmt" />
+          <ScalarProperty Name="TotTTAAmt" ColumnName="TotTTAAmt" />
+          <ScalarProperty Name="TotTTARate" ColumnName="TotTTARate" />
+          <ScalarProperty Name="TTAAmt" ColumnName="TTAAmt" />
+          <ScalarProperty Name="TTARate" ColumnName="TTARate" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockistDatas">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockistData">
+        <MappingFragment StoreEntitySet="StockistData">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="StockDate" ColumnName="StockDate" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockMCParas">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockMCPara">
+        <MappingFragment StoreEntitySet="StockMCPara">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="MachineCode" ColumnName="MachineCode" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="Para" ColumnName="Para" />
+          <ScalarProperty Name="ParentMC" ColumnName="ParentMC" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockOS">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockO">
+        <MappingFragment StoreEntitySet="StockOS">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AcceptedQty" ColumnName="AcceptedQty" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="ADC" ColumnName="ADC" />
+          <ScalarProperty Name="AddTax" ColumnName="AddTax" />
+          <ScalarProperty Name="aMaintype" ColumnName="aMaintype" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="aPrefix" ColumnName="aPrefix" />
+          <ScalarProperty Name="aSerial" ColumnName="aSerial" />
+          <ScalarProperty Name="aSno" ColumnName="aSno" />
+          <ScalarProperty Name="aSubType" ColumnName="aSubType" />
+          <ScalarProperty Name="aType" ColumnName="aType" />
+          <ScalarProperty Name="Audited" ColumnName="Audited" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="BCD" ColumnName="BCD" />
+          <ScalarProperty Name="BCDAmt" ColumnName="BCDAmt" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="BillNumber" ColumnName="BillNumber" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Broker" ColumnName="Broker" />
+          <ScalarProperty Name="Brokerage" ColumnName="Brokerage" />
+          <ScalarProperty Name="BrokerAmt" ColumnName="BrokerAmt" />
+          <ScalarProperty Name="BrokerOn" ColumnName="BrokerOn" />
+          <ScalarProperty Name="Cess" ColumnName="Cess" />
+          <ScalarProperty Name="ChlnDate" ColumnName="ChlnDate" />
+          <ScalarProperty Name="ChlnNumber" ColumnName="ChlnNumber" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CrPeriod" ColumnName="CrPeriod" />
+          <ScalarProperty Name="CurrName" ColumnName="CurrName" />
+          <ScalarProperty Name="CurrRate" ColumnName="CurrRate" />
+          <ScalarProperty Name="Disc" ColumnName="Disc" />
+          <ScalarProperty Name="DiscAmt" ColumnName="DiscAmt" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="ExciseAs" ColumnName="ExciseAs" />
+          <ScalarProperty Name="ExpDate" ColumnName="ExpDate" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="FreeQty" ColumnName="FreeQty" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="InvoiceQty" ColumnName="InvoiceQty" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="MfgDate" ColumnName="MfgDate" />
+          <ScalarProperty Name="MRP" ColumnName="MRP" />
+          <ScalarProperty Name="Narr" ColumnName="Narr" />
+          <ScalarProperty Name="NewRate" ColumnName="NewRate" />
+          <ScalarProperty Name="NewRateEntry" ColumnName="NewRateEntry" />
+          <ScalarProperty Name="NewRateLink" ColumnName="NewRateLink" />
+          <ScalarProperty Name="NoExpiry" ColumnName="NoExpiry" />
+          <ScalarProperty Name="NotInStock" ColumnName="NotInStock" />
+          <ScalarProperty Name="oDuty1" ColumnName="oDuty1" />
+          <ScalarProperty Name="oDuty2" ColumnName="oDuty2" />
+          <ScalarProperty Name="oDuty3" ColumnName="oDuty3" />
+          <ScalarProperty Name="oDutyAmt1" ColumnName="oDutyAmt1" />
+          <ScalarProperty Name="oDutyAmt2" ColumnName="oDutyAmt2" />
+          <ScalarProperty Name="oDutyAmt3" ColumnName="oDutyAmt3" />
+          <ScalarProperty Name="OrdDate" ColumnName="OrdDate" />
+          <ScalarProperty Name="OrdNumber" ColumnName="OrdNumber" />
+          <ScalarProperty Name="OriginalQty" ColumnName="OriginalQty" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="Pending" ColumnName="Pending" />
+          <ScalarProperty Name="Pending2" ColumnName="Pending2" />
+          <ScalarProperty Name="PendingWt" ColumnName="PendingWt" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="PerUnit" ColumnName="PerUnit" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="ProcessStage" ColumnName="ProcessStage" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Qty2" ColumnName="Qty2" />
+          <ScalarProperty Name="QtyEqsn" ColumnName="QtyEqsn" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="RateOn" ColumnName="RateOn" />
+          <ScalarProperty Name="RatePer" ColumnName="RatePer" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="RejectedQty" ColumnName="RejectedQty" />
+          <ScalarProperty Name="RejStore" ColumnName="RejStore" />
+          <ScalarProperty Name="RG23DEntryNo" ColumnName="RG23DEntryNo" />
+          <ScalarProperty Name="RG23DPageNo" ColumnName="RG23DPageNo" />
+          <ScalarProperty Name="SalemanAmt" ColumnName="SalemanAmt" />
+          <ScalarProperty Name="SalemanOn" ColumnName="SalemanOn" />
+          <ScalarProperty Name="SalemanPer" ColumnName="SalemanPer" />
+          <ScalarProperty Name="SalesMan" ColumnName="SalesMan" />
+          <ScalarProperty Name="SHECess" ColumnName="SHECess" />
+          <ScalarProperty Name="SHECessAmt" ColumnName="SHECessAmt" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="STAmt" ColumnName="STAmt" />
+          <ScalarProperty Name="Staxable" ColumnName="Staxable" />
+          <ScalarProperty Name="STCess" ColumnName="STCess" />
+          <ScalarProperty Name="STCode" ColumnName="STCode" />
+          <ScalarProperty Name="Stocktran" ColumnName="Stocktran" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="STSheCess" ColumnName="STSheCess" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="SurCharge" ColumnName="SurCharge" />
+          <ScalarProperty Name="TariffGrp" ColumnName="TariffGrp" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="TaxAmt" ColumnName="TaxAmt" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+          <ScalarProperty Name="WasteFlag" ColumnName="WasteFlag" />
+          <ScalarProperty Name="Weightage" ColumnName="Weightage" />
+          <ScalarProperty Name="WONumber" ColumnName="WONumber" />
+          <ScalarProperty Name="WorkOrder" ColumnName="WorkOrder" />
+          <ScalarProperty Name="Wt" ColumnName="Wt" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockQCs">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockQC">
+        <MappingFragment StoreEntitySet="StockQC">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="GINNumber" ColumnName="GINNumber" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="ProcessCode" ColumnName="ProcessCode" />
+          <ScalarProperty Name="QCCode" ColumnName="QCCode" />
+          <ScalarProperty Name="QCDone" ColumnName="QCDone" />
+          <ScalarProperty Name="QCNarr" ColumnName="QCNarr" />
+          <ScalarProperty Name="QCTimeIn" ColumnName="QCTimeIn" />
+          <ScalarProperty Name="QCTimeOut" ColumnName="QCTimeOut" />
+          <ScalarProperty Name="QCType" ColumnName="QCType" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Qty2" ColumnName="Qty2" />
+          <ScalarProperty Name="QtySno" ColumnName="QtySno" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="RejectQty" ColumnName="RejectQty" />
+          <ScalarProperty Name="RejStore" ColumnName="RejStore" />
+          <ScalarProperty Name="SelfCertified" ColumnName="SelfCertified" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+          <ScalarProperty Name="WONumber" ColumnName="WONumber" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockReserves">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockReserve">
+        <MappingFragment StoreEntitySet="StockReserve">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="CancFlag" ColumnName="CancFlag" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="Pending" ColumnName="Pending" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="RefDocument" ColumnName="RefDocument" />
+          <ScalarProperty Name="ReservedQty" ColumnName="ReservedQty" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="TouchValue" ColumnName="TouchValue" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockRevs">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockRev">
+        <MappingFragment StoreEntitySet="StockRev">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockSerials">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.StockSerial">
+        <MappingFragment StoreEntitySet="StockSerial">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AccPeriod" ColumnName="AccPeriod" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="BillNumber" ColumnName="BillNumber" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="GrossWt" ColumnName="GrossWt" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="MainType" ColumnName="MainType" />
+          <ScalarProperty Name="NettWt" ColumnName="NettWt" />
+          <ScalarProperty Name="NewRate" ColumnName="NewRate" />
+          <ScalarProperty Name="NotInStock" ColumnName="NotInStock" />
+          <ScalarProperty Name="PartyCode" ColumnName="PartyCode" />
+          <ScalarProperty Name="PeriodCode" ColumnName="PeriodCode" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="RevEntry" ColumnName="RevEntry" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="sQty" ColumnName="sQty" />
+          <ScalarProperty Name="Srl" ColumnName="Srl" />
+          <ScalarProperty Name="Store" ColumnName="Store" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="TagPrepared" ColumnName="TagPrepared" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TfatCities">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.TfatCity">
+        <MappingFragment StoreEntitySet="TfatCity">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Touchvalue" ColumnName="Touchvalue" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TfatDesignHeaders">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.TfatDesignHeader">
+        <MappingFragment StoreEntitySet="TfatDesignHeader">
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="HeaderRecordKey" ColumnName="HeaderRecordKey" />
+          <ScalarProperty Name="OptionName" ColumnName="OptionName" />
+          <ScalarProperty Name="LikeOptionCode" ColumnName="LikeOptionCode" />
+          <ScalarProperty Name="DatabaseName" ColumnName="DatabaseName" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="IDKey" ColumnName="IDKey" />
+          <ScalarProperty Name="TableRelation" ColumnName="TableRelation" />
+          <ScalarProperty Name="AutoCode" ColumnName="AutoCode" />
+          <ScalarProperty Name="KeyStart" ColumnName="KeyStart" />
+          <ScalarProperty Name="KeyLength" ColumnName="KeyLength" />
+          <ScalarProperty Name="EmbedZero" ColumnName="EmbedZero" />
+          <ScalarProperty Name="InsertMissing" ColumnName="InsertMissing" />
+          <ScalarProperty Name="SerialCond" ColumnName="SerialCond" />
+          <ScalarProperty Name="Filter" ColumnName="Filter" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsPrefix" ColumnName="IsPrefix" />
+          <ScalarProperty Name="UpdateOnly" ColumnName="UpdateOnly" />
+          <ScalarProperty Name="xAdd" ColumnName="xAdd" />
+          <ScalarProperty Name="xEdit" ColumnName="xEdit" />
+          <ScalarProperty Name="xDelete" ColumnName="xDelete" />
+          <ScalarProperty Name="xPrint" ColumnName="xPrint" />
+          <ScalarProperty Name="EditInGrid" ColumnName="EditInGrid" />
+          <ScalarProperty Name="SPDelete" ColumnName="SPDelete" />
+          <ScalarProperty Name="Tabs" ColumnName="Tabs" />
+          <ScalarProperty Name="HelpFlds" ColumnName="HelpFlds" />
+          <ScalarProperty Name="OptionInfo" ColumnName="OptionInfo" />
+          <ScalarProperty Name="PreEdit" ColumnName="PreEdit" />
+          <ScalarProperty Name="PreSave" ColumnName="PreSave" />
+          <ScalarProperty Name="PostSave" ColumnName="PostSave" />
+          <ScalarProperty Name="FunctionButton" ColumnName="FunctionButton" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="RowHeight" ColumnName="RowHeight" />
+          <ScalarProperty Name="AllowDuplicate" ColumnName="AllowDuplicate" />
+          <ScalarProperty Name="BarCodePrint" ColumnName="BarCodePrint" />
+          <ScalarProperty Name="PrintOnSave" ColumnName="PrintOnSave" />
+          <ScalarProperty Name="ForceGrid" ColumnName="ForceGrid" />
+          <ScalarProperty Name="TreeParentFld" ColumnName="TreeParentFld" />
+          <ScalarProperty Name="MaxGrid" ColumnName="MaxGrid" />
+          <ScalarProperty Name="AddSubmitUrl" ColumnName="AddSubmitUrl" />
+          <ScalarProperty Name="AddUrl" ColumnName="AddUrl" />
+          <ScalarProperty Name="AddName" ColumnName="AddName" />
+          <ScalarProperty Name="EditSubmitUrl" ColumnName="EditSubmitUrl" />
+          <ScalarProperty Name="EditUrl" ColumnName="EditUrl" />
+          <ScalarProperty Name="EditName" ColumnName="EditName" />
+          <ScalarProperty Name="DeleteSubmitUrl" ColumnName="DeleteSubmitUrl" />
+          <ScalarProperty Name="DeleteName" ColumnName="DeleteName" />
+          <ScalarProperty Name="DeleteUrl" ColumnName="DeleteUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TfatForms">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.TfatForm">
+        <MappingFragment StoreEntitySet="TfatForm">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="AuthIds" ColumnName="AuthIds" />
+          <ScalarProperty Name="Authorise" ColumnName="Authorise" />
+          <ScalarProperty Name="AutoIncr" ColumnName="AutoIncr" />
+          <ScalarProperty Name="AutoSize" ColumnName="AutoSize" />
+          <ScalarProperty Name="BackColor" ColumnName="BackColor" />
+          <ScalarProperty Name="BarCoded" ColumnName="BarCoded" />
+          <ScalarProperty Name="Border" ColumnName="Border" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="Comma" ColumnName="Comma" />
+          <ScalarProperty Name="Cond" ColumnName="Cond" />
+          <ScalarProperty Name="ControlType" ColumnName="ControlType" />
+          <ScalarProperty Name="CPI" ColumnName="CPI" />
+          <ScalarProperty Name="CPIStyle" ColumnName="CPIStyle" />
+          <ScalarProperty Name="DecS" ColumnName="DecS" />
+          <ScalarProperty Name="Equation" ColumnName="Equation" />
+          <ScalarProperty Name="Fixed" ColumnName="Fixed" />
+          <ScalarProperty Name="FldType" ColumnName="FldType" />
+          <ScalarProperty Name="FontBold" ColumnName="FontBold" />
+          <ScalarProperty Name="FontItalics" ColumnName="FontItalics" />
+          <ScalarProperty Name="FontName" ColumnName="FontName" />
+          <ScalarProperty Name="FontSize" ColumnName="FontSize" />
+          <ScalarProperty Name="FontStrike" ColumnName="FontStrike" />
+          <ScalarProperty Name="FontUnderLine" ColumnName="FontUnderLine" />
+          <ScalarProperty Name="ForeColor" ColumnName="ForeColor" />
+          <ScalarProperty Name="Format" ColumnName="Format" />
+          <ScalarProperty Name="FromRs" ColumnName="FromRs" />
+          <ScalarProperty Name="GroupHeader" ColumnName="GroupHeader" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="HWSerial" ColumnName="HWSerial" />
+          <ScalarProperty Name="HWSerial2" ColumnName="HWSerial2" />
+          <ScalarProperty Name="Justify" ColumnName="Justify" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="OnPage" ColumnName="OnPage" />
+          <ScalarProperty Name="PageJustify" ColumnName="PageJustify" />
+          <ScalarProperty Name="PrintInHeader" ColumnName="PrintInHeader" />
+          <ScalarProperty Name="Sections" ColumnName="Sections" />
+          <ScalarProperty Name="SpaceSaver" ColumnName="SpaceSaver" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="WordWrapGap" ColumnName="WordWrapGap" />
+          <ScalarProperty Name="WordWrapS" ColumnName="WordWrapS" />
+          <ScalarProperty Name="X1" ColumnName="X1" />
+          <ScalarProperty Name="X2" ColumnName="X2" />
+          <ScalarProperty Name="Y1" ColumnName="Y1" />
+          <ScalarProperty Name="Y2" ColumnName="Y2" />
+          <ScalarProperty Name="TOUCHVALUE" ColumnName="TOUCHVALUE" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TfatFrmFields">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.TfatFrmField">
+        <MappingFragment StoreEntitySet="TfatFrmFields">
+          <ScalarProperty Name="RecordKey" ColumnName="RecordKey" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="FldFormat" ColumnName="FldFormat" />
+          <ScalarProperty Name="FldName" ColumnName="FldName" />
+          <ScalarProperty Name="FldSize" ColumnName="FldSize" />
+          <ScalarProperty Name="FldType" ColumnName="FldType" />
+          <ScalarProperty Name="FromRs" ColumnName="FromRs" />
+          <ScalarProperty Name="TouchValue" ColumnName="TouchValue" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="AUTHORISE" ColumnName="AUTHORISE" />
+          <ScalarProperty Name="AUTHIDS" ColumnName="AUTHIDS" />
+          <ScalarProperty Name="HWSERIAL" ColumnName="HWSERIAL" />
+          <ScalarProperty Name="HWSERIAL2" ColumnName="HWSERIAL2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TfatMenus">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.TfatMenu">
+        <MappingFragment StoreEntitySet="TfatMenu">
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="Display" ColumnName="Display" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="MenuParent" ColumnName="MenuParent" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="Depth" ColumnName="Depth" />
+          <ScalarProperty Name="IsReport" ColumnName="IsReport" />
+          <ScalarProperty Name="IsLast" ColumnName="IsLast" />
+          <ScalarProperty Name="OptionType" ColumnName="OptionType" />
+          <ScalarProperty Name="OptionMode" ColumnName="OptionMode" />
+          <ScalarProperty Name="HotKey" ColumnName="HotKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

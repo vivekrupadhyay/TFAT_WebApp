@@ -1,0 +1,398 @@
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+G:\dipti\backup\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\Kendo.Mvc.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\Kendo.Mvc.xml
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\bg-BG\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\cs-CZ\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\da-DK\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\de-DE\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\es-ES\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\fr-FR\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\it-IT\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\nl-NL\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\pl-PL\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\pt-BR\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\pt-PT\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\ro-RO\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\ru-RU\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\sv-SE\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\tr-TR\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\uk-UA\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\zh-CN\Kendo.Mvc.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\Kendo.Mvc.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\Kendo.Mvc.xml
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\bg-BG\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\cs-CZ\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\da-DK\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\de-DE\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\es-ES\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\fr-FR\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\it-IT\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\nl-NL\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\pl-PL\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\pt-BR\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\pt-PT\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\ro-RO\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\ru-RU\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\sv-SE\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\tr-TR\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\uk-UA\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\zh-CN\Kendo.Mvc.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+G:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+Z:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+Z:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+Z:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+Z:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+Z:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+Z:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+Z:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+Z:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+Z:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+Z:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+D:\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\Kendo.Mvc.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\Kendo.Mvc.xml
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\bg-BG\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\cs-CZ\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\da-DK\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\de-DE\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\es-ES\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\fr-FR\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\it-IT\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\nl-NL\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\pl-PL\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\pt-BR\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\pt-PT\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\ro-RO\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\ru-RU\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\sv-SE\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\tr-TR\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\uk-UA\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\bin\zh-CN\Kendo.Mvc.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+G:\vivek\vivek\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\Kendo.Mvc.xml
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\bg-BG\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\cs-CZ\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\da-DK\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\de-DE\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\es-ES\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\fr-FR\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\it-IT\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\nl-NL\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\pl-PL\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\pt-BR\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\pt-PT\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\ro-RO\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\ru-RU\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\sv-SE\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\tr-TR\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\uk-UA\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\bin\zh-CN\Kendo.Mvc.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+Z:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+\\192.168.1.6\g\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Newtonsoft.Json.xml
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\MvcJqGrid.dll
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\MvcJqGrid.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\MvcJqGrid.dll
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+E:\31janBackup\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Antlr3.Runtime.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.AspNet.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.Core.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OAuth.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OpenId.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\EntityFramework.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\EntityFramework.SqlServer.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\itextsharp.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Data.Edm.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Data.OData.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Web.Infrastructure.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Newtonsoft.Json.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Net.Http.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Net.Http.Formatting.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Net.Http.WebRequest.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Spatial.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Helpers.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.OData.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.WebHost.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Mvc.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Optimization.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Razor.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.Deployment.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.Razor.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\WebGrease.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\WebMatrix.Data.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\WebMatrix.WebData.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.AspNet.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.Core.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OAuth.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OpenId.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\EntityFramework.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\EntityFramework.SqlServer.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\itextsharp.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Newtonsoft.Json.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Resources.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Net.Http.Formatting.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.WebHost.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Helpers.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Mvc.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Razor.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.Deployment.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.Razor.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\WebMatrix.Data.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\WebMatrix.WebData.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.OData.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Data.Edm.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Data.OData.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Spatial.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\de\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\it\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\de\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\fr\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\it\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ja\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ko\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ru\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\de\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\fr\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\it\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ja\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ko\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ru\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hans\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hant\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll.config
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\TFATERPWebApplication.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\TFATERPWebApplication.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Antlr3.Runtime.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.AspNet.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.Core.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OAuth.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OpenId.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\EntityFramework.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\EntityFramework.SqlServer.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\itextsharp.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Data.Edm.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Data.OData.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Web.Infrastructure.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\MvcJqGrid.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Newtonsoft.Json.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Net.Http.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Net.Http.Formatting.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Net.Http.WebRequest.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Spatial.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Helpers.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.OData.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.WebHost.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Mvc.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Optimization.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Razor.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.Deployment.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.Razor.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\WebGrease.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\WebMatrix.Data.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\WebMatrix.WebData.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.AspNet.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.Core.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OAuth.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OpenId.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\EntityFramework.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\EntityFramework.SqlServer.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\itextsharp.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Newtonsoft.Json.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Resources.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Net.Http.Formatting.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.WebHost.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Helpers.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Mvc.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Razor.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.Deployment.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.WebPages.Razor.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\WebMatrix.Data.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\WebMatrix.WebData.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Web.Http.OData.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Data.Edm.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\Microsoft.Data.OData.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\System.Spatial.xml
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\de\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\it\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\de\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\fr\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\it\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ja\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ko\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ru\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\de\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\es\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\fr\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\it\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ja\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ko\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\ru\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hans\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\bin\zh-Hant\System.Spatial.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csprojResolveAssemblyReference.cache
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.resources
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.Resource.es.resources
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.csproj.GenerateResource.Cache
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\es\TFATERPWebApplication.resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\TFATERPWebApplication\obj\Debug\TFATERPWebApplication.pdb

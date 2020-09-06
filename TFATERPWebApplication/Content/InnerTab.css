@@ -1,0 +1,75 @@
+﻿.myTabs {
+        font-family:Tahoma;
+        font-weight: bold;
+        /*text-shadow: 0 0 1px rgba(0,0,0,0.5);*/
+        margin: 20px;
+        overflow: hidden;
+        box-shadow: 4px 6px 10px 0 rgba(0,0,0,0.5);
+        /*color:#fff;*/       
+        margin-left:0px;
+        margin-top:-12px;
+        width:100%;
+    }
+    ul.myTabs {
+        margin: 0;
+        padding: 0;
+        float: left;
+        list-style: none;
+        width: 100%;
+        font-size: 9pt;
+    }
+        ul.myTabs li {
+            float: left;
+            margin: 0;
+            cursor: pointer;
+            padding: 0px 21px;
+            height: 31px;
+            line-height: 31px;
+            font-weight: bold;
+            overflow: hidden;
+            background-color: #2779aa;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+            font-size: 9pt;
+        }
+            ul.myTabs li:hover {
+                /*background: #CCCCCC;*/
+                color: #fff;
+                background-color : #2779aa;
+            }
+
+            ul.myTabs li.active {
+                /*background: rgba(0,0,0,0.1);*/
+                color: #fff;
+                background: #2779aa;
+            }
+    .tab_container {
+        clear: both;
+        float: left;
+        width: 100%;
+        background: #FFFFFF;
+    }
+    .tab_content {
+        padding: 20px;
+        font-size: 1.2em;
+        display: none;
+        line-height: 1.5em;
+    }
+    .myTabs.red {
+        background-color: #E74C3C;
+    }
+
+    .myTabs.green {
+        background-color: #519E2A;
+    }
+
+    .myTabs.blue {
+        background-color: #0072C6;
+    }
+
+    .myTabs.orange {
+        background-color: #FF3D0D;
+    }
+
+    .myTabs.purple {
+        background-color: #800080;
+    }

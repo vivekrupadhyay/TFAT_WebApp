@@ -1,0 +1,13 @@
+﻿.navbar-inner {
+min-height: 40px;  
+background: #000;/*2b2b2b*/
+background-image: none;
+background-repeat: repeat-x;
+border-color: none;
+filter: none;
+position:fixed;
+width:100%;
+top:0px;
+margin-left:0px;
+padding-right:-5px;
+}

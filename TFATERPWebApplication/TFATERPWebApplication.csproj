@@ -1,0 +1,1676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2DD8C92-2B93-4655-8EAB-2D1E7E6CCB32}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TFATERPWebApplication</RootNamespace>
+    <AssemblyName>TFATERPWebApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcJqGrid">
+      <HintPath>..\packages\MvcJqGrid.1.0.15\lib\net40\MvcJqGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Resources">
+      <HintPath>..\Resources\bin\Debug\Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.30506.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.30506.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.30506.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.30506.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.30506.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.4.0.30506\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Aspx\BankPayment.aspx.cs">
+      <DependentUpon>BankPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aspx\BankPayment.aspx.designer.cs">
+      <DependentUpon>BankPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BankPayController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\BOMController.cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
+    <Compile Include="Controllers\dateController.cs" />
+    <Compile Include="Controllers\DynamicController.cs" />
+    <Compile Include="Controllers\frmMfgBomController.cs" />
+    <Compile Include="Controllers\FrmMfgBomsubcontController.cs" />
+    <Compile Include="Controllers\frmTransferController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\popupController.cs" />
+    <Compile Include="Controllers\ReportCentreController.cs" />
+    <Compile Include="Controllers\ReportWritterController.cs" />
+    <Compile Include="Controllers\SalesController.cs" />
+    <Compile Include="Controllers\tabController.cs" />
+    <Compile Include="Controllers\tabnewController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\ViewListController.cs" />
+    <Compile Include="Core\BuildView.cs" />
+    <Compile Include="Core\CoreCommon.cs" />
+    <Compile Include="Core\CultureHelper.cs" />
+    <Compile Include="Core\DynamicDbView.cs" />
+    <Compile Include="Core\DynamicDbViewEngine.cs" />
+    <Compile Include="Core\DynamicModel.cs" />
+    <Compile Include="Core\Repositary\IDynamicModel.cs" />
+    <Compile Include="Core\SuchanHttpModule.cs" />
+    <Compile Include="Core\TabPanel.cs" />
+    <Compile Include="Core\TstDrp.cs" />
+    <Compile Include="Dal\ActivityStatu.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ActivityType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOn.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnAG.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnBP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnBR.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnC.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnCM.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnCN.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnCP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnCR.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnDN.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnE.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnEP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnEPRev.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnESRev.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnF.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnGD.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnGI.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnGJ.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnGO.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnGP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnGrid.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnGT.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnHP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnI.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnIA.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnIC.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnIM.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnIP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnIV.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnJ.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnJB.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnJC.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnJE.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnJI.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnJM.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnJO.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnJV.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnJX.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnMB.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnMC.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnMM.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnMP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnMR.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnMV.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnN.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnNP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnO.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnOC.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnOP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnOPRev.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnOSRev.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPC.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPG.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPI.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPIRev.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPJ.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPK.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPM.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPR.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPV.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnPX.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnQ.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnQP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnQPRev.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnQSRev.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnR.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnRC.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnRJ.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnRM.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnRP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnSG.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddonsIG.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnSL.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnSX.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnT.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnTG.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnTH.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnTI.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnTJ.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnTO.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnTP.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnTT.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnU.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddonValue.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnWO.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOnX.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOn_A.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOn_B.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOn_D.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOn_DRev.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOn_F.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOn_G.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOn_J.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AddOn_P.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Address.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Attachment.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AuditTrail.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Book.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Charge.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\CommissionType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\CompanyAccType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\CompanyBussType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ContactSource.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\CorrespondenceType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\CurrencyMaster.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\CurrRate.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Department.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Designation.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Division.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\DocType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ExpenseType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Grade.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\IncoTerm.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemBOM.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemBOMHeader.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemBOMRoute.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemCategory.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemClass.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemDetail.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemGroup.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemMaster.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemMaster1.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemMore.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ItemWarranty.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Language.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\LCMaster.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Ledger.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\LedgerBranch.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MachineParameter.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MailingCategory.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MainType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Master.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Master1.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MasterGroup.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MasterInfo.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MasterInfoDC.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MasterSubLedger.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MfgParameter.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MfgQuantity.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MfgRejection1.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\MfgTimeLoss1.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\PaymentTerm.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ProcessMas1.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ProductCategory.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ProjectDetail.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ReasonMaster1.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Religion.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ReportGroup.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ReportHeader.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\RequisitionType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Resource.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ResourceCategory.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\rStock.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Sale.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\SalesChannel.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\SalesDivision.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\SalesMan.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\SalesmanCategory.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\SalesTaxDetail.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Scheme.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Segment.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ServiceTaxMaster.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\ServiceTaxRate.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\SLA.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Stage.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Stock.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockAdj.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockBatch.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockClass.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockExcise.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockMCPara.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockMCPara1.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockMore.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockO.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockQC.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockReserve.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockRev.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockSerial.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\StockSerialData.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Store.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Stores1.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\SubLedger.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\SubType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\SuchanProject.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TaxDetail.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TaxForm.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TaxMaster.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TempLedgerBranch.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Territory.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Test_Date.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TFatBranch.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatCity.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatComp.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatCountry.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatDesign.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatDesignForm.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatDesignHeader.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatForm.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatMenu.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatPass.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatPerd.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatSearch.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TfatState.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TFAT_WEBERPModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TFAT_WEBERPModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TFAT_WEBERPModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TFAT_WEBERPModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TFAT_WEBERPModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TransportDetail.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\TransporterMa.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\UnitMaster.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\UnitMaster1.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\WarrantyType.cs">
+      <DependentUpon>TFAT_WEBERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Branch.cs" />
+    <Compile Include="DataAccessLayer\Company.cs" />
+    <Compile Include="DynamicBusinessLayer\BusinessCommon.cs" />
+    <Compile Include="DynamicBusinessLayer\DynamicAdd.cs" />
+    <Compile Include="DynamicBusinessLayer\DynamicDelete.cs" />
+    <Compile Include="DynamicBusinessLayer\DynamicEdit.cs" />
+    <Compile Include="DynamicBusinessLayer\DynamicMenu.cs" />
+    <Compile Include="DynamicBusinessLayer\GeneralFunCls.cs" />
+    <Compile Include="DynamicBusinessLayer\GridOperations.cs" />
+    <Compile Include="DynamicBusinessLayer\ListViewGridOperation.cs" />
+    <Compile Include="DynamicBusinessLayer\ReportCenterOperation.cs" />
+    <Compile Include="DynamicBusinessLayer\ReportWritter.cs" />
+    <Compile Include="DynamicBusinessLayer\Repositary\ICommonCls.cs" />
+    <Compile Include="DynamicBusinessLayer\Repositary\IDynamicDelete.cs" />
+    <Compile Include="DynamicBusinessLayer\Repositary\IDynamicAdd.cs" />
+    <Compile Include="DynamicBusinessLayer\Repositary\IBusinessCommon.cs" />
+    <Compile Include="DynamicBusinessLayer\Repositary\IDynamicEdit.cs" />
+    <Compile Include="DynamicBusinessLayer\Repositary\IGridOperations.cs" />
+    <Compile Include="DynamicBusinessLayer\Repositary\IListViewGridOperation.cs" />
+    <Compile Include="DynamicBusinessLayer\Repositary\IReportCenterOperation.cs" />
+    <Compile Include="DynamicBusinessLayer\Repositary\IReportWritter.cs" />
+    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginController.cs" />
+    <Compile Include="Login\SignUpController.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\AddOn_BModel.cs" />
+    <Compile Include="Models\BankPayment.cs" />
+    <Compile Include="Models\BankPaymentContext.cs" />
+    <Compile Include="Models\BomMaterialModel.cs" />
+    <Compile Include="Models\BomMfgParameter.cs" />
+    <Compile Include="Models\BranchModel.cs" />
+    <Compile Include="Models\ChargesModel.cs" />
+    <Compile Include="Models\ChkAutorisedUser.cs" />
+    <Compile Include="Models\Columns.cs" />
+    <Compile Include="Models\ExecuteCommand.cs" />
+    <Compile Include="Models\ForeignKey.cs" />
+    <Compile Include="Models\GridColumn.cs" />
+    <Compile Include="Models\IncoTerms.cs" />
+    <Compile Include="Models\ItemBOMHeaderDetailModel.cs" />
+    <Compile Include="Models\ItemBOMHeaderModel.cs" />
+    <Compile Include="Models\ItemBOMModel.cs" />
+    <Compile Include="Models\ItemBOMRouteModel.cs" />
+    <Compile Include="Models\ItemCategoryModel.cs" />
+    <Compile Include="Models\ItemClassModel.cs" />
+    <Compile Include="Models\ItemDetailModel.cs" />
+    <Compile Include="Models\ItemGroupModel.cs" />
+    <Compile Include="Models\ItemMasterModel.cs" />
+    <Compile Include="Models\JQGridData.cs" />
+    <Compile Include="Models\LanguageModel.cs" />
+    <Compile Include="Models\MailingCategoryModel.cs" />
+    <Compile Include="Models\MainSalesModel.cs" />
+    <Compile Include="Models\MasterModel.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\MfgBom.cs" />
+    <Compile Include="Models\mfgBomGenInfModel.cs" />
+    <Compile Include="Models\MfgRejectionModel.cs" />
+    <Compile Include="Models\MfgTimelossModel.cs" />
+    <Compile Include="Models\mfgUnitMasterModel.cs" />
+    <Compile Include="Models\PayTermsModel.cs" />
+    <Compile Include="Models\PrimaryKey.cs" />
+    <Compile Include="Models\ExportDetail.cs" />
+    <Compile Include="Models\ProcessMassModel.cs" />
+    <Compile Include="Models\ProductCategoryModel.cs" />
+    <Compile Include="Models\PurchaseModel.cs" />
+    <Compile Include="Models\QueryHtmlParameter.cs" />
+    <Compile Include="Models\ReligionModel.cs" />
+    <Compile Include="Models\ReportGroupModel.cs" />
+    <Compile Include="Models\ReportHeaderModel.cs" />
+    <Compile Include="Models\RequisitionTypeModel.cs" />
+    <Compile Include="Models\ResourceCategoryModel.cs" />
+    <Compile Include="Models\ResourceModel.cs" />
+    <Compile Include="Models\rStockModel.cs" />
+    <Compile Include="Models\SalesChannelModel.cs" />
+    <Compile Include="Models\SalesManModel.cs" />
+    <Compile Include="Models\SalesModel.cs" />
+    <Compile Include="Models\SegmentModel.cs" />
+    <Compile Include="Models\SLAModel.cs" />
+    <Compile Include="Models\StageModel.cs" />
+    <Compile Include="Models\StockModel.cs" />
+    <Compile Include="Models\StoresMasterModel.cs" />
+    <Compile Include="Models\SuchanProjectModel.cs" />
+    <Compile Include="Models\TerritoryModel.cs" />
+    <Compile Include="Models\TFaBranchModel.cs" />
+    <Compile Include="Models\TfatCityModel.cs" />
+    <Compile Include="Models\TfatCompModel.cs" />
+    <Compile Include="Models\TfatCountryModel.cs" />
+    <Compile Include="Models\TfatDesignFormModel.cs" />
+    <Compile Include="Models\TfatDesignHeaderModel.cs" />
+    <Compile Include="Models\TfatDesignModel.cs" />
+    <Compile Include="Models\TfatPassModel.cs" />
+    <Compile Include="Models\PartialModel.cs" />
+    <Compile Include="Models\TransportModel.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs" />
+    <Compile Include="Resource.es.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\aspnet-TFATERPWebApplication-20140415101928.mdf" />
+    <Content Include="App_Data\aspnet-TFATERPWebApplication-20140415101928_log.ldf">
+      <DependentUpon>aspnet-TFATERPWebApplication-20140415101928.mdf</DependentUpon>
+    </Content>
+    <Content Include="Aspx\BankPayment.aspx" />
+    <Content Include="Content\css\component.css" />
+    <Content Include="Content\css\custom.css" />
+    <Content Include="Content\css\dataTables.jqueryui.css" />
+    <Content Include="Content\css\dataTables.tableTools.css" />
+    <Content Include="Content\css\elastislide.css" />
+    <Content Include="Content\css\Experiment\examples-offline.css" />
+    <Content Include="Content\css\Experiment\kendo.common.min.css" />
+    <Content Include="Content\css\Experiment\kendo.dataviz.default.min.css" />
+    <Content Include="Content\css\Experiment\kendo.dataviz.min.css" />
+    <Content Include="Content\css\Experiment\kendo.default.min.css" />
+    <Content Include="Content\css\Experiment\kendo.rtl.min.css" />
+    <Content Include="Content\css\Experiment\tinyscrollbar.css" />
+    <Content Include="Content\css\main-slider.css" />
+    <Content Include="Content\css\responsive-slider.css" />
+    <Content Include="Content\font-awesome-4.0.3\css\font-awesome.css" />
+    <Content Include="Content\font-awesome-4.0.3\css\font-awesome.min.css" />
+    <Content Include="Content\font-awesome-4.0.3\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\InnerTab.css" />
+    <Content Include="Content\jqTree\images\Closed Folder yellow.ico" />
+    <Content Include="Content\jqTree\images\down.png" />
+    <Content Include="Content\jqTree\images\next.png" />
+    <Content Include="Content\jqTree\images\Open Folder yellow.ico" />
+    <Content Include="Content\jqTree\jqtree.css" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\animated-overlay.gif" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\jquery-ui-1.10.4.custom.css" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\cupertino\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\animated-overlay.gif" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-bg_glass_100_f5f0e5_1x400.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-bg_glass_25_cb842e_1x400.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-bg_glass_70_ede4d4_1x400.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-bg_highlight-hard_100_f4f0ec_1x100.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-bg_highlight-hard_75_f5f5b5_1x100.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-bg_inset-soft_100_f4f0ec_1x100.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-icons_c47a23_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-icons_cb672b_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-icons_f08000_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-icons_f35f07_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-icons_ff7519_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\jquery-ui-1.10.4.custom.css" />
+    <Content Include="Content\jquery-ui-1.10.4.custom.css\humanity\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="Content\jquery.jqGrid\ellipsis-xbl.xml" />
+    <Content Include="Content\jquery.jqGrid\ui.jqgrid.css" />
+    <Content Include="Content\layout.css" />
+    <Content Include="Content\Login.css" />
+    <Content Include="Content\menu.css" />
+    <Content Include="Content\shared\a100.png" />
+    <Content Include="Content\shared\bg-glossy.png" />
+    <Content Include="Content\shared\blackberrySkin.png" />
+    <Content Include="Content\shared\chart-wrapper-small.png" />
+    <Content Include="Content\shared\chart-wrapper.png" />
+    <Content Include="Content\shared\console.css" />
+    <Content Include="Content\shared\demos-dataviz.png" />
+    <Content Include="Content\shared\demos-mobile.png" />
+    <Content Include="Content\shared\demos-web.png" />
+    <Content Include="Content\shared\edit-icon.png" />
+    <Content Include="Content\shared\examples-offline.css" />
+    <Content Include="Content\shared\examples.css" />
+    <Content Include="Content\shared\feedback-portal.png" />
+    <Content Include="Content\shared\flags.png" />
+    <Content Include="Content\shared\flat.png" />
+    <Content Include="Content\shared\fonts\demos.svg" />
+    <Content Include="Content\shared\fonts\DroidSansWeb.svg" />
+    <Content Include="Content\shared\fonts\FaktSlabPro-Medium.svg" />
+    <Content Include="Content\shared\fonts\MetricWeb-Semibold.svg" />
+    <Content Include="Content\shared\fonts\Roboto-LightWeb.svg" />
+    <Content Include="Content\shared\fonts\Roboto-Regular-Web.svg" />
+    <Content Include="Content\shared\fonts\widgets-v1.svg" />
+    <Content Include="Content\shared\highlight.png" />
+    <Content Include="Content\shared\icon-telerik-badge.png" />
+    <Content Include="Content\shared\icons\16\photo.png" />
+    <Content Include="Content\shared\icons\16\speaker.png" />
+    <Content Include="Content\shared\icons\16\star.png" />
+    <Content Include="Content\shared\icons\16\video.png" />
+    <Content Include="Content\shared\icons\sports\baseball.png" />
+    <Content Include="Content\shared\icons\sports\golf.png" />
+    <Content Include="Content\shared\icons\sports\snowboarding.png" />
+    <Content Include="Content\shared\icons\sports\swimming.png" />
+    <Content Include="Content\shared\images\employees\1.png" />
+    <Content Include="Content\shared\images\employees\2.png" />
+    <Content Include="Content\shared\images\employees\3.png" />
+    <Content Include="Content\shared\images\employees\4.png" />
+    <Content Include="Content\shared\images\employees\5.png" />
+    <Content Include="Content\shared\images\employees\6.png" />
+    <Content Include="Content\shared\images\employees\7.png" />
+    <Content Include="Content\shared\images\employees\8.png" />
+    <Content Include="Content\shared\images\employees\9.png" />
+    <Content Include="Content\shared\images\patterns\pattern1.png" />
+    <Content Include="Content\shared\images\patterns\pattern10.png" />
+    <Content Include="Content\shared\images\patterns\pattern2.png" />
+    <Content Include="Content\shared\images\patterns\pattern3.png" />
+    <Content Include="Content\shared\images\patterns\pattern4.png" />
+    <Content Include="Content\shared\images\patterns\pattern5.png" />
+    <Content Include="Content\shared\images\patterns\pattern6.png" />
+    <Content Include="Content\shared\images\patterns\pattern7.png" />
+    <Content Include="Content\shared\images\patterns\pattern8.png" />
+    <Content Include="Content\shared\images\patterns\pattern9.png" />
+    <Content Include="Content\shared\images\photos\1.jpg" />
+    <Content Include="Content\shared\images\photos\10.jpg" />
+    <Content Include="Content\shared\images\photos\11.jpg" />
+    <Content Include="Content\shared\images\photos\12.jpg" />
+    <Content Include="Content\shared\images\photos\13.jpg" />
+    <Content Include="Content\shared\images\photos\14.jpg" />
+    <Content Include="Content\shared\images\photos\2.jpg" />
+    <Content Include="Content\shared\images\photos\220\1.jpg" />
+    <Content Include="Content\shared\images\photos\220\10.jpg" />
+    <Content Include="Content\shared\images\photos\220\11.jpg" />
+    <Content Include="Content\shared\images\photos\220\12.jpg" />
+    <Content Include="Content\shared\images\photos\220\13.jpg" />
+    <Content Include="Content\shared\images\photos\220\14.jpg" />
+    <Content Include="Content\shared\images\photos\220\2.jpg" />
+    <Content Include="Content\shared\images\photos\220\3.jpg" />
+    <Content Include="Content\shared\images\photos\220\4.jpg" />
+    <Content Include="Content\shared\images\photos\220\5.jpg" />
+    <Content Include="Content\shared\images\photos\220\6.jpg" />
+    <Content Include="Content\shared\images\photos\220\7.jpg" />
+    <Content Include="Content\shared\images\photos\220\8.jpg" />
+    <Content Include="Content\shared\images\photos\220\9.jpg" />
+    <Content Include="Content\shared\images\photos\3.jpg" />
+    <Content Include="Content\shared\images\photos\4.jpg" />
+    <Content Include="Content\shared\images\photos\5.jpg" />
+    <Content Include="Content\shared\images\photos\6.jpg" />
+    <Content Include="Content\shared\images\photos\7.jpg" />
+    <Content Include="Content\shared\images\photos\8.jpg" />
+    <Content Include="Content\shared\images\photos\9.jpg" />
+    <Content Include="Content\shared\ipad.png" />
+    <Content Include="Content\shared\iphone.png" />
+    <Content Include="Content\shared\kendoui-bootstrap.jpg" />
+    <Content Include="Content\shared\kendoui-dojo.jpg" />
+    <Content Include="Content\shared\Menu\thumbSprite.png" />
+    <Content Include="Content\shared\mobile-themebuilder.jpg" />
+    <Content Include="Content\shared\nexus.png" />
+    <Content Include="Content\shared\playbook.png" />
+    <Content Include="Content\shared\qr-icon.png" />
+    <Content Include="Content\shared\sprite.widgets.png" />
+    <Content Include="Content\shared\suite.css" />
+    <Content Include="Content\shared\sushi-mobile.jpg" />
+    <Content Include="Content\shared\tags%402x.png" />
+    <Content Include="Content\shared\tags.png" />
+    <Content Include="Content\shared\telerik-footer-social-icons.png" />
+    <Content Include="Content\shared\telerik-logo.png" />
+    <Content Include="Content\shared\telerik-navigation-sprite.png" />
+    <Content Include="Content\shared\telerik-navigation.css" />
+    <Content Include="Content\shared\w8.png" />
+    <Content Include="Content\shared\world-map.png" />
+    <Content Include="Content\shared\wpSkin.png" />
+    <Content Include="Content\testbutton.css" />
+    <Content Include="Content\themes\base\demos.css" />
+    <Content Include="Content\themes\base\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.menu.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.spinner.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="Content\themes\base\minified\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Content\themes\ui.jqcombobox.css" />
+    <Content Include="Content\themes\ui.jqdropdownlist.css" />
+    <Content Include="Content\themes\ui.jqgrid.css" />
+    <Content Include="Content\themes\ui.jqmultiselect.css" />
+    <Content Include="Content\themes\ui.jqtreeview.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bs_leftnavi.css" />
+    <Content Include="css\comman\BankPayment.css" />
+    <Content Include="css\jquery.flexbox.css" />
+    <Content Include="css\logo-nav.css" />
+    <Content Include="css\styleTab.css" />
+    <Content Include="css\tinyscrollbar.css" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\ui-lightness\jquery-ui-1.8.19.custom.css" />
+    <Content Include="DynamicTestView\DynamicDesign1.html" />
+    <Content Include="DynamicTestView\DynamicDesign2.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\font-awesome-4.0.3\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\font-awesome-4.0.3\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\font-awesome-4.0.3\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\font-awesome-4.0.3\fonts\FontAwesome.otf" />
+    <Content Include="Content\font-awesome-4.0.3\less\bordered-pulled.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\core.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\fixed-width.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\font-awesome.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\icons.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\larger.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\list.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\mixins.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\path.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\rotated-flipped.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\spinning.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\stacked.less" />
+    <Content Include="Content\font-awesome-4.0.3\less\variables.less" />
+    <Content Include="Content\font-awesome-4.0.3\scss\font-awesome.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_bordered-pulled.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_core.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_fixed-width.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_icons.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_larger.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_list.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_mixins.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_path.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_rotated-flipped.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_spinning.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_stacked.scss" />
+    <Content Include="Content\font-awesome-4.0.3\scss\_variables.scss" />
+    <Content Include="Images\1.JPG" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\add1.png" />
+    <Content Include="Images\icon\Addon.png" />
+    <Content Include="Images\icon\attach.png" />
+    <Content Include="Images\icon\Cancel.png" />
+    <Content Include="Images\icon\pencil_48.png" />
+    <Content Include="Images\icon\pick.png" />
+    <Content Include="Images\icon\Printer.png" />
+    <Content Include="Images\icon\Save.png" />
+    <Content Include="Images\icon\Stock.bmp" />
+    <Content Include="Images\Loginimg.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="js\addmfgBomControl.js" />
+    <Content Include="js\AddRuntimeControl.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\Custom_Js.js" />
+    <Content Include="js\InnerTabJs.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery-ui-1.8.19.custom.min.js" />
+    <Content Include="js\jquery.flexbox.js" />
+    <Content Include="js\jquery.flexbox.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\JsGrid.js" />
+    <Content Include="js\headermenu.js" />
+    <Content Include="js\responsive-tabs.js" />
+    <Content Include="js\Tab.js" />
+    <Content Include="js\tabstyle.js" />
+    <Content Include="js\tiny_mce_src.js" />
+    <Content Include="Resources.xml" />
+    <Content Include="Scripts\App\AppJQueryUI.js" />
+    <Content Include="Scripts\App\BankPayment.js" />
+    <Content Include="Scripts\App\BomMfgQuantity.js" />
+    <Content Include="Scripts\App\ChargesJs.js" />
+    <Content Include="Scripts\App\CommonScript.js" />
+    <Content Include="Scripts\App\Company.js" />
+    <Content Include="Scripts\App\DatePicker.js" />
+    <Content Include="Scripts\App\DropDownList.js" />
+    <Content Include="Scripts\App\DynamicGrid.js" />
+    <Content Include="Scripts\App\EditMeterialBom.js" />
+    <Content Include="Scripts\App\FrmmfgBomsubcont.js" />
+    <Content Include="Scripts\App\FrmmfgBomsubcont1.js" />
+    <Content Include="Scripts\App\frmTransfer.js" />
+    <Content Include="Scripts\App\Hide_Dropdown.js" />
+    <Content Include="Scripts\App\MfgParameter.js" />
+    <Content Include="Scripts\App\JQGridView.js" />
+    <Content Include="Scripts\App\JQMenu.js" />
+    <Content Include="Scripts\App\GridViewList.js" />
+    <Content Include="Scripts\App\jquery.jqGrid.js" />
+    <Content Include="Scripts\App\jquery.jqGrid.min.js" />
+    <Content Include="Scripts\App\jquery.jqGrid.src.js" />
+    <Content Include="Scripts\App\MfgBomMatterialTimeloss.js" />
+    <Content Include="Scripts\App\MfgBomRejection.js" />
+    <Content Include="Scripts\App\MfgBomMaterial.js" />
+    <Content Include="Scripts\App\mfgBomScript.js" />
+    <Content Include="Scripts\App\ReportCentre.js" />
+    <Content Include="Scripts\App\ReportWritter.js" />
+    <Content Include="Scripts\App\ui.datepicker.js" />
+    <Content Include="Scripts\datepicker.js" />
+    <Content Include="Scripts\i18n\grid.locale-ar.js" />
+    <Content Include="Scripts\i18n\grid.locale-bg.js" />
+    <Content Include="Scripts\i18n\grid.locale-bg1251.js" />
+    <Content Include="Scripts\i18n\grid.locale-cat.js" />
+    <Content Include="Scripts\i18n\grid.locale-cn.js" />
+    <Content Include="Scripts\i18n\grid.locale-cs.js" />
+    <Content Include="Scripts\i18n\grid.locale-da.js" />
+    <Content Include="Scripts\i18n\grid.locale-de.js" />
+    <Content Include="Scripts\i18n\grid.locale-dk.js" />
+    <Content Include="Scripts\i18n\grid.locale-el.js" />
+    <Content Include="Scripts\i18n\grid.locale-en.js" />
+    <Content Include="Scripts\i18n\grid.locale-es.js" />
+    <Content Include="Scripts\i18n\grid.locale-fa.js" />
+    <Content Include="Scripts\i18n\grid.locale-fi.js" />
+    <Content Include="Scripts\i18n\grid.locale-fr.js" />
+    <Content Include="Scripts\i18n\grid.locale-gl.js" />
+    <Content Include="Scripts\i18n\grid.locale-he.js" />
+    <Content Include="Scripts\i18n\grid.locale-hr.js" />
+    <Content Include="Scripts\i18n\grid.locale-hr1250.js" />
+    <Content Include="Scripts\i18n\grid.locale-hu.js" />
+    <Content Include="Scripts\i18n\grid.locale-id.js" />
+    <Content Include="Scripts\i18n\grid.locale-is.js" />
+    <Content Include="Scripts\i18n\grid.locale-it.js" />
+    <Content Include="Scripts\i18n\grid.locale-ja.js" />
+    <Content Include="Scripts\i18n\grid.locale-kr.js" />
+    <Content Include="Scripts\i18n\grid.locale-lt.js" />
+    <Content Include="Scripts\i18n\grid.locale-mne.js" />
+    <Content Include="Scripts\i18n\grid.locale-nl.js" />
+    <Content Include="Scripts\i18n\grid.locale-no.js" />
+    <Content Include="Scripts\i18n\grid.locale-pl.js" />
+    <Content Include="Scripts\i18n\grid.locale-pt-br.js" />
+    <Content Include="Scripts\i18n\grid.locale-pt.js" />
+    <Content Include="Scripts\i18n\grid.locale-ro.js" />
+    <Content Include="Scripts\i18n\grid.locale-ru.js" />
+    <Content Include="Scripts\i18n\grid.locale-sk.js" />
+    <Content Include="Scripts\i18n\grid.locale-sr-latin.js" />
+    <Content Include="Scripts\i18n\grid.locale-sr.js" />
+    <Content Include="Scripts\i18n\grid.locale-sv.js" />
+    <Content Include="Scripts\i18n\grid.locale-th.js" />
+    <Content Include="Scripts\i18n\grid.locale-tr.js" />
+    <Content Include="Scripts\i18n\grid.locale-tw.js" />
+    <Content Include="Scripts\i18n\grid.locale-ua.js" />
+    <Content Include="Scripts\i18n\grid.locale-vi.js" />
+    <Content Include="Scripts\JQGrid\grid.locale-en.js" />
+    <Content Include="Scripts\JQGrid\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\JQGrid\jquery.jqGrid.min.js" />
+    <Content Include="Scripts\JQGrid\jquery.jqGrid.src.js" />
+    <Content Include="Scripts\jqTree\tree.jquery.js" />
+    <Content Include="ClassDiagram1.cd" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <None Include="Scripts\jquery-2.1.0.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.0.js" />
+    <Content Include="Scripts\jquery-2.1.0.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Dal\ERPEFDataModal.csdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Dal\ERPEFDataModal.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Dal\ERPEFDataModal.ssdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Dal\ERPEFDataModel.csdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Dal\ERPEFDataModel.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Dal\ERPEFDataModel.ssdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Dal\ERPEFModel.csdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Dal\ERPEFModel.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Dal\ERPEFModel.ssdl" />
+    <EntityDeploy Include="Dal\TFAT_WEBERPModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TFAT_WEBERPModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Dal\TFAT_WEBERPModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TFAT_WEBERPModel.edmx</DependentUpon>
+      <LastGenOutput>TFAT_WEBERPModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Dal\TFAT_WEBERPModel.edmx.diagram">
+      <DependentUpon>TFAT_WEBERPModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Dal\TFAT_WEBERPModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TFAT_WEBERPModel.edmx</DependentUpon>
+      <LastGenOutput>TFAT_WEBERPModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Content\shared\fonts\demos.eot" />
+    <Content Include="Content\shared\fonts\demos.ttf" />
+    <Content Include="Content\shared\fonts\demos.woff" />
+    <Content Include="Content\shared\fonts\DroidSansWeb.eot" />
+    <Content Include="Content\shared\fonts\DroidSansWeb.ttf" />
+    <Content Include="Content\shared\fonts\DroidSansWeb.woff" />
+    <Content Include="Content\shared\fonts\FaktSlabPro-Medium.eot" />
+    <Content Include="Content\shared\fonts\FaktSlabPro-Medium.otf" />
+    <Content Include="Content\shared\fonts\FaktSlabPro-Medium.ttf" />
+    <Content Include="Content\shared\fonts\FaktSlabPro-Medium.woff" />
+    <Content Include="Content\shared\fonts\MetricWeb-Semibold.eot" />
+    <Content Include="Content\shared\fonts\MetricWeb-Semibold.ttf" />
+    <Content Include="Content\shared\fonts\MetricWeb-Semibold.woff" />
+    <Content Include="Content\shared\fonts\Roboto-LightWeb.eot" />
+    <Content Include="Content\shared\fonts\Roboto-LightWeb.ttf" />
+    <Content Include="Content\shared\fonts\Roboto-LightWeb.woff" />
+    <Content Include="Content\shared\fonts\Roboto-Regular-Web.eot" />
+    <Content Include="Content\shared\fonts\Roboto-Regular-Web.ttf" />
+    <Content Include="Content\shared\fonts\Roboto-Regular-Web.woff" />
+    <Content Include="Content\shared\fonts\widgets-v1.eot" />
+    <Content Include="Content\shared\fonts\widgets-v1.ttf" />
+    <Content Include="Content\shared\fonts\widgets-v1.woff" />
+    <Content Include="Content\shared\kendoui.ttf" />
+    <Content Include="Content\shared\kendoui.woff" />
+    <Content Include="Scripts\jquery-2.1.0.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.0.js" />
+    <Content Include="Scripts\jquery-ui-1.10.0.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.custom\jquery-ui-1.10.4.custom.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.custom\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.jqDatePicker.min.js" />
+    <Content Include="Scripts\jquery.jqGrid.js" />
+    <Content Include="Scripts\jquery.jqGrid.min.js" />
+    <Content Include="Scripts\jquery.jqGrid.src.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.tabs.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquerypp.custom.js" />
+    <Content Include="Scripts\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr.custom.17475.js" />
+    <Content Include="Scripts\responsive-slider.js" />
+    <Content Include="Scripts\sumo_select\jquery.sumoselect.min.js" />
+    <Content Include="Scripts\sumo_select\sumo-select-min.js" />
+    <Content Include="Scripts\sumo_select\sumo-select.css" />
+    <Content Include="Scripts\sumo_select\sumoselect.css" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-ar.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-bg.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-bg1251.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-cat.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-cn.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-cs.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-da.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-de.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-dk.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-el.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-en.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-es.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-fa.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-fi.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-fr.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-gl.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-he.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-hr.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-hr1250.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-hu.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-id.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-is.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-it.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-ja.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-kr.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-lt.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-mne.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-nl.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-no.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-pl.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-pt-br.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-pt.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-ro.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-ru.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-sk.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-sr-latin.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-sr.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-sv.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-th.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-tr.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-tw.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-ua.js" />
+    <Content Include="Scripts\trirand\i18n\grid.locale-vi.js" />
+    <Content Include="Scripts\trirand\jquery.jqAutoComplete.min.js" />
+    <Content Include="Scripts\trirand\jquery.jqChart.exporting.min.js" />
+    <Content Include="Scripts\trirand\jquery.jqChart.min.js" />
+    <Content Include="Scripts\trirand\jquery.jqComboBox.min.js" />
+    <Content Include="Scripts\trirand\jquery.jqDatePicker.min.js" />
+    <Content Include="Scripts\trirand\jquery.jqDropDownList.min.js" />
+    <Content Include="Scripts\trirand\jquery.jqGrid.min.js" />
+    <Content Include="Scripts\trirand\jquery.jqMultiSelect.min.js" />
+    <Content Include="Scripts\trirand\jquery.jqTreeView.min.js" />
+    <Content Include="Views\Account\UserControll\TabView.ascx" />
+    <Content Include="Views\BankPay\Index.cshtml" />
+    <Content Include="Views\Shared\_footer.cshtml" />
+    <Content Include="Views\Shared\_header.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\ViewList\Index.cshtml" />
+    <Content Include="Views\ReportCentre\Index.cshtml" />
+    <Content Include="Views\ReportWritter\Index.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\SignUp\SignUp.cshtml" />
+    <Content Include="Views\Company\Newdatalist.cshtml" />
+    <Content Include="Views\NewCompany\NewCompany.cshtml" />
+    <Content Include="Views\NewBranch\NewBranch.cshtml" />
+    <Content Include="Views\tab\tab.cshtml" />
+    <Content Include="Views\tabnew\tabnew.cshtml" />
+    <Content Include="Views\popup\popup.cshtml" />
+    <Content Include="Views\date\date.cshtml" />
+    <Content Include="Views\Shared\_User.cshtml" />
+    <Content Include="Views\User\UserC.cshtml" />
+    <Content Include="Views\Sales\Index.cshtml" />
+    <Content Include="Views\Shared\_Save_Footer.cshtml" />
+    <Content Include="Views\Shared\Tab.cshtml" />
+    <Content Include="Views\Shared\_drop.cshtml" />
+    <Content Include="Views\frmTransfer\Index.cshtml" />
+    <Content Include="Views\FrmMfgBomsubcont\Index.cshtml" />
+    <Content Include="Views\Sales\Edit.cshtml" />
+    <Content Include="Views\Sales\AddRecord.cshtml" />
+    <Content Include="Views\frmMfgBom\Edit.cshtml" />
+    <Content Include="Views\frmMfgBom\addrecord.cshtml" />
+    <Content Include="Views\frmMfgBom\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.es.resx" />
+    <EmbeddedResource Include="Resource.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49322</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4932</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

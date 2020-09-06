@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TFAT_WEBERPModelStoreContainer" CdmEntityContainer="TFAT_WEBERPEntities">
+    <EntitySetMapping Name="Resources">
+      <EntityTypeMapping TypeName="TFAT_WEBERPModel.Resource">
+        <MappingFragment StoreEntitySet="Resources">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Culture" ColumnName="Culture" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

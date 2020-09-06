@@ -1,0 +1,2215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TFAT_WEBERPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ActivityStatu">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ActivityType">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TFAT_WEBERP.dbo.AddOn@B' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AddOn@B">
+    <Key>
+      <PropertyRef Name="RecordKey" />
+      <PropertyRef Name="AuthIds" />
+      <PropertyRef Name="Authorise" />
+      <PropertyRef Name="CheckedAddOns" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="HWSerial" />
+      <PropertyRef Name="HWSerial2" />
+      <PropertyRef Name="Product" />
+      <PropertyRef Name="Sno" />
+      <PropertyRef Name="TOUCHVALUE" />
+      <PropertyRef Name="EnteredBy" />
+      <PropertyRef Name="LastUpdateDate" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="CheckedAddOns" Type="varchar(max)" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Product" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Sno" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Books">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Author" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Category" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Cost" Type="money" Nullable="false" />
+    <Property Name="Edition" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Note" Type="varchar(max)" Nullable="false" />
+    <Property Name="PurchDate" Type="datetime" Nullable="false" />
+    <Property Name="SelfLife" Type="int" Nullable="false" />
+    <Property Name="SerialNo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CommissionType">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CompanyAccTypes">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CompanyBussType">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactSource">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CorrespondenceType">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Designation">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Division">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpenseType">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grade">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Qty" Type="int" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemBOM">
+    <Key>
+      <PropertyRef Name="BomSrl" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="Sno" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AddTolerance" Type="bit" Nullable="false" />
+    <Property Name="AllowPartial" Type="bit" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="BasedQty2" Type="bit" Nullable="false" />
+    <Property Name="BomCode" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="BomSrl" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="ChgAmt1" Type="money" Nullable="false" />
+    <Property Name="ChgAmt2" Type="money" Nullable="false" />
+    <Property Name="ChgAmt3" Type="money" Nullable="false" />
+    <Property Name="ChildBOM" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="ECNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EffectiveDate" Type="datetime" Nullable="false" />
+    <Property Name="EffectiveDateTo" Type="datetime" Nullable="false" />
+    <Property Name="Factor" Type="float" Nullable="false" />
+    <Property Name="Fixed" Type="bit" Nullable="false" />
+    <Property Name="Flag" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="FlagCost" Type="bit" Nullable="false" />
+    <Property Name="FlagJob" Type="bit" Nullable="false" />
+    <Property Name="FlagMFG" Type="bit" Nullable="false" />
+    <Property Name="FlagPlan" Type="bit" Nullable="false" />
+    <Property Name="FlagPM" Type="bit" Nullable="false" />
+    <Property Name="FlagSales" Type="bit" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="IsSubstitute" Type="bit" Nullable="false" />
+    <Property Name="ItemCategory" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="LabourAmt" Type="money" Nullable="false" />
+    <Property Name="Loss" Type="money" Nullable="false" />
+    <Property Name="LossOnWaste" Type="bit" Nullable="false" />
+    <Property Name="MachineAmt" Type="money" Nullable="false" />
+    <Property Name="MfgProcess" Type="bit" Nullable="false" />
+    <Property Name="MfgStore" Type="bit" Nullable="false" />
+    <Property Name="MultiLevel" Type="bit" Nullable="false" />
+    <Property Name="MultiProd" Type="bit" Nullable="false" />
+    <Property Name="OtherAmt" Type="money" Nullable="false" />
+    <Property Name="PerUnit" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="pLoss" Type="money" Nullable="false" />
+    <Property Name="pQty" Type="money" Nullable="false" />
+    <Property Name="ProcessCode" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="ProductMfg" Type="bit" Nullable="false" />
+    <Property Name="pWastage" Type="money" Nullable="false" />
+    <Property Name="Qty" Type="money" Nullable="false" />
+    <Property Name="Qty2" Type="money" Nullable="false" />
+    <Property Name="QtyBasis" Type="smallint" Nullable="false" />
+    <Property Name="QtyEqsn" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="QtyPer" Type="money" Nullable="false" />
+    <Property Name="Sno" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="StockType" Type="smallint" Nullable="false" />
+    <Property Name="Store" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="SubstituteWith" Type="varchar(max)" Nullable="false" />
+    <Property Name="Unit" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Unit2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Wastage" Type="money" Nullable="false" />
+    <Property Name="WasteCode" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="WasteStore" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemBOMHeader">
+    <Key>
+      <PropertyRef Name="BOMSrl" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchQty" Type="money" Nullable="false" />
+    <Property Name="BOMName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BOMSrl" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="BOMType" Type="bit" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="EffectiveDate" Type="datetime" Nullable="false" />
+    <Property Name="EffectiveDateTo" Type="datetime" Nullable="false" />
+    <Property Name="ExcludeKitParent" Type="bit" Nullable="false" />
+    <Property Name="ExpandKIT" Type="bit" Nullable="false" />
+    <Property Name="IsKIT" Type="bit" Nullable="false" />
+    <Property Name="LastUpdateBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateOn" Type="datetime" Nullable="false" />
+    <Property Name="OrdNumber" Type="varchar" MaxLength="31" Nullable="false" />
+    <Property Name="Party" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="StdWeight" Type="money" Nullable="false" />
+    <Property Name="StdYield" Type="money" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemBOMRoute">
+    <Key>
+      <PropertyRef Name="BOMSrl" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BOMCode" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="BOMSrl" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Qty" Type="money" Nullable="false" />
+    <Property Name="QtyPercent" Type="money" Nullable="false" />
+    <Property Name="RouteCode" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Sno" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Stage" Type="int" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemCategory">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TFAT_WEBERP.dbo.ItemClass' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ItemClass">
+    <Key>
+      <PropertyRef Name="RecordKey" />
+      <PropertyRef Name="AuthIds" />
+      <PropertyRef Name="Authorise" />
+      <PropertyRef Name="Class" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="HWSerial" />
+      <PropertyRef Name="HWSerial2" />
+      <PropertyRef Name="TOUCHVALUE" />
+      <PropertyRef Name="EnteredBy" />
+      <PropertyRef Name="LastUpdateDate" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="Class" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemDetail">
+    <Key>
+      <PropertyRef Name="Branch" />
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ABC" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="ACCode" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="ACCodeX" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="AllowProdCat" Type="bit" Nullable="false" />
+    <Property Name="AllowUser" Type="bit" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AutoBatch" Type="bit" Nullable="false" />
+    <Property Name="AutoBatchIssue" Type="int" Nullable="false" />
+    <Property Name="AutoMFG" Type="bit" Nullable="false" />
+    <Property Name="AutoSerialGRN" Type="bit" Nullable="false" />
+    <Property Name="AutoSerialMFG" Type="bit" Nullable="false" />
+    <Property Name="Availability" Type="bit" Nullable="false" />
+    <Property Name="BatchAutoGRN" Type="bit" Nullable="false" />
+    <Property Name="BatchExp" Type="bit" Nullable="false" />
+    <Property Name="BatchExpDays" Type="int" Nullable="false" />
+    <Property Name="BatchForce" Type="bit" Nullable="false" />
+    <Property Name="BatchMFG" Type="bit" Nullable="false" />
+    <Property Name="BatchNoDupl" Type="bit" Nullable="false" />
+    <Property Name="BatchPattern" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BatchRates" Type="bit" Nullable="false" />
+    <Property Name="BatchReq" Type="bit" Nullable="false" />
+    <Property Name="BatchSizeQty" Type="money" Nullable="false" />
+    <Property Name="BatchWidth" Type="int" Nullable="false" />
+    <Property Name="BinNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Branch" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="CanMfg" Type="bit" Nullable="false" />
+    <Property Name="CanPurch" Type="bit" Nullable="false" />
+    <Property Name="CanSale" Type="bit" Nullable="false" />
+    <Property Name="CanSubContract" Type="bit" Nullable="false" />
+    <Property Name="CheckPending2" Type="bit" Nullable="false" />
+    <Property Name="CheckStock" Type="bit" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="CostRate" Type="money" Nullable="false" />
+    <Property Name="CostValue" Type="bit" Nullable="false" />
+    <Property Name="DCCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="DefQty" Type="money" Nullable="false" />
+    <Property Name="DeliverPrice" Type="money" Nullable="false" />
+    <Property Name="DelyTime" Type="int" Nullable="false" />
+    <Property Name="EOQ" Type="money" Nullable="false" />
+    <Property Name="FIFORate" Type="money" Nullable="false" />
+    <Property Name="FIFOValue" Type="money" Nullable="false" />
+    <Property Name="GRNLeadTime" Type="money" Nullable="false" />
+    <Property Name="Grp" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="HalfPrice" Type="money" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="ItemCategory" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="LastCostRate" Type="money" Nullable="false" />
+    <Property Name="LastPurchRate" Type="money" Nullable="false" />
+    <Property Name="LastValue" Type="money" Nullable="false" />
+    <Property Name="LBTTaxCode" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="LeadTime" Type="money" Nullable="false" />
+    <Property Name="LIFORate" Type="money" Nullable="false" />
+    <Property Name="LIFOValue" Type="money" Nullable="false" />
+    <Property Name="ListPrice" Type="money" Nullable="false" />
+    <Property Name="MaxQty" Type="money" Nullable="false" />
+    <Property Name="MfgLeadTime" Type="money" Nullable="false" />
+    <Property Name="MfgLocation" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="MinDelyQty" Type="money" Nullable="false" />
+    <Property Name="MinDlyQty" Type="money" Nullable="false" />
+    <Property Name="MinQty" Type="money" Nullable="false" />
+    <Property Name="MinSaleRate" Type="money" Nullable="false" />
+    <Property Name="MRP" Type="money" Nullable="false" />
+    <Property Name="MRPTaxP" Type="bit" Nullable="false" />
+    <Property Name="MRPTaxS" Type="bit" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="OverReserve" Type="bit" Nullable="false" />
+    <Property Name="Party" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="PCCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="PointEarn" Type="money" Nullable="false" />
+    <Property Name="PortionPrice" Type="bit" Nullable="false" />
+    <Property Name="ProcLeadTime" Type="money" Nullable="false" />
+    <Property Name="PurchDisc" Type="money" Nullable="false" />
+    <Property Name="PurchDiscAmt" Type="money" Nullable="false" />
+    <Property Name="PurchGroup" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="PurchPer" Type="money" Nullable="false" />
+    <Property Name="PurchRate" Type="money" Nullable="false" />
+    <Property Name="PurchTaxCode" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="PurchTaxOST" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="QCReqd" Type="bit" Nullable="false" />
+    <Property Name="QCReqdMfg" Type="bit" Nullable="false" />
+    <Property Name="QCReqdSub" Type="bit" Nullable="false" />
+    <Property Name="QtyToleMinus" Type="money" Nullable="false" />
+    <Property Name="QtyTolePlus" Type="money" Nullable="false" />
+    <Property Name="QuarterPrice" Type="money" Nullable="false" />
+    <Property Name="RateMethod" Type="int" Nullable="false" />
+    <Property Name="RateOn2" Type="bit" Nullable="false" />
+    <Property Name="RedemptionCost" Type="money" Nullable="false" />
+    <Property Name="ReOrdDays" Type="int" Nullable="false" />
+    <Property Name="ReOrdDaysC" Type="int" Nullable="false" />
+    <Property Name="ReOrdHighLow" Type="bit" Nullable="false" />
+    <Property Name="ReOrdLevel" Type="money" Nullable="false" />
+    <Property Name="ReOrdQty" Type="money" Nullable="false" />
+    <Property Name="RestrictPR" Type="bit" Nullable="false" />
+    <Property Name="SalesDisc" Type="money" Nullable="false" />
+    <Property Name="SalesDiscAmt" Type="money" Nullable="false" />
+    <Property Name="SalesMargin" Type="money" Nullable="false" />
+    <Property Name="SalesMaxDisc" Type="money" Nullable="false" />
+    <Property Name="SalesPer" Type="money" Nullable="false" />
+    <Property Name="SalesRate" Type="money" Nullable="false" />
+    <Property Name="SalesTaxCode" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="SalesTaxOST" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="SecondUnit" Type="bit" Nullable="false" />
+    <Property Name="SerialNoDupl" Type="bit" Nullable="false" />
+    <Property Name="SerialPatternGRN" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="SerialPatternMFG" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="SerialPrefix" Type="bit" Nullable="false" />
+    <Property Name="SerialReq" Type="bit" Nullable="false" />
+    <Property Name="SerialType" Type="bit" Nullable="false" />
+    <Property Name="SerTax" Type="bit" Nullable="false" />
+    <Property Name="SerTaxCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="SourceListReq" Type="bit" Nullable="false" />
+    <Property Name="StockReserve" Type="bit" Nullable="false" />
+    <Property Name="StockSerial" Type="bit" Nullable="false" />
+    <Property Name="Store" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="ThirdPrice" Type="money" Nullable="false" />
+    <Property Name="TimePrice1" Type="money" Nullable="false" />
+    <Property Name="TimePrice2" Type="money" Nullable="false" />
+    <Property Name="TimePrice3" Type="money" Nullable="false" />
+    <Property Name="TimePrice4" Type="money" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="Unit" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Unit2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="VED" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="VerifyDate" Type="datetime" Nullable="false" />
+    <Property Name="VerifyDays" Type="int" Nullable="false" />
+    <Property Name="VerifyItem" Type="bit" Nullable="false" />
+    <Property Name="WTRate" Type="money" Nullable="false" />
+    <Property Name="WTValue" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="MRPControlGroup" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="MRPIPType" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="MRPISType" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="MRPReqd" Type="bit" Nullable="false" />
+    <Property Name="MRPWOType" Type="varchar" MaxLength="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemGroups">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AcCode" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="AcCodeX" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="AcType" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="BaseGr" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Flag" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Grp" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Hide" Type="bit" Nullable="false" />
+    <Property Name="IsLast" Type="bit" Nullable="false" />
+    <Property Name="IsPrefixCode" Type="bit" Nullable="false" />
+    <Property Name="IsPrefixDescr" Type="bit" Nullable="false" />
+    <Property Name="LeadTime" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Prefix" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PurchDisc" Type="money" Nullable="false" />
+    <Property Name="PurchPer" Type="money" Nullable="false" />
+    <Property Name="PurchRate" Type="money" Nullable="false" />
+    <Property Name="PurchTaxCode" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="SalesDisc" Type="money" Nullable="false" />
+    <Property Name="SalesMargin" Type="money" Nullable="false" />
+    <Property Name="SalesMaxDisc" Type="money" Nullable="false" />
+    <Property Name="SalesPer" Type="money" Nullable="false" />
+    <Property Name="SalesRate" Type="money" Nullable="false" />
+    <Property Name="SalesTaxCode" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Unit" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemMaster">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AcType" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="AppBranch" Type="varchar(max)" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="BarCode" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="BaseGr" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="BomExist" Type="bit" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Flag" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Grp" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Hide" Type="bit" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="IsLast" Type="bit" Nullable="false" />
+    <Property Name="IsPacking" Type="bit" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Narr" Type="varchar(max)" Nullable="false" />
+    <Property Name="PopupMsg" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Prefix" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="RedemptionCost" Type="money" Nullable="false" />
+    <Property Name="Stocking" Type="smallint" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="Unit" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ledger">
+    <Key>
+      <PropertyRef Name="Branch" />
+      <PropertyRef Name="Prefix" />
+      <PropertyRef Name="Sno" />
+      <PropertyRef Name="Srl" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccPeriod" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Allocation" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="AltCode" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Audited" Type="bit" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="BankCode" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="BillDate" Type="datetime" Nullable="false" />
+    <Property Name="BillNumber" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Branch" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Cheque" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ChequeReturn" Type="bit" Nullable="false" />
+    <Property Name="ChqCategory" Type="smallint" Nullable="false" />
+    <Property Name="ClearDate" Type="datetime" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="CostCentre" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Credit" Type="money" Nullable="false" />
+    <Property Name="CrPeriod" Type="int" Nullable="false" />
+    <Property Name="CurrAmount" Type="money" Nullable="false" />
+    <Property Name="CurrName" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CurrRate" Type="money" Nullable="false" />
+    <Property Name="Debit" Type="money" Nullable="false" />
+    <Property Name="Discounted" Type="bit" Nullable="false" />
+    <Property Name="Division" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="DocDate" Type="datetime" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="MainType" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Narr" Type="varchar(max)" Nullable="false" />
+    <Property Name="Party" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="PCCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="PeriodCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Prefix" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ProjectCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="ProjectStage" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="ProjectUnit" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="RecoFlag" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="RefDoc" Type="varchar" MaxLength="31" Nullable="false" />
+    <Property Name="SLCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Sno" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Srl" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="SubType" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="TDSChallanNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TDSCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="TdsFlag" Type="bit" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LedgerBranch">
+    <Key>
+      <PropertyRef Name="Branch" />
+      <PropertyRef Name="Prefix" />
+      <PropertyRef Name="Sno" />
+      <PropertyRef Name="Srl" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccPeriod" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Audited" Type="bit" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="BankCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="BillDate" Type="datetime" Nullable="false" />
+    <Property Name="BillNo" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Branch" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Cheque" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ChequeReturn" Type="bit" Nullable="false" />
+    <Property Name="ChqCategory" Type="smallint" Nullable="false" />
+    <Property Name="ClearDate" Type="datetime" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="CostCentre" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Credit" Type="money" Nullable="false" />
+    <Property Name="CurrAmount" Type="money" Nullable="false" />
+    <Property Name="CurrName" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CurrRate" Type="money" Nullable="false" />
+    <Property Name="Debit" Type="money" Nullable="false" />
+    <Property Name="DocDate" Type="datetime" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="MainType" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Narr" Type="varchar(max)" Nullable="false" />
+    <Property Name="OSAdj" Type="varchar(max)" Nullable="false" />
+    <Property Name="Party" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="PCCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="PeriodCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Prefix" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ProjectCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="ProjectStage" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="ProjectUnit" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="RecoFlag" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="RefDoc" Type="varchar" MaxLength="31" Nullable="false" />
+    <Property Name="SLCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Sno" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Srl" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="SubType" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="TDSCode" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="TDSFlag" Type="bit" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="ValueDate" Type="datetime" Nullable="false" />
+    <Property Name="xBranch" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MailingCategory">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReportGroups">
+    <Key>
+      <PropertyRef Name="RecordKey" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Descr" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Flag" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Grp" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Level" Type="smallint" Nullable="false" />
+    <Property Name="Modules" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Touchvalue" Type="money" Nullable="false" />
+    <Property Name="Users" Type="varchar(max)" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReportHeader">
+    <Key>
+      <PropertyRef Name="RecordKey" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AllowEmail" Type="bit" Nullable="false" />
+    <Property Name="AllowSMS" Type="bit" Nullable="false" />
+    <Property Name="BackColor" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Comp" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DefaultReport" Type="bit" Nullable="false" />
+    <Property Name="DisplayGrid" Type="bit" Nullable="false" />
+    <Property Name="Divisor" Type="money" Nullable="false" />
+    <Property Name="DrillCaption" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DrillQuery" Type="varchar(max)" Nullable="false" />
+    <Property Name="DrillQuerySub" Type="varchar(max)" Nullable="false" />
+    <Property Name="EMAILTemplate" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="FontBold" Type="bit" Nullable="false" />
+    <Property Name="FontItalics" Type="bit" Nullable="false" />
+    <Property Name="FontName" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FontSize" Type="smallint" Nullable="false" />
+    <Property Name="FontStrike" Type="bit" Nullable="false" />
+    <Property Name="FontUnderLine" Type="bit" Nullable="false" />
+    <Property Name="ForeColor" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="FormatGroup" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FormatHead" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="GridColor" Type="int" Nullable="false" />
+    <Property Name="GroupHead" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="HeaderHeight" Type="int" Nullable="false" />
+    <Property Name="LabelHORNos" Type="money" Nullable="false" />
+    <Property Name="LabelHORSpace" Type="money" Nullable="false" />
+    <Property Name="LabelOption" Type="bit" Nullable="false" />
+    <Property Name="LabelPrintTitle" Type="smallint" Nullable="false" />
+    <Property Name="LabelTitleWidth" Type="money" Nullable="false" />
+    <Property Name="LabelVERNos" Type="money" Nullable="false" />
+    <Property Name="LabelVERSpace" Type="money" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="MenuPlace" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="minHeight" Type="int" Nullable="false" />
+    <Property Name="Modules" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NoDetails" Type="bit" Nullable="false" />
+    <Property Name="NoSubHeading" Type="bit" Nullable="false" />
+    <Property Name="OwnReport" Type="smallint" Nullable="false" />
+    <Property Name="PageOrient" Type="bit" Nullable="false" />
+    <Property Name="pBlank" Type="bit" Nullable="false" />
+    <Property Name="pMerge" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="PostLogic" Type="varchar(max)" Nullable="false" />
+    <Property Name="pToMerge" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="RecLines" Type="smallint" Nullable="false" />
+    <Property Name="RecordFilter" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RemoveUnused" Type="bit" Nullable="false" />
+    <Property Name="RunAtStart" Type="bit" Nullable="false" />
+    <Property Name="SepLines" Type="smallint" Nullable="false" />
+    <Property Name="ShowFilter" Type="bit" Nullable="false" />
+    <Property Name="SMSTemplate" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="SortedOn" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="SubCodeOf" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="SubTotal" Type="bit" Nullable="false" />
+    <Property Name="SubTotalOn" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Summarized" Type="bit" Nullable="false" />
+    <Property Name="Tables" Type="varchar(max)" Nullable="false" />
+    <Property Name="TimesUsed" Type="int" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="UserQuery" Type="varchar(max)" Nullable="false" />
+    <Property Name="Users" Type="varchar(max)" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TFAT_WEBERP.dbo.rStock' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="rStock">
+    <Key>
+      <PropertyRef Name="RecordKey" />
+      <PropertyRef Name="AccPeriod" />
+      <PropertyRef Name="Amt" />
+      <PropertyRef Name="Bearer" />
+      <PropertyRef Name="BillNo" />
+      <PropertyRef Name="BomItem" />
+      <PropertyRef Name="Branch" />
+      <PropertyRef Name="CancelBill" />
+      <PropertyRef Name="Canceled" />
+      <PropertyRef Name="CancelReason" />
+      <PropertyRef Name="Captain" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="Disc" />
+      <PropertyRef Name="DiscAmt" />
+      <PropertyRef Name="DocDate" />
+      <PropertyRef Name="DocTime" />
+      <PropertyRef Name="MainType" />
+      <PropertyRef Name="NotInStock" />
+      <PropertyRef Name="ObjectType" />
+      <PropertyRef Name="PaxNo" />
+      <PropertyRef Name="PeriodCode" />
+      <PropertyRef Name="Prefix" />
+      <PropertyRef Name="PrepareFlag" />
+      <PropertyRef Name="Qty" />
+      <PropertyRef Name="Rate" />
+      <PropertyRef Name="Remark" />
+      <PropertyRef Name="ServiceType" />
+      <PropertyRef Name="Sno" />
+      <PropertyRef Name="Srl" />
+      <PropertyRef Name="Store" />
+      <PropertyRef Name="SubType" />
+      <PropertyRef Name="TableCode" />
+      <PropertyRef Name="TaxCode" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="TOUCHVALUE" />
+      <PropertyRef Name="EnteredBy" />
+      <PropertyRef Name="LastUpdateDate" />
+      <PropertyRef Name="AUTHORISE" />
+      <PropertyRef Name="AUTHIDS" />
+      <PropertyRef Name="HWSERIAL" />
+      <PropertyRef Name="HWSERIAL2" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccPeriod" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Amt" Type="money" Nullable="false" />
+    <Property Name="Bearer" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="BillNo" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="BomItem" Type="bit" Nullable="false" />
+    <Property Name="Branch" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="CancelBill" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Canceled" Type="bit" Nullable="false" />
+    <Property Name="CancelReason" Type="varchar(max)" Nullable="false" />
+    <Property Name="Captain" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Disc" Type="money" Nullable="false" />
+    <Property Name="DiscAmt" Type="money" Nullable="false" />
+    <Property Name="DocDate" Type="datetime" Nullable="false" />
+    <Property Name="DocTime" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MainType" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="NotInStock" Type="bit" Nullable="false" />
+    <Property Name="ObjectType" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="PaxNo" Type="int" Nullable="false" />
+    <Property Name="PeriodCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Prefix" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PrepareFlag" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Qty" Type="money" Nullable="false" />
+    <Property Name="Rate" Type="money" Nullable="false" />
+    <Property Name="Remark" Type="varchar(max)" Nullable="false" />
+    <Property Name="ServiceType" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Sno" Type="int" Nullable="false" />
+    <Property Name="Srl" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Store" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="SubType" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="TableCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TaxCode" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Segment">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SLA">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Stage">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TFAT_WEBERP.dbo.SuchanProjects' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SuchanProjects">
+    <Key>
+      <PropertyRef Name="ProjectCode" />
+      <PropertyRef Name="TOUCHVALUE" />
+      <PropertyRef Name="RecordKey" />
+      <PropertyRef Name="EnteredBy" />
+      <PropertyRef Name="LastUpdateDate" />
+      <PropertyRef Name="AUTHORISE" />
+      <PropertyRef Name="AUTHIDS" />
+      <PropertyRef Name="HWSERIAL" />
+      <PropertyRef Name="HWSERIAL2" />
+    </Key>
+    <Property Name="ProjectCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Club" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISOCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sponsor" Type="nvarchar" MaxLength="35" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="ProjectManager" Type="nvarchar" MaxLength="30" />
+    <Property Name="OptionCentric" Type="nvarchar" MaxLength="25" />
+    <Property Name="TestedBy" Type="nvarchar" MaxLength="30" />
+    <Property Name="TestCompletedDate" Type="datetime" />
+    <Property Name="AlphaDate" Type="datetime" />
+    <Property Name="DlyAlphaDate" Type="datetime" />
+    <Property Name="Beta1Date" Type="datetime" />
+    <Property Name="DlyBeta1Date" Type="datetime" />
+    <Property Name="Beta2Date" Type="datetime" />
+    <Property Name="DlyBeta2Date" Type="datetime" />
+    <Property Name="Beta3Date" Type="datetime" />
+    <Property Name="DlyBeta3Date" Type="datetime" />
+    <Property Name="FinalDlyDate" Type="datetime" />
+    <Property Name="DlyFinalDlyDate" Type="datetime" />
+    <Property Name="ProjectCloseDate" Type="datetime" />
+    <Property Name="TrainingDate" Type="datetime" />
+    <Property Name="DocumentDate" Type="datetime" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Territory">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TFatBranch">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="aAuthno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="aCity" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="aCountry" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="aCstNo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Addrl1" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Addrl2" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Addrl3" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Addrl4" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="aFax" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="aLstno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="aPin" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="AssAreaCode" Type="varchar(max)" Nullable="false" />
+    <Property Name="AssCityCode" Type="varchar(max)" Nullable="false" />
+    <Property Name="AssPincode" Type="varchar(max)" Nullable="false" />
+    <Property Name="aState" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="aTel1" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="aTel2" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="aTel3" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="aTel4" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="BranchLocation" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Business" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Coll" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="CompCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Custom" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Div" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="ECCNo" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="EMail" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Flag" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Fri" Type="bit" Nullable="false" />
+    <Property Name="Grp" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="LastBranch" Type="bit" Nullable="false" />
+    <Property Name="LastUpdated" Type="bit" Nullable="false" />
+    <Property Name="Licence2" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="LogIn" Type="bit" Nullable="false" />
+    <Property Name="Mon" Type="bit" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NoteAvail" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NoteSno" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OpCredit" Type="money" Nullable="false" />
+    <Property Name="OpDebit" Type="money" Nullable="false" />
+    <Property Name="PanNo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Range" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="RegNo" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Sat" Type="bit" Nullable="false" />
+    <Property Name="ServiceTax" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Sun" Type="bit" Nullable="false" />
+    <Property Name="Supp" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="TDSAuthorise" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TDSCir" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="TDSOffice" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="TDSReg" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Thu" Type="bit" Nullable="false" />
+    <Property Name="TINNo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="Tue" Type="bit" Nullable="false" />
+    <Property Name="Users" Type="varchar(max)" Nullable="false" />
+    <Property Name="VATReg" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Wed" Type="bit" Nullable="false" />
+    <Property Name="www" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TfatCity">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="State" Type="int" Nullable="false" />
+    <Property Name="Country" Type="int" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Touchvalue" Type="money" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TfatComp">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adrl1" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Adrl2" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Adrl3" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Adrl4" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="AssessOffice" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="AuthCap" Type="money" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="AuthNo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="Business" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="CompanyLogo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="CompanyType" Type="smallint" Nullable="false" />
+    <Property Name="CompInfo" Type="varchar(max)" Nullable="false" />
+    <Property Name="Const" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Country" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="cstno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="DDOCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DDOReg" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DeductorType" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="EMail" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fax" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="LastBranch" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastPeriod" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Licence1" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Licence2" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="lstno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Ministry" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Nature" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="PAN" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="PAOCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PAOReg" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PFFix" Type="bit" Nullable="false" />
+    <Property Name="PFupLimit" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Pin" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ServiceTaxNo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="SMSURL" Type="varchar(max)" Nullable="false" />
+    <Property Name="State" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="STDCode" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Taluka" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TDSCir" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="TDSReg" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Tel1" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Tel2" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Tel3" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Tel4" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TINNo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="USERPass" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Users" Type="varchar(max)" Nullable="false" />
+    <Property Name="VATReg" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="www" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="xState" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TfatCountry">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CountryCode" Type="varchar" MaxLength="10" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="ResourceOffset" Type="money" Nullable="false" />
+    <Property Name="CurCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CurDec" Type="money" Nullable="false" />
+    <Property Name="CurDecName" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CurName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="CurrRate" Type="money" Nullable="false" />
+    <Property Name="DialCode" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="Lang" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="LockCode" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TFAT_WEBERP.dbo.TfatDesign' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TfatDesign">
+    <Key>
+      <PropertyRef Name="TfatDesignRecordKey" />
+      <PropertyRef Name="TfatDesignContent" />
+      <PropertyRef Name="TOUCHVALUE" />
+      <PropertyRef Name="RecordKey" />
+      <PropertyRef Name="EnteredBy" />
+      <PropertyRef Name="LastUpdateDate" />
+      <PropertyRef Name="AUTHORISE" />
+      <PropertyRef Name="AUTHIDS" />
+      <PropertyRef Name="HWSERIAL" />
+      <PropertyRef Name="HWSERIAL2" />
+    </Key>
+    <Property Name="TfatDesignRecordKey" Type="int" Nullable="false" />
+    <Property Name="TfatDesignContent" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TfatDesignForm">
+    <Key>
+      <PropertyRef Name="FormRecordKey" />
+    </Key>
+    <Property Name="FormRecordKey" Type="int" Nullable="false" />
+    <Property Name="HeaderRecordKey" Type="int" Nullable="false" />
+    <Property Name="Fle" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fld" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="FldSize" Type="tinyint" />
+    <Property Name="fType" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="ControlType" Type="nvarchar" MaxLength="1" />
+    <Property Name="NotZero" Type="bit" />
+    <Property Name="Decs" Type="tinyint" />
+    <Property Name="DisplayOrder" Type="smallint" />
+    <Property Name="Enabled" Type="bit" />
+    <Property Name="Visible" Type="bit" />
+    <Property Name="Locked" Type="bit" />
+    <Property Name="CarryForward" Type="bit" />
+    <Property Name="LabelCaption" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NewGroup" Type="nvarchar" MaxLength="50" />
+    <Property Name="LabelAutoSize" Type="bit" />
+    <Property Name="TabName" Type="nvarchar" MaxLength="20" />
+    <Property Name="IsButton" Type="bit" />
+    <Property Name="LetterCase" Type="nvarchar" MaxLength="1" />
+    <Property Name="AllowBlank" Type="bit" />
+    <Property Name="eDepend" Type="nvarchar" MaxLength="200" />
+    <Property Name="vDepend" Type="nvarchar" MaxLength="200" />
+    <Property Name="FldValues" Type="nvarchar" MaxLength="255" />
+    <Property Name="DefaultValue" Type="nvarchar" MaxLength="50" />
+    <Property Name="DontAllow" Type="nvarchar" MaxLength="200" />
+    <Property Name="Meaning" Type="nvarchar" MaxLength="60" />
+    <Property Name="FontName" Type="nvarchar" MaxLength="20" />
+    <Property Name="FontSize" Type="tinyint" />
+    <Property Name="FontItalics" Type="bit" />
+    <Property Name="FontBold" Type="bit" />
+    <Property Name="FontUnderLine" Type="bit" />
+    <Property Name="FontStrikethru" Type="bit" />
+    <Property Name="Sno" Type="smallint" />
+    <Property Name="ColWidth" Type="smallint" />
+    <Property Name="Triggers" Type="nvarchar" MaxLength="10" />
+    <Property Name="Columns" Type="smallint" />
+    <Property Name="GridFldValueUrl" Type="nvarchar(max)" />
+    <Property Name="Section" Type="tinyint" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TfatDesignHeader">
+    <Key>
+      <PropertyRef Name="HeaderRecordKey" />
+    </Key>
+    <Property Name="ProjectCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="HeaderRecordKey" Type="int" Nullable="false" />
+    <Property Name="OptionName" Type="nvarchar" MaxLength="40" />
+    <Property Name="LikeOptionCode" Type="nvarchar" MaxLength="25" />
+    <Property Name="DatabaseName" Type="nvarchar" MaxLength="1" />
+    <Property Name="TableName" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDKey" Type="nvarchar" MaxLength="100" />
+    <Property Name="TableRelation" Type="nvarchar" MaxLength="50" />
+    <Property Name="AutoCode" Type="bit" Nullable="false" />
+    <Property Name="KeyStart" Type="nvarchar" MaxLength="6" />
+    <Property Name="KeyLength" Type="tinyint" />
+    <Property Name="EmbedZero" Type="bit" Nullable="false" />
+    <Property Name="InsertMissing" Type="bit" Nullable="false" />
+    <Property Name="SerialCond" Type="nvarchar" MaxLength="50" />
+    <Property Name="Filter" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="nvarchar" MaxLength="1" />
+    <Property Name="IsPrefix" Type="bit" Nullable="false" />
+    <Property Name="UpdateOnly" Type="bit" Nullable="false" />
+    <Property Name="xAdd" Type="bit" Nullable="false" />
+    <Property Name="xEdit" Type="bit" Nullable="false" />
+    <Property Name="xDelete" Type="bit" Nullable="false" />
+    <Property Name="xPrint" Type="bit" Nullable="false" />
+    <Property Name="EditInGrid" Type="bit" Nullable="false" />
+    <Property Name="SPDelete" Type="nvarchar" MaxLength="200" />
+    <Property Name="Tabs" Type="nvarchar" MaxLength="100" />
+    <Property Name="HelpFlds" Type="nvarchar" MaxLength="200" />
+    <Property Name="OptionInfo" Type="nvarchar" MaxLength="200" />
+    <Property Name="PreEdit" Type="nvarchar(max)" />
+    <Property Name="PreSave" Type="nvarchar(max)" />
+    <Property Name="PostSave" Type="nvarchar(max)" />
+    <Property Name="FunctionButton" Type="nvarchar(max)" />
+    <Property Name="Width" Type="smallint" />
+    <Property Name="Height" Type="smallint" />
+    <Property Name="RowHeight" Type="smallint" />
+    <Property Name="AllowDuplicate" Type="bit" Nullable="false" />
+    <Property Name="BarCodePrint" Type="bit" Nullable="false" />
+    <Property Name="PrintOnSave" Type="bit" Nullable="false" />
+    <Property Name="ForceGrid" Type="bit" Nullable="false" />
+    <Property Name="TreeParentFld" Type="nvarchar" MaxLength="35" />
+    <Property Name="MaxGrid" Type="smallint" />
+    <Property Name="AddSubmitUrl" Type="nvarchar(max)" />
+    <Property Name="AddUrl" Type="nvarchar(max)" />
+    <Property Name="AddName" Type="nvarchar(max)" />
+    <Property Name="EditSubmitUrl" Type="nvarchar(max)" />
+    <Property Name="EditUrl" Type="nvarchar(max)" />
+    <Property Name="EditName" Type="nvarchar(max)" />
+    <Property Name="DeleteSubmitUrl" Type="nvarchar(max)" />
+    <Property Name="DeleteName" Type="nvarchar(max)" />
+    <Property Name="DeleteUrl" Type="nvarchar(max)" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="OptionCode" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TFAT_WEBERP.dbo.TfatForm' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TfatForm">
+    <Key>
+      <PropertyRef Name="RecordKey" />
+      <PropertyRef Name="AuthIds" />
+      <PropertyRef Name="Authorise" />
+      <PropertyRef Name="AutoIncr" />
+      <PropertyRef Name="AutoSize" />
+      <PropertyRef Name="BackColor" />
+      <PropertyRef Name="BarCoded" />
+      <PropertyRef Name="Border" />
+      <PropertyRef Name="Caption" />
+      <PropertyRef Name="Comma" />
+      <PropertyRef Name="Cond" />
+      <PropertyRef Name="ControlType" />
+      <PropertyRef Name="CPI" />
+      <PropertyRef Name="CPIStyle" />
+      <PropertyRef Name="DecS" />
+      <PropertyRef Name="Equation" />
+      <PropertyRef Name="Fixed" />
+      <PropertyRef Name="FldType" />
+      <PropertyRef Name="FontBold" />
+      <PropertyRef Name="FontItalics" />
+      <PropertyRef Name="FontName" />
+      <PropertyRef Name="FontSize" />
+      <PropertyRef Name="FontStrike" />
+      <PropertyRef Name="FontUnderLine" />
+      <PropertyRef Name="ForeColor" />
+      <PropertyRef Name="Format" />
+      <PropertyRef Name="FromRs" />
+      <PropertyRef Name="GroupHeader" />
+      <PropertyRef Name="Height" />
+      <PropertyRef Name="HWSerial" />
+      <PropertyRef Name="HWSerial2" />
+      <PropertyRef Name="Justify" />
+      <PropertyRef Name="Locked" />
+      <PropertyRef Name="OnPage" />
+      <PropertyRef Name="PageJustify" />
+      <PropertyRef Name="PrintInHeader" />
+      <PropertyRef Name="Sections" />
+      <PropertyRef Name="SpaceSaver" />
+      <PropertyRef Name="Width" />
+      <PropertyRef Name="WordWrapGap" />
+      <PropertyRef Name="WordWrapS" />
+      <PropertyRef Name="X1" />
+      <PropertyRef Name="X2" />
+      <PropertyRef Name="Y1" />
+      <PropertyRef Name="Y2" />
+      <PropertyRef Name="TOUCHVALUE" />
+      <PropertyRef Name="EnteredBy" />
+      <PropertyRef Name="LastUpdateDate" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AutoIncr" Type="smallint" Nullable="false" />
+    <Property Name="AutoSize" Type="bit" Nullable="false" />
+    <Property Name="BackColor" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="BarCoded" Type="bit" Nullable="false" />
+    <Property Name="Border" Type="bit" Nullable="false" />
+    <Property Name="Caption" Type="varchar(max)" Nullable="false" />
+    <Property Name="Comma" Type="bit" Nullable="false" />
+    <Property Name="Cond" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="ControlType" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="CPI" Type="smallint" Nullable="false" />
+    <Property Name="CPIStyle" Type="smallint" Nullable="false" />
+    <Property Name="DecS" Type="smallint" Nullable="false" />
+    <Property Name="Equation" Type="varchar(max)" Nullable="false" />
+    <Property Name="Fixed" Type="bit" Nullable="false" />
+    <Property Name="FldType" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="FontBold" Type="bit" Nullable="false" />
+    <Property Name="FontItalics" Type="bit" Nullable="false" />
+    <Property Name="FontName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="FontSize" Type="smallint" Nullable="false" />
+    <Property Name="FontStrike" Type="bit" Nullable="false" />
+    <Property Name="FontUnderLine" Type="bit" Nullable="false" />
+    <Property Name="ForeColor" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Format" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="FromRs" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="GroupHeader" Type="bit" Nullable="false" />
+    <Property Name="Height" Type="int" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Justify" Type="smallint" Nullable="false" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="OnPage" Type="smallint" Nullable="false" />
+    <Property Name="PageJustify" Type="smallint" Nullable="false" />
+    <Property Name="PrintInHeader" Type="bit" Nullable="false" />
+    <Property Name="Sections" Type="smallint" Nullable="false" />
+    <Property Name="SpaceSaver" Type="bit" Nullable="false" />
+    <Property Name="Width" Type="int" Nullable="false" />
+    <Property Name="WordWrapGap" Type="int" Nullable="false" />
+    <Property Name="WordWrapS" Type="bit" Nullable="false" />
+    <Property Name="X1" Type="int" Nullable="false" />
+    <Property Name="X2" Type="int" Nullable="false" />
+    <Property Name="Y1" Type="int" Nullable="false" />
+    <Property Name="Y2" Type="int" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TfatMenu">
+    <Key>
+      <PropertyRef Name="RecordKey" />
+    </Key>
+    <Property Name="ProjectCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="60" />
+    <Property Name="Display" Type="smallint" />
+    <Property Name="MenuID" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="MenuParent" Type="nvarchar" MaxLength="25" />
+    <Property Name="FormName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Depth" Type="smallint" />
+    <Property Name="IsReport" Type="bit" Nullable="false" />
+    <Property Name="IsLast" Type="bit" Nullable="false" />
+    <Property Name="OptionType" Type="nvarchar" MaxLength="5" />
+    <Property Name="OptionMode" Type="nvarchar" MaxLength="1" />
+    <Property Name="HotKey" Type="nvarchar" MaxLength="10" />
+    <Property Name="MenuUrl" Type="varchar" MaxLength="70" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TfatPass">
+    <Key>
+      <PropertyRef Name="IDs" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountRights" Type="varchar(max)" Nullable="false" />
+    <Property Name="ActiveAssist" Type="smallint" Nullable="false" />
+    <Property Name="AllowAreas" Type="varchar(max)" Nullable="false" />
+    <Property Name="AllowCategory" Type="varchar(max)" Nullable="false" />
+    <Property Name="Animate" Type="bit" Nullable="false" />
+    <Property Name="AppBranch" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Assistant" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="AuditTrail" Type="bit" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AuthRec" Type="int" Nullable="false" />
+    <Property Name="BoldFont" Type="bit" Nullable="false" />
+    <Property Name="ChangeForm" Type="bit" Nullable="false" />
+    <Property Name="CheckMark" Type="smallint" Nullable="false" />
+    <Property Name="ClickSequence" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColScheme" Type="smallint" Nullable="false" />
+    <Property Name="Control3D" Type="bit" Nullable="false" />
+    <Property Name="CorpID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DailyPassword" Type="bit" Nullable="false" />
+    <Property Name="Dept" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="DeskTop" Type="bit" Nullable="false" />
+    <Property Name="DontChangePassword" Type="bit" Nullable="false" />
+    <Property Name="EmailClient" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="EmailID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EnterKey" Type="bit" Nullable="false" />
+    <Property Name="Expiry" Type="datetime" Nullable="false" />
+    <Property Name="Flag" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="FontBoldBtn" Type="bit" Nullable="false" />
+    <Property Name="FontBoldGrdC" Type="bit" Nullable="false" />
+    <Property Name="FontBoldGrdH" Type="bit" Nullable="false" />
+    <Property Name="FontBoldLbl" Type="bit" Nullable="false" />
+    <Property Name="FontBoldTxt" Type="bit" Nullable="false" />
+    <Property Name="FontName" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FontNameBtn" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FontNameGrdC" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FontNameGrdH" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FontNameLbl" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FontNameTxt" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FontSize" Type="smallint" Nullable="false" />
+    <Property Name="FontSizeBtn" Type="smallint" Nullable="false" />
+    <Property Name="FontSizeGrdC" Type="smallint" Nullable="false" />
+    <Property Name="FontSizeGrdH" Type="smallint" Nullable="false" />
+    <Property Name="FontSizeLbl" Type="smallint" Nullable="false" />
+    <Property Name="FontSizeTxt" Type="smallint" Nullable="false" />
+    <Property Name="ForceResize" Type="bit" Nullable="false" />
+    <Property Name="FormCaption" Type="bit" Nullable="false" />
+    <Property Name="Fri" Type="bit" Nullable="false" />
+    <Property Name="HelpOnStart" Type="bit" Nullable="false" />
+    <Property Name="Hide" Type="bit" Nullable="false" />
+    <Property Name="HomeWorkflow" Type="bit" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="IDs" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="InBox" Type="bit" Nullable="false" />
+    <Property Name="InboxDelete" Type="bit" Nullable="false" />
+    <Property Name="IsHead" Type="bit" Nullable="false" />
+    <Property Name="LastBranch" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="LastBranchUsed" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="LastComp" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastCompany" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="LastLastDt" Type="datetime" Nullable="false" />
+    <Property Name="LastLicReminder" Type="datetime" Nullable="false" />
+    <Property Name="LastLogin" Type="datetime" Nullable="false" />
+    <Property Name="LastStartDt" Type="datetime" Nullable="false" />
+    <Property Name="LastUser" Type="bit" Nullable="false" />
+    <Property Name="Learning" Type="bit" Nullable="false" />
+    <Property Name="LicReminder" Type="bit" Nullable="false" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="LogIns" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="MainCentre" Type="bit" Nullable="false" />
+    <Property Name="MaxTrx" Type="int" Nullable="false" />
+    <Property Name="Mobile" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Mon" Type="bit" Nullable="false" />
+    <Property Name="MsgDays" Type="int" Nullable="false" />
+    <Property Name="MsgPopup" Type="bit" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="NoRightClick" Type="bit" Nullable="false" />
+    <Property Name="OptionAlign" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="OptionTab" Type="smallint" Nullable="false" />
+    <Property Name="PassRead" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="PassWords" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Photograph" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="POPServer" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PrGroup" Type="varchar(max)" Nullable="false" />
+    <Property Name="PrintControl" Type="bit" Nullable="false" />
+    <Property Name="ProductRights" Type="varchar(max)" Nullable="false" />
+    <Property Name="RateHistory" Type="bit" Nullable="false" />
+    <Property Name="RecMsg" Type="bit" Nullable="false" />
+    <Property Name="RecSMS" Type="bit" Nullable="false" />
+    <Property Name="RestrictWS" Type="bit" Nullable="false" />
+    <Property Name="Sat" Type="bit" Nullable="false" />
+    <Property Name="Signature" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="SMTPPassword" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="SMTPPort" Type="int" Nullable="false" />
+    <Property Name="SMTPRoute" Type="bit" Nullable="false" />
+    <Property Name="SMTPServer" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SMTPUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SoundEvent" Type="bit" Nullable="false" />
+    <Property Name="StartRem" Type="bit" Nullable="false" />
+    <Property Name="StartUpForm" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="StartUpMemo" Type="bit" Nullable="false" />
+    <Property Name="StatusBar" Type="bit" Nullable="false" />
+    <Property Name="Sun" Type="bit" Nullable="false" />
+    <Property Name="Thu" Type="bit" Nullable="false" />
+    <Property Name="TipOnStart" Type="smallint" Nullable="false" />
+    <Property Name="ToolBar" Type="smallint" Nullable="false" />
+    <Property Name="ToolBarDisplay" Type="smallint" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="Tue" Type="bit" Nullable="false" />
+    <Property Name="UserRole" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="WallPaper" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Wed" Type="bit" Nullable="false" />
+    <Property Name="WorkStation" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WSLogin" Type="varchar(max)" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TFAT_WEBERP.dbo.TfatPerd' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TfatPerd">
+    <Key>
+      <PropertyRef Name="RecordKey" />
+      <PropertyRef Name="AuthIds" />
+      <PropertyRef Name="Authorise" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="DatabaseName" />
+      <PropertyRef Name="DbOffLine" />
+      <PropertyRef Name="HWSerial" />
+      <PropertyRef Name="HWSerial2" />
+      <PropertyRef Name="LastDate" />
+      <PropertyRef Name="Locked" />
+      <PropertyRef Name="MasUpdate" />
+      <PropertyRef Name="NewUpdate" />
+      <PropertyRef Name="PerdCode" />
+      <PropertyRef Name="PeriodCode" />
+      <PropertyRef Name="StartDate" />
+      <PropertyRef Name="TouchValue" />
+      <PropertyRef Name="EnteredBy" />
+      <PropertyRef Name="LastUpdateDate" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="DatabaseName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DbOffLine" Type="bit" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSerial2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="LastDate" Type="datetime" Nullable="false" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="MasUpdate" Type="bit" Nullable="false" />
+    <Property Name="NewUpdate" Type="bit" Nullable="false" />
+    <Property Name="PerdCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PeriodCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TfatSearch">
+    <Key>
+      <PropertyRef Name="RecordKey" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="BackColor" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="CalculatedCol" Type="bit" Nullable="false" />
+    <Property Name="ChildOfCol" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ColChars" Type="smallint" Nullable="false" />
+    <Property Name="ColCondition" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="ColField" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="ColHead" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="ColType" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="ColWidth" Type="int" Nullable="false" />
+    <Property Name="Comma" Type="bit" Nullable="false" />
+    <Property Name="CondBCLR" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Decs" Type="smallint" Nullable="false" />
+    <Property Name="DisplayGrid" Type="bit" Nullable="false" />
+    <Property Name="FitToHeight" Type="bit" Nullable="false" />
+    <Property Name="FitToWidth" Type="bit" Nullable="false" />
+    <Property Name="FldAs" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="FontBold" Type="bit" Nullable="false" />
+    <Property Name="FontItalics" Type="bit" Nullable="false" />
+    <Property Name="FontName" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FontSize" Type="smallint" Nullable="false" />
+    <Property Name="FontStrike" Type="bit" Nullable="false" />
+    <Property Name="FontUnderLine" Type="bit" Nullable="false" />
+    <Property Name="ForeColor" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="FormatString" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="GraphCol" Type="bit" Nullable="false" />
+    <Property Name="GroupHead" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Idle" Type="bit" Nullable="false" />
+    <Property Name="IsHidden" Type="bit" Nullable="false" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="pMerge" Type="bit" Nullable="false" />
+    <Property Name="MergeCond" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Sno" Type="int" Nullable="false" />
+    <Property Name="SplitColumn" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="SystemColumn" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="xCurrency" Type="bit" Nullable="false" />
+    <Property Name="YesTotal" Type="bit" Nullable="false" />
+    <Property Name="Modules" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ColPosition" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TFAT_WEBERP.dbo.TFATSetup' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TFATSetup">
+    <Key>
+      <PropertyRef Name="RecordKey" />
+      <PropertyRef Name="AutoUpdate" />
+      <PropertyRef Name="LastUpdate" />
+      <PropertyRef Name="SuccessStatus" />
+      <PropertyRef Name="TouchValue" />
+      <PropertyRef Name="UpdateWorkStation" />
+      <PropertyRef Name="EnteredBy" />
+      <PropertyRef Name="LastUpdateDate" />
+      <PropertyRef Name="AUTHORISE" />
+      <PropertyRef Name="AUTHIDS" />
+      <PropertyRef Name="HWSERIAL" />
+      <PropertyRef Name="HWSERIAL2" />
+    </Key>
+    <Property Name="RecordKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AutoUpdate" Type="bit" Nullable="false" />
+    <Property Name="LastUpdate" Type="datetime" Nullable="false" />
+    <Property Name="SuccessStatus" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="TouchValue" Type="money" Nullable="false" />
+    <Property Name="UpdateWorkStation" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TfatState">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Country" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Authorise" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AuthIds" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Touchvalue" Type="money" Nullable="false" />
+    <Property Name="HWSerial" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WarrantyType">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="RecordKey" Type="int" Nullable="false" />
+    <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="TOUCHVALUE" Type="money" Nullable="false" />
+    <Property Name="EnteredBy" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="AUTHORISE" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="AUTHIDS" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="HWSERIAL" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="HWSERIAL2" Type="varchar" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ItemBOM_ItemBOM">
+    <End Role="ItemBOM" Type="Self.ItemBOM" Multiplicity="1" />
+    <End Role="ItemBOM1" Type="Self.ItemBOM" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ItemBOM">
+        <PropertyRef Name="BomSrl" />
+        <PropertyRef Name="Code" />
+        <PropertyRef Name="Sno" />
+      </Principal>
+      <Dependent Role="ItemBOM1">
+        <PropertyRef Name="BomSrl" />
+        <PropertyRef Name="Code" />
+        <PropertyRef Name="Sno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemBOMHeader_ItemBOMHeader">
+    <End Role="ItemBOMHeader" Type="Self.ItemBOMHeader" Multiplicity="1" />
+    <End Role="ItemBOMHeader1" Type="Self.ItemBOMHeader" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ItemBOMHeader">
+        <PropertyRef Name="BOMSrl" />
+      </Principal>
+      <Dependent Role="ItemBOMHeader1">
+        <PropertyRef Name="BOMSrl" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemBOMRoute_ItemBOMHeader">
+    <End Role="ItemBOMHeader" Type="Self.ItemBOMHeader" Multiplicity="1" />
+    <End Role="ItemBOMRoute" Type="Self.ItemBOMRoute" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ItemBOMHeader">
+        <PropertyRef Name="BOMSrl" />
+      </Principal>
+      <Dependent Role="ItemBOMRoute">
+        <PropertyRef Name="BOMSrl" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemBOMRoute_ItemBOMHeader1">
+    <End Role="ItemBOMHeader" Type="Self.ItemBOMHeader" Multiplicity="1" />
+    <End Role="ItemBOMRoute" Type="Self.ItemBOMRoute" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ItemBOMHeader">
+        <PropertyRef Name="BOMSrl" />
+      </Principal>
+      <Dependent Role="ItemBOMRoute">
+        <PropertyRef Name="BOMSrl" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemBOMRoute_ItemBOMHeader2">
+    <End Role="ItemBOMHeader" Type="Self.ItemBOMHeader" Multiplicity="1" />
+    <End Role="ItemBOMRoute" Type="Self.ItemBOMRoute" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ItemBOMHeader">
+        <PropertyRef Name="BOMSrl" />
+      </Principal>
+      <Dependent Role="ItemBOMRoute">
+        <PropertyRef Name="BOMSrl" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemBOMRoute_ItemBOMRoute">
+    <End Role="ItemBOMRoute" Type="Self.ItemBOMRoute" Multiplicity="1" />
+    <End Role="ItemBOMRoute1" Type="Self.ItemBOMRoute" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ItemBOMRoute">
+        <PropertyRef Name="BOMSrl" />
+      </Principal>
+      <Dependent Role="ItemBOMRoute1">
+        <PropertyRef Name="BOMSrl" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LedgerAuthIds">
+    <End Role="TfatPass" Type="Self.TfatPass" Multiplicity="1" />
+    <End Role="Ledger" Type="Self.Ledger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TfatPass">
+        <PropertyRef Name="IDs" />
+      </Principal>
+      <Dependent Role="Ledger">
+        <PropertyRef Name="AuthIds" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TFatBranch_TfatComp">
+    <End Role="TfatComp" Type="Self.TfatComp" Multiplicity="1" />
+    <End Role="TFatBranch" Type="Self.TFatBranch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TfatComp">
+        <PropertyRef Name="Code" />
+      </Principal>
+      <Dependent Role="TFatBranch">
+        <PropertyRef Name="CompCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TfatCity_TfatCity">
+    <End Role="TfatState" Type="Self.TfatState" Multiplicity="1" />
+    <End Role="TfatCity" Type="Self.TfatCity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TfatState">
+        <PropertyRef Name="Code" />
+      </Principal>
+      <Dependent Role="TfatCity">
+        <PropertyRef Name="State" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TfatDesignForm_TfatDesignHeader">
+    <End Role="TfatDesignHeader" Type="Self.TfatDesignHeader" Multiplicity="1" />
+    <End Role="TfatDesignForm" Type="Self.TfatDesignForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TfatDesignHeader">
+        <PropertyRef Name="HeaderRecordKey" />
+      </Principal>
+      <Dependent Role="TfatDesignForm">
+        <PropertyRef Name="HeaderRecordKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TfatState_TfatCountry">
+    <End Role="TfatCountry" Type="Self.TfatCountry" Multiplicity="1" />
+    <End Role="TfatState" Type="Self.TfatState" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TfatCountry">
+        <PropertyRef Name="Code" />
+      </Principal>
+      <Dependent Role="TfatState">
+        <PropertyRef Name="Country" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TFAT_WEBERPModelStoreContainer">
+    <EntitySet Name="ActivityStatu" EntityType="Self.ActivityStatu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ActivityType" EntityType="Self.ActivityType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Books" EntityType="Self.Books" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CommissionType" EntityType="Self.CommissionType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CompanyAccTypes" EntityType="Self.CompanyAccTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CompanyBussType" EntityType="Self.CompanyBussType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactSource" EntityType="Self.ContactSource" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CorrespondenceType" EntityType="Self.CorrespondenceType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Designation" EntityType="Self.Designation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Division" EntityType="Self.Division" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExpenseType" EntityType="Self.ExpenseType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grade" EntityType="Self.Grade" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemBOM" EntityType="Self.ItemBOM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemBOMHeader" EntityType="Self.ItemBOMHeader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemBOMRoute" EntityType="Self.ItemBOMRoute" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemCategory" EntityType="Self.ItemCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemDetail" EntityType="Self.ItemDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemGroups" EntityType="Self.ItemGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemMaster" EntityType="Self.ItemMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Language" EntityType="Self.Language" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ledger" EntityType="Self.Ledger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LedgerBranch" EntityType="Self.LedgerBranch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MailingCategory" EntityType="Self.MailingCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductCategory" EntityType="Self.ProductCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReportGroups" EntityType="Self.ReportGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReportHeader" EntityType="Self.ReportHeader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Segment" EntityType="Self.Segment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SLA" EntityType="Self.SLA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stage" EntityType="Self.Stage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Territory" EntityType="Self.Territory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TFatBranch" EntityType="Self.TFatBranch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TfatCity" EntityType="Self.TfatCity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TfatComp" EntityType="Self.TfatComp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TfatCountry" EntityType="Self.TfatCountry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TfatDesignForm" EntityType="Self.TfatDesignForm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TfatDesignHeader" EntityType="Self.TfatDesignHeader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TfatMenu" EntityType="Self.TfatMenu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TfatPass" EntityType="Self.TfatPass" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TfatSearch" EntityType="Self.TfatSearch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TfatState" EntityType="Self.TfatState" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WarrantyType" EntityType="Self.WarrantyType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AddOn@B" EntityType="Self.AddOn@B" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AddOn@B].[RecordKey] AS [RecordKey], 
+    [AddOn@B].[AuthIds] AS [AuthIds], 
+    [AddOn@B].[Authorise] AS [Authorise], 
+    [AddOn@B].[CheckedAddOns] AS [CheckedAddOns], 
+    [AddOn@B].[Code] AS [Code], 
+    [AddOn@B].[HWSerial] AS [HWSerial], 
+    [AddOn@B].[HWSerial2] AS [HWSerial2], 
+    [AddOn@B].[Product] AS [Product], 
+    [AddOn@B].[Sno] AS [Sno], 
+    [AddOn@B].[TOUCHVALUE] AS [TOUCHVALUE], 
+    [AddOn@B].[EnteredBy] AS [EnteredBy], 
+    [AddOn@B].[LastUpdateDate] AS [LastUpdateDate]
+    FROM [dbo].[AddOn@B] AS [AddOn@B]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ItemClass" EntityType="Self.ItemClass" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ItemClass].[RecordKey] AS [RecordKey], 
+    [ItemClass].[AuthIds] AS [AuthIds], 
+    [ItemClass].[Authorise] AS [Authorise], 
+    [ItemClass].[Class] AS [Class], 
+    [ItemClass].[Code] AS [Code], 
+    [ItemClass].[HWSerial] AS [HWSerial], 
+    [ItemClass].[HWSerial2] AS [HWSerial2], 
+    [ItemClass].[TOUCHVALUE] AS [TOUCHVALUE], 
+    [ItemClass].[EnteredBy] AS [EnteredBy], 
+    [ItemClass].[LastUpdateDate] AS [LastUpdateDate]
+    FROM [dbo].[ItemClass] AS [ItemClass]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="rStock" EntityType="Self.rStock" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [rStock].[RecordKey] AS [RecordKey], 
+    [rStock].[AccPeriod] AS [AccPeriod], 
+    [rStock].[Amt] AS [Amt], 
+    [rStock].[Bearer] AS [Bearer], 
+    [rStock].[BillNo] AS [BillNo], 
+    [rStock].[BomItem] AS [BomItem], 
+    [rStock].[Branch] AS [Branch], 
+    [rStock].[CancelBill] AS [CancelBill], 
+    [rStock].[Canceled] AS [Canceled], 
+    [rStock].[CancelReason] AS [CancelReason], 
+    [rStock].[Captain] AS [Captain], 
+    [rStock].[Code] AS [Code], 
+    [rStock].[Disc] AS [Disc], 
+    [rStock].[DiscAmt] AS [DiscAmt], 
+    [rStock].[DocDate] AS [DocDate], 
+    [rStock].[DocTime] AS [DocTime], 
+    [rStock].[MainType] AS [MainType], 
+    [rStock].[NotInStock] AS [NotInStock], 
+    [rStock].[ObjectType] AS [ObjectType], 
+    [rStock].[PaxNo] AS [PaxNo], 
+    [rStock].[PeriodCode] AS [PeriodCode], 
+    [rStock].[Prefix] AS [Prefix], 
+    [rStock].[PrepareFlag] AS [PrepareFlag], 
+    [rStock].[Qty] AS [Qty], 
+    [rStock].[Rate] AS [Rate], 
+    [rStock].[Remark] AS [Remark], 
+    [rStock].[ServiceType] AS [ServiceType], 
+    [rStock].[Sno] AS [Sno], 
+    [rStock].[Srl] AS [Srl], 
+    [rStock].[Store] AS [Store], 
+    [rStock].[SubType] AS [SubType], 
+    [rStock].[TableCode] AS [TableCode], 
+    [rStock].[TaxCode] AS [TaxCode], 
+    [rStock].[Type] AS [Type], 
+    [rStock].[TOUCHVALUE] AS [TOUCHVALUE], 
+    [rStock].[EnteredBy] AS [EnteredBy], 
+    [rStock].[LastUpdateDate] AS [LastUpdateDate], 
+    [rStock].[AUTHORISE] AS [AUTHORISE], 
+    [rStock].[AUTHIDS] AS [AUTHIDS], 
+    [rStock].[HWSERIAL] AS [HWSERIAL], 
+    [rStock].[HWSERIAL2] AS [HWSERIAL2]
+    FROM [dbo].[rStock] AS [rStock]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SuchanProjects" EntityType="Self.SuchanProjects" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SuchanProjects].[ProjectCode] AS [ProjectCode], 
+    [SuchanProjects].[Club] AS [Club], 
+    [SuchanProjects].[ISOCode] AS [ISOCode], 
+    [SuchanProjects].[ProjectName] AS [ProjectName], 
+    [SuchanProjects].[Sponsor] AS [Sponsor], 
+    [SuchanProjects].[StartDate] AS [StartDate], 
+    [SuchanProjects].[EndDate] AS [EndDate], 
+    [SuchanProjects].[ProjectManager] AS [ProjectManager], 
+    [SuchanProjects].[OptionCentric] AS [OptionCentric], 
+    [SuchanProjects].[TestedBy] AS [TestedBy], 
+    [SuchanProjects].[TestCompletedDate] AS [TestCompletedDate], 
+    [SuchanProjects].[AlphaDate] AS [AlphaDate], 
+    [SuchanProjects].[DlyAlphaDate] AS [DlyAlphaDate], 
+    [SuchanProjects].[Beta1Date] AS [Beta1Date], 
+    [SuchanProjects].[DlyBeta1Date] AS [DlyBeta1Date], 
+    [SuchanProjects].[Beta2Date] AS [Beta2Date], 
+    [SuchanProjects].[DlyBeta2Date] AS [DlyBeta2Date], 
+    [SuchanProjects].[Beta3Date] AS [Beta3Date], 
+    [SuchanProjects].[DlyBeta3Date] AS [DlyBeta3Date], 
+    [SuchanProjects].[FinalDlyDate] AS [FinalDlyDate], 
+    [SuchanProjects].[DlyFinalDlyDate] AS [DlyFinalDlyDate], 
+    [SuchanProjects].[ProjectCloseDate] AS [ProjectCloseDate], 
+    [SuchanProjects].[TrainingDate] AS [TrainingDate], 
+    [SuchanProjects].[DocumentDate] AS [DocumentDate], 
+    [SuchanProjects].[TOUCHVALUE] AS [TOUCHVALUE], 
+    [SuchanProjects].[RecordKey] AS [RecordKey], 
+    [SuchanProjects].[EnteredBy] AS [EnteredBy], 
+    [SuchanProjects].[LastUpdateDate] AS [LastUpdateDate], 
+    [SuchanProjects].[AUTHORISE] AS [AUTHORISE], 
+    [SuchanProjects].[AUTHIDS] AS [AUTHIDS], 
+    [SuchanProjects].[HWSERIAL] AS [HWSERIAL], 
+    [SuchanProjects].[HWSERIAL2] AS [HWSERIAL2]
+    FROM [dbo].[SuchanProjects] AS [SuchanProjects]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TfatDesign" EntityType="Self.TfatDesign" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TfatDesign].[TfatDesignRecordKey] AS [TfatDesignRecordKey], 
+    [TfatDesign].[TfatDesignContent] AS [TfatDesignContent], 
+    [TfatDesign].[TOUCHVALUE] AS [TOUCHVALUE], 
+    [TfatDesign].[RecordKey] AS [RecordKey], 
+    [TfatDesign].[EnteredBy] AS [EnteredBy], 
+    [TfatDesign].[LastUpdateDate] AS [LastUpdateDate], 
+    [TfatDesign].[AUTHORISE] AS [AUTHORISE], 
+    [TfatDesign].[AUTHIDS] AS [AUTHIDS], 
+    [TfatDesign].[HWSERIAL] AS [HWSERIAL], 
+    [TfatDesign].[HWSERIAL2] AS [HWSERIAL2]
+    FROM [dbo].[TfatDesign] AS [TfatDesign]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TfatForm" EntityType="Self.TfatForm" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TfatForm].[RecordKey] AS [RecordKey], 
+    [TfatForm].[AuthIds] AS [AuthIds], 
+    [TfatForm].[Authorise] AS [Authorise], 
+    [TfatForm].[AutoIncr] AS [AutoIncr], 
+    [TfatForm].[AutoSize] AS [AutoSize], 
+    [TfatForm].[BackColor] AS [BackColor], 
+    [TfatForm].[BarCoded] AS [BarCoded], 
+    [TfatForm].[Border] AS [Border], 
+    [TfatForm].[Caption] AS [Caption], 
+    [TfatForm].[Comma] AS [Comma], 
+    [TfatForm].[Cond] AS [Cond], 
+    [TfatForm].[ControlType] AS [ControlType], 
+    [TfatForm].[CPI] AS [CPI], 
+    [TfatForm].[CPIStyle] AS [CPIStyle], 
+    [TfatForm].[DecS] AS [DecS], 
+    [TfatForm].[Equation] AS [Equation], 
+    [TfatForm].[Fixed] AS [Fixed], 
+    [TfatForm].[FldType] AS [FldType], 
+    [TfatForm].[FontBold] AS [FontBold], 
+    [TfatForm].[FontItalics] AS [FontItalics], 
+    [TfatForm].[FontName] AS [FontName], 
+    [TfatForm].[FontSize] AS [FontSize], 
+    [TfatForm].[FontStrike] AS [FontStrike], 
+    [TfatForm].[FontUnderLine] AS [FontUnderLine], 
+    [TfatForm].[ForeColor] AS [ForeColor], 
+    [TfatForm].[Format] AS [Format], 
+    [TfatForm].[FromRs] AS [FromRs], 
+    [TfatForm].[GroupHeader] AS [GroupHeader], 
+    [TfatForm].[Height] AS [Height], 
+    [TfatForm].[HWSerial] AS [HWSerial], 
+    [TfatForm].[HWSerial2] AS [HWSerial2], 
+    [TfatForm].[Justify] AS [Justify], 
+    [TfatForm].[Locked] AS [Locked], 
+    [TfatForm].[OnPage] AS [OnPage], 
+    [TfatForm].[PageJustify] AS [PageJustify], 
+    [TfatForm].[PrintInHeader] AS [PrintInHeader], 
+    [TfatForm].[Sections] AS [Sections], 
+    [TfatForm].[SpaceSaver] AS [SpaceSaver], 
+    [TfatForm].[Width] AS [Width], 
+    [TfatForm].[WordWrapGap] AS [WordWrapGap], 
+    [TfatForm].[WordWrapS] AS [WordWrapS], 
+    [TfatForm].[X1] AS [X1], 
+    [TfatForm].[X2] AS [X2], 
+    [TfatForm].[Y1] AS [Y1], 
+    [TfatForm].[Y2] AS [Y2], 
+    [TfatForm].[TOUCHVALUE] AS [TOUCHVALUE], 
+    [TfatForm].[EnteredBy] AS [EnteredBy], 
+    [TfatForm].[LastUpdateDate] AS [LastUpdateDate]
+    FROM [dbo].[TfatForm] AS [TfatForm]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TfatPerd" EntityType="Self.TfatPerd" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TfatPerd].[RecordKey] AS [RecordKey], 
+    [TfatPerd].[AuthIds] AS [AuthIds], 
+    [TfatPerd].[Authorise] AS [Authorise], 
+    [TfatPerd].[Code] AS [Code], 
+    [TfatPerd].[DatabaseName] AS [DatabaseName], 
+    [TfatPerd].[DbOffLine] AS [DbOffLine], 
+    [TfatPerd].[HWSerial] AS [HWSerial], 
+    [TfatPerd].[HWSerial2] AS [HWSerial2], 
+    [TfatPerd].[LastDate] AS [LastDate], 
+    [TfatPerd].[Locked] AS [Locked], 
+    [TfatPerd].[MasUpdate] AS [MasUpdate], 
+    [TfatPerd].[NewUpdate] AS [NewUpdate], 
+    [TfatPerd].[PerdCode] AS [PerdCode], 
+    [TfatPerd].[PeriodCode] AS [PeriodCode], 
+    [TfatPerd].[StartDate] AS [StartDate], 
+    [TfatPerd].[TouchValue] AS [TouchValue], 
+    [TfatPerd].[EnteredBy] AS [EnteredBy], 
+    [TfatPerd].[LastUpdateDate] AS [LastUpdateDate]
+    FROM [dbo].[TfatPerd] AS [TfatPerd]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TFATSetup" EntityType="Self.TFATSetup" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TFATSetup].[RecordKey] AS [RecordKey], 
+    [TFATSetup].[AutoUpdate] AS [AutoUpdate], 
+    [TFATSetup].[LastUpdate] AS [LastUpdate], 
+    [TFATSetup].[SuccessStatus] AS [SuccessStatus], 
+    [TFATSetup].[TouchValue] AS [TouchValue], 
+    [TFATSetup].[UpdateWorkStation] AS [UpdateWorkStation], 
+    [TFATSetup].[EnteredBy] AS [EnteredBy], 
+    [TFATSetup].[LastUpdateDate] AS [LastUpdateDate], 
+    [TFATSetup].[AUTHORISE] AS [AUTHORISE], 
+    [TFATSetup].[AUTHIDS] AS [AUTHIDS], 
+    [TFATSetup].[HWSERIAL] AS [HWSERIAL], 
+    [TFATSetup].[HWSERIAL2] AS [HWSERIAL2]
+    FROM [dbo].[TFATSetup] AS [TFATSetup]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_ItemBOM_ItemBOM" Association="Self.FK_ItemBOM_ItemBOM">
+      <End Role="ItemBOM" EntitySet="ItemBOM" />
+      <End Role="ItemBOM1" EntitySet="ItemBOM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemBOMHeader_ItemBOMHeader" Association="Self.FK_ItemBOMHeader_ItemBOMHeader">
+      <End Role="ItemBOMHeader" EntitySet="ItemBOMHeader" />
+      <End Role="ItemBOMHeader1" EntitySet="ItemBOMHeader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemBOMRoute_ItemBOMHeader" Association="Self.FK_ItemBOMRoute_ItemBOMHeader">
+      <End Role="ItemBOMHeader" EntitySet="ItemBOMHeader" />
+      <End Role="ItemBOMRoute" EntitySet="ItemBOMRoute" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemBOMRoute_ItemBOMHeader1" Association="Self.FK_ItemBOMRoute_ItemBOMHeader1">
+      <End Role="ItemBOMHeader" EntitySet="ItemBOMHeader" />
+      <End Role="ItemBOMRoute" EntitySet="ItemBOMRoute" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemBOMRoute_ItemBOMHeader2" Association="Self.FK_ItemBOMRoute_ItemBOMHeader2">
+      <End Role="ItemBOMHeader" EntitySet="ItemBOMHeader" />
+      <End Role="ItemBOMRoute" EntitySet="ItemBOMRoute" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemBOMRoute_ItemBOMRoute" Association="Self.FK_ItemBOMRoute_ItemBOMRoute">
+      <End Role="ItemBOMRoute" EntitySet="ItemBOMRoute" />
+      <End Role="ItemBOMRoute1" EntitySet="ItemBOMRoute" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LedgerAuthIds" Association="Self.FK_LedgerAuthIds">
+      <End Role="TfatPass" EntitySet="TfatPass" />
+      <End Role="Ledger" EntitySet="Ledger" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TFatBranch_TfatComp" Association="Self.FK_TFatBranch_TfatComp">
+      <End Role="TfatComp" EntitySet="TfatComp" />
+      <End Role="TFatBranch" EntitySet="TFatBranch" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TfatCity_TfatCity" Association="Self.FK_TfatCity_TfatCity">
+      <End Role="TfatState" EntitySet="TfatState" />
+      <End Role="TfatCity" EntitySet="TfatCity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TfatDesignForm_TfatDesignHeader" Association="Self.FK_TfatDesignForm_TfatDesignHeader">
+      <End Role="TfatDesignHeader" EntitySet="TfatDesignHeader" />
+      <End Role="TfatDesignForm" EntitySet="TfatDesignForm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TfatState_TfatCountry" Association="Self.FK_TfatState_TfatCountry">
+      <End Role="TfatCountry" EntitySet="TfatCountry" />
+      <End Role="TfatState" EntitySet="TfatState" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

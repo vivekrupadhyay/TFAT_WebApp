@@ -1,0 +1,76 @@
+﻿@model string
+<input type="hidden" id="TableName_@Model" value="@Model" />
+<input type="text" name="Code" id="txtCode_@Model" style="width:80px;" /><input type="text" name="Name" id="txtName_@Model" style="width:150px;" />
+<script type="text/javascript">
+    $(function () {
+        $('#txtName_@Model').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName_@Model').val();
+                $.ajax({
+                    url: "/Sales/AutocompleteName/" + id + "?name=" + $('#txtName_@Model').val(),
+                    dataType: "json",
+                    type: 'POST',
+                    data: {
+                        name: request.term
+                    },
+                    success: function (data) {
+                        response(data);
+                    }
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+
+                var id = $('#TableName_@Model').val();
+                var mData;
+                $.ajax({
+                    url: "/Sales/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'N'
+                    },
+                    success: function (_result) {
+                        mData = _result;
+                    }
+                });
+                setTimeout(function () { $('#txtCode_@Model').val(mData); }, 1000);
+            },
+            minLength: 1
+        });
+        $('#txtCode_@Model').autocomplete({
+            source: function (request, response) {
+                var id = $('#TableName_@Model').val();
+                $.ajax({
+                    url: "/Sales/AutocompleteCode/" + id + "?code=" + $('#txtCode_@Model').val(),
+                    dataType: "json",
+                    data: {
+                        code: request.term
+                    },
+                    success: function (data) {
+                        response(data);
+                    },
+                    type: 'POST'
+                });
+            },
+            autoFocus: true,
+            select: function (event, ui) {
+                var id = $('#TableName_@Model').val();
+                var mData;
+                $.ajax({
+                    url: "/Sales/GetCodeName/" + id,
+                    type: 'POST',
+                    data: {
+                        codeName: ui.item.value,
+                        mPara: 'C'
+                    },
+                    success: function (_result) {
+                        mData = _result;
+                    }
+                });
+                setTimeout(function () { $('#txtName_@Model').val(mData); }, 1000);
+            },
+            minLength: 1
+        });
+    });
+</script>

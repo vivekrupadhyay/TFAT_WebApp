@@ -1,0 +1,128 @@
+﻿
+        /* CSS Document */
+
+        .container {
+            width: 100%;
+            max-width: 960px;
+            margin: 50px auto;
+            font: 90% arial;
+        }
+
+        article, header {
+            display: block;
+        }
+
+            header h1, header p {
+                margin: 0 auto;
+                position: relative;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+        header a {
+                text-decoration: none;
+            }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .tabs {
+            top: 25px;
+            width: 100%;
+            max-width: 600px;
+            background: #E6F1F9;
+            margin: 50px auto 0;
+            position: relative;
+            color: #000;
+            font-family: Tahoma;
+            font-size: 11px;
+        }
+
+        span.anchor {
+            width: 100%;
+            position: fixed;
+            display: none;
+        }
+
+        .panel div {
+            opacity: 0;
+            background: #eee;
+            float: left;
+            width: 960px;
+            height: 200px;
+            position: absolute;
+            top: 1200px;
+            left: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            /*line-height: 11.5em;*/
+            border-radius: 5px;
+            border-top-left-radius: 0;
+            -webkit-transition: all 0.6s ease;
+            -moz-transition: all 0.6s ease;
+            -ms-transition: all 0.6s ease;
+            -o-transition: all 0.6s ease;
+            transition: all 0.6s ease;
+        }
+
+        .panel .tab-link {
+            margin-top: -39px;
+            float: left;
+            width: 15%;
+            padding: 10px;
+            background: #2779aa;
+            margin-right:-75px;
+            margin-top:-75px;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #000;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            -webkit-transition: all 0.6s ease;
+            -moz-transition: all 0.6s ease;
+            -ms-transition: all 0.6s ease;
+            -o-transition: all 0.6s ease;
+            transition: all 0.6s ease;
+        }
+
+    .panel .tab-link1 {
+        margin-top: -39px;
+        float: left;
+        width: 15%;
+        padding: 10px;
+        background: #2779aa;
+        margin-right: -75px;
+        margin-top: -75px;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #000;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -ms-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        transition: all 0.6s ease;
+    }
+
+            .panel .tab-link:visited {
+                color: #fff;
+            }
+
+        .anchor:target + .panel div {
+            /*opacity: 1;*/
+            background: #f2f5f7;
+        }
+
+        .anchor:target + .panel .tab-link {
+            background: #2779aa;
+        }
+

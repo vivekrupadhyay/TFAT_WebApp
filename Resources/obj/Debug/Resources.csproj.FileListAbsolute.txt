@@ -1,0 +1,25 @@
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\Resources\bin\Debug\Resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\Resources\bin\Debug\Resources.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\Resources\obj\Debug\Resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\Resources\obj\Debug\Resources.pdb
+G:\dipti\backup\TFATERPWebApplication\Resources\bin\Debug\Resources.dll
+G:\dipti\backup\TFATERPWebApplication\Resources\bin\Debug\Resources.pdb
+G:\dipti\backup\TFATERPWebApplication\Resources\obj\Debug\Resources.dll
+G:\dipti\backup\TFATERPWebApplication\Resources\obj\Debug\Resources.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\bin\Debug\Resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\bin\Debug\Resources.pdb
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\obj\Debug\Resources.dll
+G:\Live Projects\TFAT@WEB\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\obj\Debug\Resources.pdb
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\bin\Debug\Resources.dll
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\bin\Debug\Resources.pdb
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\obj\Debug\Resources.dll
+E:\ERP\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\obj\Debug\Resources.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\bin\Debug\Resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\bin\Debug\Resources.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\obj\Debug\Resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\obj\Debug\Resources.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\bin\Debug\Resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\bin\Debug\Resources.pdb
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\obj\Debug\Resources.dll
+E:\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplication\TFATERPWebApplicationProject\Resources\obj\Debug\Resources.pdb
